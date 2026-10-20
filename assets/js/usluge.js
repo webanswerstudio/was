@@ -28,11 +28,11 @@ class Component_ extends DCLogic {
       showGrid: this.props.showGrid ?? true,
       process, lineW: step * 50 + '%',
       services_: [
-        { icon: 'brush', href: 'usluge-izrada-sajtova.html', price: 'Od 350 EUR', title: 'Izrada sajtova', text: 'Brzi, moderni sajtovi koji jasno objašnjavaju ponudu i pretvaraju posete u upite.', features: ['Konverziona struktura', 'Responsive dizajn', 'Kontakt forme', 'SEO osnova'] },
-        { icon: 'travel_explore', href: 'usluge-seo-optimizacija.html', price: 'Od 250 EUR', title: 'SEO optimizacija', text: 'Tehnička i sadržajna SEO optimizacija za bolju vidljivost i više organskih poseta.', features: ['Tehnički SEO', 'Ključne reči', 'Lokalni SEO', 'Izveštaji'] },
-        { icon: 'auto_awesome', href: 'usluge-geo-optimizacija.html', price: 'Od 300 EUR', title: 'AI optimizacija (GEO)', text: 'Optimizacija za AI pretragu da vas ChatGPT, Gemini i Google AI Overviews citiraju kao izvor.', features: ['Strukturisani podaci', 'Sadržaj za AI odgovore', 'Praćenje AI pominjanja', 'Entitet brenda'] },
-        { icon: 'shopping_bag', href: 'usluge-online-prodavnice.html', price: 'Od 990 EUR', title: 'Online prodavnice', text: 'Stabilne prodavnice sa jasnim tokom kupovine, plaćanjem, dostavom i upravljanjem porudžbinama.', features: ['Shopify ili custom rešenje', 'Plaćanje i dostava', 'Upravljanje proizvodima', 'Email obaveštenja'] },
-        { icon: 'settings', href: 'usluge-odrzavanje-sajta.html', price: 'Od 90 EUR/mesec', title: 'Održavanje sajta', text: 'Tehnička podrška, bezbednost, izmene sadržaja i monitoring, da sajt radi bez stresa.', features: ['Backup', 'Bezbednost', 'Sitne izmene', 'Monitoring'] }
+        { icon: 'brush', href: 'usluge-izrada-sajtova', price: 'Od 350 EUR', title: 'Izrada sajtova', text: 'Brzi, moderni sajtovi koji jasno objašnjavaju ponudu i pretvaraju posete u upite.', features: ['Konverziona struktura', 'Responsive dizajn', 'Kontakt forme', 'SEO osnova'] },
+        { icon: 'travel_explore', href: 'usluge-seo-optimizacija', price: 'Od 250 EUR', title: 'SEO optimizacija', text: 'Tehnička i sadržajna SEO optimizacija za bolju vidljivost i više organskih poseta.', features: ['Tehnički SEO', 'Ključne reči', 'Lokalni SEO', 'Izveštaji'] },
+        { icon: 'auto_awesome', href: 'usluge-geo-optimizacija', price: 'Od 300 EUR', title: 'AI optimizacija (GEO)', text: 'Optimizacija za AI pretragu da vas ChatGPT, Gemini i Google AI Overviews citiraju kao izvor.', features: ['Strukturisani podaci', 'Sadržaj za AI odgovore', 'Praćenje AI pominjanja', 'Entitet brenda'] },
+        { icon: 'shopping_bag', href: 'usluge-online-prodavnice', price: 'Od 990 EUR', title: 'Online prodavnice', text: 'Stabilne prodavnice sa jasnim tokom kupovine, plaćanjem, dostavom i upravljanjem porudžbinama.', features: ['Shopify ili custom rešenje', 'Plaćanje i dostava', 'Upravljanje proizvodima', 'Email obaveštenja'] },
+        { icon: 'settings', href: 'usluge-odrzavanje-sajta', price: 'Od 90 EUR/mesec', title: 'Održavanje sajta', text: 'Tehnička podrška, bezbednost, izmene sadržaja i monitoring, da sajt radi bez stresa.', features: ['Backup', 'Bezbednost', 'Sitne izmene', 'Monitoring'] }
       ]
     };
     const by = t => vals.services_.find(x => x.title === t);
