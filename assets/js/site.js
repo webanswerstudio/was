@@ -77,6 +77,12 @@
       bt.setAttribute('aria-label', open ? 'Zatvori meni' : 'Otvori meni');
     }
     bt.addEventListener('click', function () { set(!mn.hasAttribute('data-open')); });
+    var ex = mn.querySelector('.wa-mexp'), sub = document.getElementById('wa-msub');
+    if (ex && sub) ex.addEventListener('click', function () {
+      var o = !sub.hasAttribute('data-open');
+      if (o) sub.setAttribute('data-open', ''); else sub.removeAttribute('data-open');
+      ex.setAttribute('aria-expanded', o ? 'true' : 'false');
+    });
     mn.addEventListener('click', function (e) { if (e.target.closest('a')) set(false); });
     document.addEventListener('keydown', function (e) { if (e.key === 'Escape') set(false); });
     window.addEventListener('resize', function () { if (window.innerWidth > 960) set(false); });

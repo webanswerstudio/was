@@ -56,14 +56,17 @@ h1,h2,h3,h4,p{margin:0}
 .wa-burger[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg)}
 .wa-burger[aria-expanded="true"] span:nth-child(2){opacity:0}
 .wa-burger[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
-.wa-mnav{display:none;position:absolute;left:24px;right:24px;top:100%;margin-top:8px;max-height:calc(100vh - 110px);overflow:auto;padding:10px;background:#ffffff;border:1px solid #e3ecea;border-radius:16px;box-shadow:0 30px 60px -28px rgba(12,15,15,0.35);flex-direction:column;gap:2px}
+.wa-mnav{display:none;position:absolute;left:24px;right:24px;top:100%;margin-top:8px;max-height:calc(100vh - 110px);overflow:auto;padding:6px;background:#ffffff;border:1px solid #e3ecea;border-radius:16px;box-shadow:0 30px 60px -28px rgba(12,15,15,0.35);flex-direction:column}
 .wa-mnav[data-open]{display:flex}
-.wa-mnav a{display:flex;align-items:center;min-height:48px;padding:0 14px;border-radius:12px;font-size:16px;font-weight:500;color:#0c0f0f}
-.wa-mnav a:hover{background:#eef8f6;color:#0c0f0f}
-.wa-mnav a[aria-current]{color:#0d7f76;font-weight:600}
-.wa-msub{display:flex;flex-direction:column;margin:0 0 4px 14px;padding-left:8px;border-left:2px solid #e3ecea}
-.wa-msub a{min-height:44px;font-size:15px;color:#4a5554}
-.wa-mnav a.wa-mcta{justify-content:center;margin-top:8px;background:#0c0f0f;color:#ffffff;font-weight:600}
+.wa-mnav a,.wa-mexp{display:flex;align-items:center;justify-content:space-between;width:100%;min-height:44px;padding:0 12px;border:0;border-radius:10px;background:transparent;font-family:inherit;font-size:15px;font-weight:500;color:#0c0f0f;text-align:left;cursor:pointer}
+.wa-mnav a:hover,.wa-mexp:hover{background:#eef8f6;color:#0c0f0f}
+.wa-mnav a[aria-current],.wa-mexp[data-cur]{color:#0d7f76;font-weight:600}
+.wa-mexp i{width:8px;height:8px;margin-right:4px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:translateY(-2px) rotate(45deg);transition:transform .2s}
+.wa-mexp[aria-expanded="true"] i{transform:translateY(2px) rotate(-135deg)}
+.wa-msub{display:none;flex-direction:column;margin:0 0 4px 12px;padding-left:8px;border-left:2px solid #e3ecea}
+.wa-msub[data-open]{display:flex}
+.wa-msub a{min-height:40px;font-size:14px;color:#4a5554}
+.wa-mnav a.wa-mcta{justify-content:center;margin-top:6px;background:#0c0f0f;color:#ffffff;font-weight:600}
 .wa-mnav a.wa-mcta:hover{background:#0d7f76;color:#ffffff}
 @media (max-width:980px){.wa-links,.wa-cta{display:none!important}.wa-burger{display:flex}}
 </style>
@@ -495,7 +498,7 @@ h1,h2,h3,h4,p{margin:0}
     </div>
     <a href="#kontakt" style="background:#0c0f0f;color:#ffffff;padding:12px 20px;border-radius:10px;font-weight:600;font-size:15px" class="h2 wa-cta">Zatraži analizu</a>
   <button class="wa-burger" type="button" aria-label="Otvori meni" aria-expanded="false" aria-controls="wa-mnav"><span></span><span></span><span></span></button></nav>
-<div id="wa-mnav" class="wa-mnav"><a href="./">Početna</a><a href="usluge.html">Usluge</a><div class="wa-msub"><a href="usluge-izrada-sajtova.html">Izrada sajtova</a><a href="usluge-online-prodavnice.html">Online prodavnice</a><a href="usluge-seo-optimizacija.html">SEO optimizacija</a><a href="usluge-geo-optimizacija.html">GEO optimizacija</a><a href="usluge-odrzavanje-sajta.html" aria-current="page">Održavanje sajta</a></div><a href="cene.html">Cene</a><a href="prirucnik.html">Priručnik</a><a href="o-nama.html">O nama</a><a href="kontakt.html">Kontakt</a><a class="wa-mcta" href="#kontakt">Zatraži analizu</a></div></div>
+<div id="wa-mnav" class="wa-mnav"><a href="./">Početna</a><button type="button" class="wa-mexp" aria-expanded="false" aria-controls="wa-msub" data-cur="">Usluge<i></i></button><div class="wa-msub" id="wa-msub"><a href="usluge.html">Sve usluge</a><a href="usluge-izrada-sajtova.html">Izrada sajtova</a><a href="usluge-online-prodavnice.html">Online prodavnice</a><a href="usluge-seo-optimizacija.html">SEO optimizacija</a><a href="usluge-geo-optimizacija.html">GEO optimizacija</a><a href="usluge-odrzavanje-sajta.html" aria-current="page">Održavanje sajta</a></div><a href="cene.html">Cene</a><a href="prirucnik.html">Priručnik</a><a href="o-nama.html">O nama</a><a href="kontakt.html">Kontakt</a><a class="wa-mcta" href="#kontakt">Zatraži analizu</a></div></div>
 
 <section style="position:relative;overflow:hidden;margin-top:-80px;padding:160px 24px 110px;background:#f6faf9">
   <div style="position:absolute;inset:0;background-image:linear-gradient(#e7efee 1px,transparent 1px),linear-gradient(90deg,#e7efee 1px,transparent 1px);background-size:56px 56px;opacity:0.7;pointer-events:none"></div>
