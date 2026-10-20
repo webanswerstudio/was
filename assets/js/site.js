@@ -1,4 +1,7 @@
 (function () {
+  if (/\.html$/.test(location.pathname) && location.protocol !== 'file:') {
+    try { history.replaceState(null, '', location.pathname.replace(/(index)?\.html$/, '') + location.search + location.hash); } catch (e) {}
+  }
   var HOLE = /\{\{\s*([^{}]+?)\s*\}\}/g;
   function lit(p) {
     if (p === 'true') return { v: true }; if (p === 'false') return { v: false };
