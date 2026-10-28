@@ -91,7 +91,6 @@ class Component_ extends DCLogic {
       starter: cur.s, biznis: cur.b, premium: cur.p,
       steps, lineW: step * 50 + '%', bars,
       ctaPoints: ['Analizu brzine učitavanja stranica', 'SEO izveštaj', 'Analizu dizajna sa konkretnim predlozima'],
-      logos: ['logo klijenta', 'logo klijenta', 'logo klijenta'],
       stats: [
         { icon: 'travel_explore', kicker: 'SEO SKOR 100', title: 'Bolja pozicija na Google-u', text: 'Tehnički čist sajt koji Google lako čita, indeksira i bolje rangira.' },
         { icon: 'auto_awesome', kicker: 'AI VIDLJIVOST', title: 'Citiranje u AI odgovorima', text: 'Sadržaj i struktura zbog kojih vas ChatGPT, Gemini i Google AI Overviews navode kao izvor.' },
@@ -121,6 +120,20 @@ class Component_ extends DCLogic {
         { icon: 'apartment', label: 'Nekretnine' },
         { icon: 'shopping_bag', label: 'E-commerce' },
         { icon: 'restaurant', label: 'Ugostiteljstvo' }
+      ],
+      svcCards: [
+        { icon: 'support_agent', kicker: 'OPTIMIZACIJA SAJTA', title: 'Konsalting SEO', text: 'Analiza, jasan plan i optimizacija postojećeg sajta, uz direktan rad sa SEO stručnjakom.', items: ['SEO audit i plan prioriteta', 'Tehnički i on-page SEO', 'Izmene koje sprovodimo mi'], cta: 'Zatraži analizu', href: 'seo-konsalting' },
+        { icon: 'shopping_cart', kicker: 'OPTIMIZACIJA SAJTA', title: 'E-commerce SEO', text: 'Više porudžbina iz Google pretrage za Shopify, WooCommerce i WordPress prodavnice.', items: ['Kategorije i stranice proizvoda', 'Transakcione ključne reči', 'Schema i Google Merchant Center'], cta: 'Zatraži analizu', href: 'ecommerce-seo' },
+        { icon: 'auto_awesome', kicker: 'AI PRETRAGA', title: 'GEO optimizacija', text: 'Da vas ChatGPT, Gemini i Google AI Overviews preporučuju i navode kao izvor.', items: ['GEO i AEO optimizacija tekstova', 'Schema i entitet brenda', 'Praćenje AI vidljivosti'], cta: 'Zatraži analizu', href: 'geo-optimizacija' },
+        { icon: 'design_services', kicker: 'BREND OD NULE', title: 'Izrada sajtova', text: 'Sajt za lokalni biznis, online prodavnicu ili portfolio, sa SEO osnovom od prvog dana.', items: ['Dizajn po meri i mobilna verzija', 'Osnovni SEO paket', 'Blog, kategorije i više jezika'], cta: 'Zatraži ponudu', href: 'izrada-sajtova' }
+      ],
+      ecoSteps: [
+        { num: '01', icon: 'fact_check', title: 'Audit prodavnice', text: 'Proveravamo indeksiranje, filtere, duplirane stranice i brzinu.' },
+        { num: '02', icon: 'manage_search', title: 'Transakcione ključne reči', text: 'Pronalazimo pojmove koje kupci kucaju kada su spremni da kupe.' },
+        { num: '03', icon: 'category', title: 'Kategorije koje se rangiraju', text: 'Struktura, tekstovi i interni linkovi za najvažnije kategorije.' },
+        { num: '04', icon: 'inventory_2', title: 'Stranice proizvoda', text: 'Naslovi, opisi, slike i schema sa cenom, dostupnošću i ocenama.' },
+        { num: '05', icon: 'storefront', title: 'Google Merchant Center', text: 'Proizvodi u besplatnim Shopping listinzima na Google-u.' },
+        { num: '06', icon: 'auto_awesome', title: 'Vidljivost u AI pretrazi', text: 'Podaci o proizvodima koje AI alati čitaju i preporučuju.' }
       ],
       guarantees: ['Bez skrivenih troškova', 'Podrška nakon lansiranja', 'Merljivo brži sajt', 'Jasan proces i rokovi']
     };
