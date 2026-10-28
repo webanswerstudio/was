@@ -95,6 +95,12 @@
 .wa-group .wa-item__title{font-size:15px}
 .wa-notes{font-size:14px;color:var(--wa-mute);line-height:1.5}
 
+/* obaveštenje posle slanja */
+.wa-notice{display:flex;gap:12px;align-items:flex-start;padding:14px 16px;border-radius:14px;font-size:15px;line-height:1.5;scroll-margin-top:110px}
+.wa-notice svg{flex:none;margin-top:2px}
+.wa-notice[data-type="ok"]{background:#e5f5f2;border:1px solid #bfe5df;color:#0b5f58}
+.wa-notice[data-type="warn"]{background:#fdf1dc;border:1px solid #f3dcae;color:#7a4600}
+
 /* email */
 .wa-gate{display:flex;flex-direction:column;gap:14px;padding:24px;border-radius:18px;background:var(--wa-soft);border:1px dashed #b9dcd7}
 .wa-gate__title{font-family:Lexend,sans-serif;font-weight:600;font-size:19px}

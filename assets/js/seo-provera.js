@@ -6,11 +6,13 @@
   var CFG = Object.assign({
     // Adresa Cloudflare Workera (posle postavljanja Workera upišite njegovu adresu + /audit)
     workerUrl: 'https://audit.webanswerstudio.com/audit',
-    // Isti Web3Forms ključ kao u kontakt formi: leadovi stižu na isti mejl
+    // Slanje PDF izveštaja na email posetioca (isti Worker)
+    reportUrl: 'https://audit.webanswerstudio.com/report',
+    // Rezerva: ako slanje izveštaja ne uspe, lead vam stiže preko Web3Forms (isti ključ kao kontakt forma)
     web3formsKey: '51e5be71-4bed-474a-81b7-f7a42254f50f',
     contactUrl: 'kontakt',
     privacyUrl: 'politika-privatnosti',
-    gate: true,        // true: ceo izveštaj se otključava emailom; false: sve odmah
+    gate: true,        // true: ceo izveštaj se šalje i otključava emailom; false: sve odmah, bez emaila
     topCount: 3,
     runner: null       // samo za testiranje: async function (url) { return rezultat; }
   }, window.WA_AUDIT_CONFIG || {});
@@ -35,6 +37,7 @@
     warn: '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M12 5v9M12 19h.01"/></svg>',
     info: '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M12 11v7M12 6h.01"/></svg>',
     alert: '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.3 3.9L1.8 18a2 2 0 001.7 3h17a2 2 0 001.7-3L13.7 3.9a2 2 0 00-3.4 0zM12 9v4M12 17h.01"/></svg>',
+    mail: '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>',
     arrow: '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>'
   };
 
@@ -148,13 +151,13 @@
 
   function gate(res, hiddenCount) {
     return '<form class="wa-gate" data-wa-gate novalidate>' +
-      '<div><div class="wa-gate__title">Otključajte ceo izveštaj</div>' +
-      '<p class="wa-gate__text">Izveštaj ima još ' + hiddenCount + ' ' + plural(hiddenCount, 'proveru', 'provere', 'provera') + ' sa uputstvom kako da popravite svaku stavku. Unesite email i odmah ga prikazujemo ovde.</p></div>' +
+      '<div><div class="wa-gate__title">Dobijte ceo izveštaj u PDF‑u</div>' +
+      '<p class="wa-gate__text">Izveštaj ima još ' + hiddenCount + ' ' + plural(hiddenCount, 'proveru', 'provere', 'provera') + ' sa uputstvom kako da popravite svaku stavku. Unesite email: šaljemo vam ceo izveštaj u PDF‑u, a odmah ga otvaramo i ovde.</p></div>' +
       '<div class="wa-gate__row"><label class="wa-sr" for="wa-gate-email">Email adresa</label>' +
       '<input class="wa-gate__email" id="wa-gate-email" type="email" autocomplete="email" placeholder="vas@email.com" required value="' + esc(savedEmail) + '">' +
       '<input class="wa-hp" type="checkbox" name="botcheck" tabindex="-1" aria-hidden="true">' +
-      '<button class="wa-gate__btn" type="submit">Prikaži ceo izveštaj</button></div>' +
-      '<label class="wa-gate__consent"><input type="checkbox" required> <span>Slažem se da me Web Answer Studio kontaktira povodom ove analize. <a href="' + esc(CFG.privacyUrl) + '" target="_blank" rel="noopener">Politika privatnosti</a></span></label>' +
+      '<button class="wa-gate__btn" type="submit">Pošalji mi izveštaj</button></div>' +
+      '<label class="wa-gate__consent"><input type="checkbox" required> <span>Slažem se da mi Web Answer Studio pošalje izveštaj i javi se povodom ove analize. <a href="' + esc(CFG.privacyUrl) + '" target="_blank" rel="noopener">Politika privatnosti</a></span></label>' +
       '<div class="wa-gate__err" role="alert"></div></form>';
   }
 
@@ -164,7 +167,7 @@
       '<button type="button" data-wa-again>Proveri drugi sajt</button></div></div>';
   }
 
-  function render(res, unlocked) {
+  function render(res, unlocked, notice) {
     var byId = {};
     res.checks.forEach(function (c) { byId[c.id] = c; });
     var top = (res.topIssues || []).slice(0, CFG.topCount).map(function (id) { return byId[id]; }).filter(Boolean);
@@ -180,6 +183,7 @@
         return '<div class="wa-cat"><div class="wa-cat__top"><span>' + esc(c.label) + '</span><b>' + c.score + '</b></div><div class="wa-bar"><i style="background:' + color(c.score) + '" data-w="' + c.score + '"></i></div></div>';
       }).join('') + '</div>';
 
+    if (notice) html += '<div class="wa-notice" data-type="' + notice.type + '" role="status">' + (notice.type === 'ok' ? ICON.mail : ICON.alert) + '<span>' + esc(notice.text) + '</span></div>';
     if (unlocked) {
       html += '<div>' + fullReport(res) + '</div>';
     } else if (top.length) {
@@ -220,18 +224,45 @@
       if (!consent.checked) { err.textContent = 'Potvrdite saglasnost da bismo vam poslali izveštaj.'; return; }
       if (g.querySelector('[name=botcheck]').checked) return;
       var b = g.querySelector('.wa-gate__btn');
-      b.disabled = true; b.textContent = 'Otključavam…';
+      b.disabled = true; b.textContent = 'Šaljem izveštaj…'; err.textContent = '';
       savedEmail = email;
       try { localStorage.setItem(STORE, email); } catch (x) {}
-      sendLead(res, email).then(function () {
-        render(res, true);
-        var first = resultEl.querySelector('.wa-group');
+      requestReport(res, email).then(function (out) {
+        if (out.retry) { b.disabled = false; b.textContent = 'Pošalji mi izveštaj'; err.textContent = out.message; return; }
+        render(res, true, out.notice);
+        var first = resultEl.querySelector('.wa-notice') || resultEl.querySelector('.wa-group');
         if (first) scrollToEl(first);
       });
     });
   }
 
-  /* ---------- lead (Web3Forms) ---------- */
+  /* ---------- PDF izveštaj na email (Worker → Resend) ---------- */
+  function requestReport(res, email) {
+    var failText = 'Ceo izveštaj je otključan ovde. Slanje na email trenutno nije uspelo, a mi ćemo vam se javiti na ' + email + '.';
+    function fallback() { return sendLead(res, email).then(function () { return { notice: { type: 'warn', text: failText } }; }); }
+    var ctrl = typeof AbortController !== 'undefined' ? new AbortController() : null;
+    var t = setTimeout(function () { if (ctrl) ctrl.abort(); }, 60000);
+    return fetch(CFG.reportUrl, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ url: res.url, email: email, consent: true }),
+      signal: ctrl ? ctrl.signal : undefined
+    }).then(function (r) {
+      return r.json().catch(function () { return {}; }).then(function (j) { return { status: r.status, j: j }; });
+    }).then(function (x) {
+      clearTimeout(t);
+      if (x.status === 200 && x.j.sent) {
+        track('generate_lead', { method: 'seo_audit', value: res.score });
+        return { notice: { type: 'ok', text: (x.j.pdf ? 'PDF izveštaj je poslat na ' : 'Izveštaj je poslat na ') + email + '. Ako ga ne vidite za par minuta, pogledajte folder Spam ili Promocije.' } };
+      }
+      if (x.status === 400) return { retry: true, message: x.j.message || 'Proverite email adresu.' };
+      if (x.status === 429) return { notice: { type: 'warn', text: x.j.message || 'Dostignut je limit slanja izveštaja. Ceo izveštaj je otključan ovde.' } };
+      if (x.status === 502 && x.j.agency) return { notice: { type: 'warn', text: failText } };
+      return fallback();
+    }, function () { clearTimeout(t); return fallback(); });
+  }
+
+  /* ---------- rezervni lead (Web3Forms) ---------- */
   function sendLead(res, email) {
     track('generate_lead', { method: 'seo_audit', value: res.score });
     if (!CFG.web3formsKey) return Promise.resolve();
@@ -247,7 +278,7 @@
       skor: res.score + '/100',
       kategorije: res.categories.map(function (c) { return c.label + ' ' + c.score; }).join(' · '),
       problemi: problems || 'Nema problema.',
-      izvor: 'SEO provera na sajtu'
+      izvor: 'SEO provera na sajtu (slanje PDF-a nije uspelo, javite se posetiocu)'
     };
     var ctrl = typeof AbortController !== 'undefined' ? new AbortController() : null;
     var t = setTimeout(function () { if (ctrl) ctrl.abort(); }, 8000);
@@ -275,9 +306,7 @@
       clearTimers();
       statusEl.innerHTML = '';
       last = res;
-      var unlocked = !CFG.gate || !!savedEmail;
-      render(res, unlocked);
-      if (unlocked && savedEmail && CFG.gate) sendLead(res, savedEmail);
+      render(res, !CFG.gate);
       track('seo_audit_complete', { value: res.score });
       resultEl.focus({ preventScroll: true });
       scrollToEl(resultEl);
