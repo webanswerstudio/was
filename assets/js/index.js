@@ -26,6 +26,10 @@ class Component_ extends DCLogic {
           h('span', { style: { fontSize: 12, letterSpacing: '0.18em', fontWeight: 700, color: done ? '#2cc4b6' : '#9aa5a3' } }, done ? 'SPEED TEST' : 'TESTIRANJE…'))));
   };
   componentDidMount() {
+    if (!window.__waAuditLoaded && document.querySelector('[data-wa-audit]')) {
+      window.__waAuditLoaded = true;
+      const sc = document.createElement('script'); sc.src = 'assets/js/seo-provera.js'; document.body.appendChild(sc);
+    }
     this.t5 = setTimeout(() => this.setState({ heroRun: true }), 60);
     this.heroTimer();
     this.t1 = setInterval(() => this.setState(s => ({ step: (s.step + 1) % 3 })), 2600);
