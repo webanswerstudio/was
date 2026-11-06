@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="sr-Latn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>llms.txt generator i vodič: šta radi, a šta ne | Web Answer Studio</title>
+<meta name="description" content="llms.txt generator: napravite pregled najvažnijih stranica sajta za AI alate, uz uvoz iz sitemap-a i iskren odgovor da li llms.txt pomaže vidljivosti.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://webanswerstudio.com/llms-txt-generator">
+<link rel="icon" type="image/png" sizes="48x48" href="favicon-48.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="theme-color" content="#ffffff">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Web Answer Studio">
+<meta property="og:locale" content="sr_RS">
+<meta property="og:title" content="llms.txt generator i vodič">
+<meta property="og:description" content="Napravite llms.txt za par minuta i saznajte šta on zaista radi za AI vidljivost.">
+<meta property="og:url" content="https://webanswerstudio.com/llms-txt-generator">
+<meta property="og:image" content="https://webanswerstudio.com/assets/img/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="llms.txt generator i vodič">
+<meta name="twitter:description" content="Napravite llms.txt za par minuta i saznajte šta on zaista radi za AI vidljivost.">
+<meta name="twitter:image" content="https://webanswerstudio.com/assets/img/og-image.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend:wght@600;700&amp;family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&amp;display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400..500,0..1,0&amp;icon_names=add,arrow_forward,auto_awesome,call,check_circle,close,computer,content_copy,data_object,delete,description,download,error,expand_more,groups,image,info,mail,open_in_new,search,shopping_cart,smart_toy,smartphone,support_agent,upload,warning&amp;display=block">
+<style>
+html,body{margin:0;padding:0;background:#ffffff;color:#0c0f0f;font-family:'DM Sans',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+*{box-sizing:border-box}
+a{color:#0d7f76;text-decoration:none}
+a:hover{color:#0c0f0f}
+h1,h2,h3,h4,p{margin:0}
+@keyframes orb{to{transform:rotate(360deg)}}
+@keyframes orbr{to{transform:rotate(-360deg)}}
+@keyframes hglow{0%,100%{transform:scale(1)}50%{transform:scale(1.05)}}
+.h0:hover{background:#eef8f6!important;color:#0c0f0f!important}
+.h1:hover{background:#0d7f76!important;color:#ffffff!important}
+.h2:hover{background:#0c0f0f!important;color:#ffffff!important}
+.h3:hover{background:#eef8f6!important;border-color:#9fd9d2!important;transform:translateY(-4px)!important;box-shadow:0 28px 50px -32px rgba(13,127,118,0.5)!important}
+.h4:hover{transform:translateY(-4px)!important;border-color:#9fd9d2!important;box-shadow:0 30px 60px -36px rgba(13,127,118,0.5)!important}
+.h5:hover{border-color:#0c0f0f!important;color:#0c0f0f!important}
+.h6:hover{background:#ffffff!important;color:#0c0f0f!important}
+.h7:hover{border-color:#2cc4b6!important;color:#2cc4b6!important}
+.h8:hover{transform:translateY(-3px)!important;border-color:#9fd9d2!important}
+.h9:hover{background:#eef8f6!important;border-color:#9fd9d2!important;transform:translateY(-4px)!important;box-shadow:0 24px 44px -30px rgba(13,127,118,0.5)!important}
+.ha:hover{background:#e9f6f4!important;border-color:#9fd9d2!important;transform:translateY(-4px)!important;box-shadow:0 28px 50px -32px rgba(13,127,118,0.5)!important}
+.hb:hover{border-color:#0d7f76!important;color:#0d7f76!important}
+.hc:hover{border-color:#9fd9d2!important;transform:translateY(-3px)!important;box-shadow:0 28px 50px -32px rgba(13,127,118,0.5)!important}
+[data-hide]{display:none!important}
+.wa-burger{display:none;width:46px;height:46px;padding:0;border:1px solid #e3ecea;border-radius:12px;background:#ffffff;cursor:pointer;flex-direction:column;align-items:center;justify-content:center;gap:5px}
+.wa-burger span{display:block;width:20px;height:2px;border-radius:2px;background:#0c0f0f;transition:transform .25s,opacity .2s}
+.wa-burger[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.wa-burger[aria-expanded="true"] span:nth-child(2){opacity:0}
+.wa-burger[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+.wa-mnav{display:none;position:absolute;left:24px;right:24px;top:100%;margin-top:8px;max-height:calc(100vh - 110px);overflow:auto;padding:6px;background:#ffffff;border:1px solid #e3ecea;border-radius:16px;box-shadow:0 30px 60px -28px rgba(12,15,15,0.35);flex-direction:column}
+.wa-mnav[data-open]{display:flex}
+.wa-mnav a,.wa-mexp{display:flex;align-items:center;justify-content:space-between;width:100%;min-height:44px;padding:0 12px;border:0;border-radius:10px;background:transparent;font-family:inherit;font-size:15px;font-weight:500;color:#0c0f0f;text-align:left;cursor:pointer}
+.wa-mnav a:hover,.wa-mexp:hover{background:#eef8f6;color:#0c0f0f}
+.wa-mnav a[aria-current],.wa-mexp[data-cur]{color:#0d7f76;font-weight:600}
+.wa-mexp i{width:8px;height:8px;margin-right:4px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:translateY(-2px) rotate(45deg);transition:transform .2s}
+.wa-mexp[aria-expanded="true"] i{transform:translateY(2px) rotate(-135deg)}
+.wa-msub{display:none;flex-direction:column;margin:0 0 4px 12px;padding-left:8px;border-left:2px solid #e3ecea}
+.wa-msub[data-open]{display:flex}
+.wa-msub a{min-height:40px;font-size:14px;color:#4a5554}
+.wa-mnav a.wa-mcta{justify-content:center;margin-top:6px;background:#0c0f0f;color:#ffffff;font-weight:600}
+.wa-mnav a.wa-mcta:hover{background:#0d7f76;color:#ffffff}
+.wa-dd .wa-ddm{display:none}.wa-dd:hover .wa-ddm,.wa-dd:focus-within .wa-ddm{display:block}
+@media (max-width:980px){.wa-links,.wa-cta{display:none!important}.wa-burger{display:flex}}
+/* ---------- SEO alati: zajednički stil ---------- */
+.ms{font-family:'Material Symbols Rounded';font-weight:normal;font-style:normal;line-height:1;letter-spacing:normal;text-transform:none;white-space:nowrap;direction:ltr;-webkit-font-feature-settings:'liga';font-feature-settings:'liga'}
+.rt-wrap{max-width:1180px;margin:0 auto}
+.rt-eyebrow{font-size:13px;font-weight:700;letter-spacing:.18em;color:#0d7f76}
+.rt-h2{font-family:Lexend;font-weight:700;font-size:clamp(30px,3.6vw,46px);line-height:1.1;letter-spacing:-.03em;text-wrap:balance}
+.rt-lead{font-size:18px;line-height:1.65;color:#4a5554;text-wrap:pretty}
+.rt-card{position:relative;background:#ffffff;border:1px solid #e3ecea;border-radius:26px;box-shadow:0 40px 80px -50px rgba(12,15,15,.35);overflow:hidden}
+.rt-tabs{display:flex;gap:6px;padding:8px;margin:22px 22px 0;background:#f2f7f6;border:1px solid #e3ecea;border-radius:14px;width:max-content;max-width:calc(100% - 44px);flex-wrap:wrap}
+.rt-tab{display:flex;align-items:center;gap:8px;border:0;background:transparent;padding:11px 18px;border-radius:10px;font:600 15px 'DM Sans',sans-serif;color:#4a5554;cursor:pointer;transition:background .2s,color .2s}
+.rt-tab .ms{font-size:20px}
+.rt-tab[aria-selected="true"]{background:#0c0f0f;color:#ffffff;box-shadow:0 10px 20px -12px rgba(12,15,15,.6)}
+.rt-tab:not([aria-selected="true"]):hover{background:#ffffff;color:#0c0f0f}
+.rt-panel{padding:22px}
+.rt-grid{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,1fr);gap:22px;align-items:start}
+@media (max-width:960px){.rt-grid{grid-template-columns:minmax(0,1fr)}.rt-out{position:static}}
+.rt-step{border:1px solid #e6eeed;background:#f6faf9;border-radius:20px;padding:22px;display:flex;flex-direction:column;gap:16px}
+.rt-step+.rt-step{margin-top:16px}
+.rt-step-h{display:flex;align-items:center;gap:12px}
+.rt-num{flex:none;width:32px;height:32px;border-radius:10px;background:linear-gradient(150deg,#1b2625,#0c0f0f);color:#2cc4b6;display:grid;place-items:center;font:700 15px Lexend}
+.rt-step-h h3{font-family:Lexend;font-weight:600;font-size:18px;line-height:1.3}
+.rt-step-h p{font-size:14px;color:#6b7675;margin-top:2px}
+.rt-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,210px),1fr));gap:14px}
+.rt-field{display:flex;flex-direction:column;gap:7px}
+.rt-label{font-size:14px;font-weight:600;color:#0c0f0f}
+.rt-hint{font-size:13px;line-height:1.5;color:#6b7675}
+.rt-input,.rt-select,.rt-ta{width:100%;font:500 15px 'DM Sans',sans-serif;color:#0c0f0f;background:#ffffff;border:1px solid #d9e5e3;border-radius:12px;padding:12px 14px;outline:none;transition:border-color .2s,box-shadow .2s}
+.rt-ta{font:500 14px/1.6 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;resize:vertical;min-height:92px}
+.rt-input:focus,.rt-select:focus,.rt-ta:focus{border-color:#1aa89d;box-shadow:0 0 0 4px rgba(26,168,157,.14)}
+.rt-select{appearance:none;background-image:linear-gradient(45deg,transparent 50%,#4a5554 50%),linear-gradient(135deg,#4a5554 50%,transparent 50%);background-position:calc(100% - 20px) 52%,calc(100% - 14px) 52%;background-size:6px 6px;background-repeat:no-repeat;padding-right:40px;cursor:pointer}
+.rt-presets{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,180px),1fr));gap:10px}
+.rt-preset{position:relative;text-align:left;border:1.5px solid #dfe9e7;background:#ffffff;border-radius:14px;padding:14px 14px 14px 16px;cursor:pointer;font-family:inherit;display:flex;flex-direction:column;gap:4px;transition:border-color .2s,background .2s,transform .2s}
+.rt-preset:hover{border-color:#9fd9d2;transform:translateY(-2px)}
+.rt-preset[aria-pressed="true"]{border-color:#0d7f76;background:#eef8f6}
+.rt-preset strong{font:600 15px Lexend;color:#0c0f0f;padding-right:22px}
+.rt-preset span{font-size:13px;line-height:1.45;color:#4a5554}
+.rt-preset em{font-style:normal;align-self:flex-start;margin-top:4px;font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#0d7f76;background:#dff3f0;padding:3px 8px;border-radius:999px}
+.rt-preset[aria-pressed="true"]::after{content:'check_circle';font-family:'Material Symbols Rounded';position:absolute;top:12px;right:12px;font-size:20px;color:#0d7f76;font-variation-settings:'FILL' 1}
+.rt-cat{display:flex;flex-direction:column;gap:6px}
+.rt-cat-h{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:6px}
+.rt-cat-h b{display:flex;align-items:center;gap:8px;font:600 15px Lexend}
+.rt-cat-h small{font-size:13px;color:#6b7675}
+.rt-bot{display:flex;align-items:center;gap:12px;padding:10px 12px;background:#ffffff;border:1px solid #e6eeed;border-radius:12px}
+.rt-bot-i{flex:1;min-width:0;display:flex;flex-direction:column;gap:2px}
+.rt-bot-n{font:600 14px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;color:#0c0f0f;word-break:break-word}
+.rt-bot-d{font-size:13px;line-height:1.4;color:#6b7675}
+.rt-bot-d b{font-weight:600;color:#4a5554}
+.rt-sw{flex:none;display:flex;align-items:center;gap:8px;border:0;background:transparent;cursor:pointer;font:600 13px 'DM Sans',sans-serif;color:#0d7f76;padding:4px}
+.rt-sw i{position:relative;width:42px;height:24px;border-radius:999px;background:#0d7f76;transition:background .2s}
+.rt-sw i::after{content:'';position:absolute;top:3px;left:21px;width:18px;height:18px;border-radius:50%;background:#ffffff;box-shadow:0 2px 4px rgba(0,0,0,.2);transition:left .2s}
+.rt-sw[aria-checked="false"]{color:#b4442f}
+.rt-sw[aria-checked="false"] i{background:#d9cfcc}
+.rt-sw[aria-checked="false"] i::after{left:3px}
+.rt-sw span{min-width:66px;text-align:right}
+.rt-dot{width:9px;height:9px;border-radius:50%;flex:none}
+.rt-check{display:flex;align-items:flex-start;gap:10px;font-size:14px;line-height:1.5;color:#2b3433;cursor:pointer}
+.rt-check input{margin-top:3px;width:17px;height:17px;accent-color:#0d7f76;flex:none}
+.rt-out{position:sticky;top:110px;display:flex;flex-direction:column;gap:14px}
+.rt-code-card{background:#0c0f0f;border-radius:20px;overflow:hidden;box-shadow:0 30px 60px -36px rgba(13,127,118,.6)}
+.rt-code-top{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:14px 16px 14px 20px;border-bottom:1px solid #1e2928;flex-wrap:wrap}
+.rt-code-top b{display:flex;align-items:center;gap:10px;color:#ffffff;font:600 15px Lexend}
+.rt-code-top b small{font:500 12px 'DM Sans',sans-serif;color:#8fa3a0}
+.rt-btns{display:flex;gap:8px;flex-wrap:wrap}
+.rt-btn{display:inline-flex;align-items:center;gap:7px;border:0;cursor:pointer;font:600 14px 'DM Sans',sans-serif;padding:10px 14px;border-radius:10px;transition:background .2s,color .2s,transform .15s}
+.rt-btn .ms{font-size:18px}
+.rt-btn:active{transform:scale(.97)}
+.rt-btn--light{background:#1b2625;color:#e6f2f0}
+.rt-btn--light:hover{background:#26413d;color:#ffffff}
+.rt-btn--teal{background:#2cc4b6;color:#0c0f0f}
+.rt-btn--teal:hover{background:#ffffff}
+.rt-btn--dark{background:#0c0f0f;color:#ffffff;padding:13px 20px;font-size:15px}
+.rt-btn--dark:hover{background:#0d7f76}
+.rt-btn--ghost{background:#ffffff;color:#0c0f0f;border:1px solid #d9e5e3;padding:12px 18px;font-size:15px}
+.rt-btn--ghost:hover{border-color:#0d7f76;color:#0d7f76}
+.rt-code{margin:0;padding:18px 20px 22px;max-height:440px;overflow:auto;font:500 13.5px/1.7 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;color:#e6f2f0;white-space:pre;tab-size:2}
+.rt-code .c{color:#6f8582}
+.rt-code .k{color:#2cc4b6}
+.rt-code .kd{color:#ff9b85}
+.rt-code .ka{color:#8ee0a8}
+.rt-notes{display:flex;flex-direction:column;gap:8px}
+.rt-note{display:flex;gap:10px;align-items:flex-start;padding:12px 14px;border-radius:12px;font-size:14px;line-height:1.5;border:1px solid}
+.rt-note .ms{font-size:20px;flex:none;margin-top:1px;font-variation-settings:'FILL' 1}
+.rt-note--ok{background:#eef8f6;border-color:#cfe5e2;color:#0b5f58}
+.rt-note--info{background:#f3f6ff;border-color:#dde4fb;color:#2f3f86}
+.rt-note--warn{background:#fff7e8;border-color:#f5dfb3;color:#7a4b00}
+.rt-note--crit{background:#fdf0ed;border-color:#f3cfc6;color:#9a2f1c}
+.rt-note b{font-weight:700}
+.rt-toast{position:fixed;left:50%;bottom:28px;transform:translate(-50%,20px);opacity:0;pointer-events:none;background:#0c0f0f;color:#ffffff;padding:12px 18px;border-radius:12px;font-weight:600;font-size:14px;transition:opacity .25s,transform .25s;z-index:60;display:flex;align-items:center;gap:8px}
+.rt-toast.on{opacity:1;transform:translate(-50%,0)}
+/* checker */
+.rt-chk-top{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:22px;align-items:start}
+@media (max-width:960px){.rt-chk-top{grid-template-columns:minmax(0,1fr)}}
+.rt-chk-ta{min-height:320px}
+.rt-chk-actions{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.rt-sum{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,96px),1fr));gap:10px}
+.rt-sum div{background:#ffffff;border:1px solid #e6eeed;border-radius:14px;padding:14px;display:flex;flex-direction:column;gap:4px}
+.rt-sum b{font:700 26px Lexend;letter-spacing:-.02em}
+.rt-sum span{font-size:13px;color:#6b7675;line-height:1.35}
+.rt-table{width:100%;border-collapse:separate;border-spacing:0;font-size:14px}
+.rt-table th{text-align:left;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#6b7675;padding:0 12px 10px}
+.rt-table td{padding:11px 12px;background:#ffffff;border-top:1px solid #e6eeed;vertical-align:top}
+.rt-table tr td:first-child{border-left:1px solid #e6eeed}
+.rt-table tr td:last-child{border-right:1px solid #e6eeed}
+.rt-table tbody tr:last-child td{border-bottom:1px solid #e6eeed}
+.rt-table .grp td{background:#f6faf9;font:600 13px Lexend;color:#2b3433;padding:9px 12px}
+.rt-table code{font:600 13px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+.rt-table small{display:block;color:#6b7675;font-size:12.5px;margin-top:2px;line-height:1.4}
+.rt-pill{display:inline-flex;align-items:center;gap:6px;padding:4px 10px;border-radius:999px;font-size:12.5px;font-weight:700;white-space:nowrap}
+.rt-pill--ok{background:#dff3f0;color:#0b5f58}
+.rt-pill--bad{background:#fbe1da;color:#9a2f1c}
+.rt-pill--mid{background:#fff0d2;color:#7a4b00}
+.rt-tbl-wrap{overflow-x:auto;margin:0 -2px;padding:0 2px}
+.rt-empty{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;text-align:center;min-height:320px;border:1.5px dashed #cfe0dd;border-radius:20px;padding:24px;color:#6b7675;font-size:15px;background:#f9fcfb}
+.rt-empty .ms{font-size:38px;color:#1aa89d}
+/* sadržaj */
+.rt-prose{display:flex;flex-direction:column;gap:18px;font-size:17px;line-height:1.75;color:#2b3433}
+.rt-prose h2{font-family:Lexend;font-weight:700;font-size:clamp(26px,2.8vw,34px);line-height:1.15;letter-spacing:-.025em;color:#0c0f0f;margin-top:26px;text-wrap:balance}
+.rt-prose h3{font-family:Lexend;font-weight:600;font-size:20px;color:#0c0f0f;margin-top:8px}
+.rt-prose ul,.rt-prose ol{margin:0;padding-left:22px;display:flex;flex-direction:column;gap:8px}
+.rt-prose code{font:600 .88em ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;background:#eef4f3;padding:2px 6px;border-radius:6px}
+.rt-prose pre{margin:0;background:#0c0f0f;color:#e6f2f0;border-radius:16px;padding:18px 20px;overflow:auto;font:500 14px/1.7 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+.rt-types{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));gap:16px;margin-top:6px}
+.rt-type{padding:24px;background:#f6faf9;border:1px solid #e6eeed;border-radius:20px;display:flex;flex-direction:column;gap:10px;font-size:15.5px;line-height:1.6}
+.rt-type .ic{width:48px;height:48px;border-radius:14px;background:linear-gradient(150deg,#1b2625,#0c0f0f);display:grid;place-items:center;color:#2cc4b6;font-size:24px}
+.rt-type h3{margin:0;font-size:18px}
+.rt-type p{color:#4a5554}
+.rt-type code{font-size:.85em}
+.rt-faq{display:flex;flex-direction:column;gap:12px}
+.rt-faq details{background:#ffffff;border:1px solid #e3ecea;border-radius:16px;padding:0 22px;transition:border-color .2s}
+.rt-faq details[open]{border-color:#9fd9d2}
+.rt-faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:20px 0;font:600 17px Lexend;color:#0c0f0f}
+.rt-faq summary::-webkit-details-marker{display:none}
+.rt-faq summary::after{content:'expand_more';font-family:'Material Symbols Rounded';font-size:24px;color:#0d7f76;transition:transform .2s;flex:none}
+.rt-faq details[open] summary::after{transform:rotate(180deg)}
+.rt-faq details p{padding:0 0 20px;font-size:16px;line-height:1.7;color:#4a5554}
+.rt-guides{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:18px}
+.rt-guide{position:relative;display:flex;flex-direction:column;gap:12px;padding:28px;border-radius:24px;border:1px solid #e3ecea;background:#ffffff;color:#0c0f0f;transition:transform .25s,border-color .25s,box-shadow .25s}
+.rt-guide:hover{transform:translateY(-4px);border-color:#9fd9d2;box-shadow:0 28px 50px -32px rgba(13,127,118,.5);color:#0c0f0f}
+.rt-guide--dark{background:linear-gradient(160deg,#16201f,#0c0f0f);border-color:#0c0f0f;color:#ffffff}
+.rt-guide--dark:hover{color:#ffffff;border-color:#2cc4b6}
+.rt-guide .tag{align-self:flex-start;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:5px 10px;border-radius:999px;background:#dff3f0;color:#0b5f58}
+.rt-guide--dark .tag{background:rgba(44,196,182,.16);color:#2cc4b6}
+.rt-guide h3{font:600 21px/1.25 Lexend}
+.rt-guide p{font-size:15.5px;line-height:1.6;color:#4a5554}
+.rt-guide--dark p{color:#b8c8c5}
+.rt-guide .go{margin-top:auto;padding-top:8px;display:flex;align-items:center;justify-content:space-between;gap:10px;font-weight:700;font-size:15px;color:#0d7f76}
+.rt-guide--dark .go{color:#2cc4b6}
+.rt-guide .price{font:700 20px Lexend;color:inherit}
+@media (max-width:600px){.rt-panel{padding:14px}.rt-step{padding:16px}.rt-tabs{margin:14px 14px 0;max-width:calc(100% - 28px)}.rt-tab{padding:10px 12px;font-size:14px}.rt-sum b{font-size:22px}}
+.rt-sr{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
+/* zajednički dodaci */
+.rt-tools{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));gap:18px}
+.rt-toolcard{display:flex;flex-direction:column;gap:12px;padding:26px;background:#f6faf9;border:1px solid #e6eeed;border-radius:22px;color:#0c0f0f;transition:background .25s,border-color .25s,transform .25s,box-shadow .25s}
+.rt-toolcard:hover{background:#eef8f6;border-color:#9fd9d2;transform:translateY(-4px);box-shadow:0 28px 50px -32px rgba(13,127,118,.5);color:#0c0f0f}
+.rt-toolcard .ic{width:52px;height:52px;border-radius:15px;background:linear-gradient(150deg,#1b2625,#0c0f0f);box-shadow:inset 0 0 0 1px rgba(255,255,255,.08),0 14px 26px -14px rgba(13,127,118,.8);display:grid;place-items:center;color:#2cc4b6;font-size:26px}
+.rt-toolcard h3{font:600 19px/1.3 Lexend}
+.rt-toolcard p{font-size:15px;line-height:1.6;color:#4a5554}
+.rt-toolcard .go{margin-top:auto;padding-top:6px;display:flex;align-items:center;gap:6px;font-weight:700;font-size:15px;color:#0d7f76}
+.rt-toolcard--big{padding:32px;gap:14px}
+.rt-toolcard--big h3{font-size:22px}
+.rt-mini{display:inline-flex;align-items:center;gap:6px;border:1px solid #d9e5e3;background:#ffffff;color:#0c0f0f;border-radius:10px;padding:8px 12px;font:600 13.5px 'DM Sans',sans-serif;cursor:pointer;transition:border-color .2s,color .2s,background .2s}
+.rt-mini .ms{font-size:18px}
+.rt-mini:hover{border-color:#0d7f76;color:#0d7f76}
+.rt-mini--x{padding:8px;color:#6b7675}
+.rt-mini--x:hover{border-color:#b4442f;color:#b4442f}
+.rt-seg{display:inline-flex;gap:4px;padding:4px;background:#f2f7f6;border:1px solid #e3ecea;border-radius:12px}
+.rt-seg button{border:0;background:transparent;padding:8px 14px;border-radius:9px;font:600 14px 'DM Sans',sans-serif;color:#4a5554;cursor:pointer;display:flex;align-items:center;gap:6px}
+.rt-seg button .ms{font-size:18px}
+.rt-seg button[aria-pressed="true"]{background:#ffffff;color:#0c0f0f;box-shadow:0 4px 10px -6px rgba(12,15,15,.4)}
+.rt-bar{height:8px;border-radius:999px;background:#e6eeed;overflow:hidden}
+.rt-bar i{display:block;height:100%;border-radius:999px;background:#1aa89d;transition:width .2s,background .2s}
+.rt-meter{display:flex;flex-direction:column;gap:6px}
+.rt-meter-top{display:flex;justify-content:space-between;gap:10px;font-size:13px;color:#6b7675}
+.rt-meter-top b{color:#0c0f0f;font-weight:600}
+.rt-counter{font-size:12.5px;color:#6b7675;font-weight:500}
+.rt-label-row{display:flex;justify-content:space-between;align-items:baseline;gap:10px}
+.rt-sub{font:600 14px Lexend;color:#0c0f0f;margin-top:4px}
+@media (max-width:600px){.rt-toolcard--big{padding:24px}}
+[hidden]{display:none!important}
+.rt-seg{max-width:100%;flex-wrap:wrap}
+
+/* ---------- Stil ove stranice ---------- */
+.ls{background:#ffffff;border:1px solid #e6eeed;border-radius:14px;padding:12px;display:flex;flex-direction:column;gap:8px}
+.ls-top{display:flex;gap:8px;align-items:center}
+.ls-top input{flex:1;font-weight:600}
+.ls-tag{font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#7a4b00;background:#fff0d2;padding:3px 8px;border-radius:999px;white-space:nowrap}
+.ll{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.2fr) minmax(0,1.3fr) auto;gap:6px;align-items:center}
+.ll input{font:500 13.5px 'DM Sans',sans-serif;border:1px solid #d9e5e3;border-radius:9px;padding:8px 9px;color:#0c0f0f;background:#ffffff;min-width:0;width:100%;outline:none}
+.ll input:focus{border-color:#1aa89d;box-shadow:0 0 0 3px rgba(26,168,157,.14)}
+.ll-head{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.2fr) minmax(0,1.3fr) 36px;gap:6px;font-size:11.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#6b7675;padding:0 2px}
+.ls .rt-mini--x{padding:6px}
+.rt-code .h1{color:#2cc4b6;font-weight:700}
+.rt-code .h2{color:#8ee0a8;font-weight:700}
+.rt-code .q{color:#c9d6d4;font-style:italic}
+.rt-code .lk{color:#ffd89b}
+.rt-code .u{color:#8fa3a0}
+@media (max-width:600px){.ll{grid-template-columns:1fr auto;}.ll input:nth-child(2),.ll input:nth-child(3){grid-column:1 / 2}.ll-head{display:none}}
+
+</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebApplication",
+   "@id": "https://webanswerstudio.com/llms-txt-generator#app",
+   "name": "llms.txt generator",
+   "url": "https://webanswerstudio.com/llms-txt-generator",
+   "inLanguage": "sr-Latn",
+   "applicationCategory": "DeveloperApplication",
+   "operatingSystem": "Any",
+   "browserRequirements": "Requires JavaScript",
+   "description": "Generator llms.txt fajla po llmstxt.org formatu, sa uvozom iz sitemap-a ili liste URL-ova.",
+   "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "EUR"
+   },
+   "provider": {
+    "@id": "https://webanswerstudio.com/#organization"
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Početna",
+     "item": "https://webanswerstudio.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "llms.txt generator",
+     "item": "https://webanswerstudio.com/llms-txt-generator"
+    }
+   ]
+  },
+  {
+   "@type": "FAQPage",
+   "@id": "https://webanswerstudio.com/llms-txt-generator#faq",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Da li Google koristi llms.txt?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Ne. Google je 2026. u vodiču za AI pretragu napisao da llms.txt nije potreban za Google pretragu, AI Overviews ni AI Mode i da ne utiče na rangiranje."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Da li llms.txt zamenjuje robots.txt ili sitemap?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Ne. Robots.txt određuje koji botovi smeju da čitaju sajt, a sitemap navodi sve stranice za pretraživače. llms.txt je samo kratak, ručno izabran pregled najvažnijih stranica."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Da li llms.txt može da šteti?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Ne, ako je tačan. Problem je zastareo fajl sa ugašenim stranicama ili pogrešnim podacima, pa ga ažurirajte kad menjate sajt."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Šta je llms-full.txt?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "To je proširena verzija sa celim tekstom važnih stranica u jednom fajlu. Ima smisla za dokumentaciju i baze znanja, a za većinu sajtova firmi nije potrebna."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Koliko stranica da stavim u llms.txt?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Samo najvažnije: usluge, proizvode, cene, kontakt i ključne vodiče. Za većinu firmi to je 10 do 50 linkova."
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+</head>
+<body>
+<div style="min-height:100vh;background:#ffffff">
+
+<div style="position:sticky;top:0;z-index:20;padding:16px 24px 0">
+  <nav style="max-width:1180px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:clamp(12px,1.6vw,24px);flex-wrap:wrap;padding:14px 18px 14px 24px;background:rgba(255,255,255,0.92);backdrop-filter:blur(12px);border:1px solid #e3ecea;border-radius:16px;box-shadow:0 10px 30px -18px rgba(12,15,15,0.25)" aria-label="Glavna navigacija">
+    <a href="#" style="display:flex;align-items:center;gap:10px;color:#0c0f0f">
+      <img src="assets/img/logo-web-answer-studio.webp" alt="Logo Web Answer Studio" style="display:block;height:46px;width:auto" width="440" height="120" decoding="async" fetchpriority="high">
+    </a>
+    <div style="display:flex;gap:clamp(14px,1.8vw,28px);flex-wrap:wrap;align-items:center;font-size:15px;font-weight:500" class="wa-links">
+      <a href="./" style="color:#2b3433">Početna</a>
+      <div style="position:relative;display:flex;align-items:center" data-b="0 1">
+        <a href="#" style="display:flex;align-items:center;gap:2px;color:#2b3433">Optimizacija sajta<span style="font-family:'Material Symbols Rounded';font-size:20px;color:inherit">expand_more</span></a>
+        
+          <div style="position:absolute;top:100%;left:-24px;padding-top:18px;z-index:40" data-if="2" data-hide="">
+            <div style="width:320px;padding:10px;background:#ffffff;border:1px solid #e3ecea;border-radius:18px;box-shadow:0 30px 60px -28px rgba(12,15,15,0.35);display:flex;flex-direction:column;gap:2px">
+              <a href="seo-konsalting" style="display:flex;align-items:center;gap:14px;padding:10px 12px;border-radius:12px;color:#0c0f0f" class="h0"><span style="flex:none;width:40px;height:40px;border-radius:12px;background:linear-gradient(150deg,#1b2625,#0c0f0f);display:grid;place-items:center;font-family:'Material Symbols Rounded';font-size:20px;color:#2cc4b6">support_agent</span><span style="display:flex;flex-direction:column;gap:1px"><span style="font-weight:600;font-size:15px">Konsalting SEO</span><span style="font-size:13px;font-weight:400;color:#6b7675">Savet i optimizacija sajta</span></span></a>
+              <a href="ecommerce-seo" style="display:flex;align-items:center;gap:14px;padding:10px 12px;border-radius:12px;color:#0c0f0f" class="h0"><span style="flex:none;width:40px;height:40px;border-radius:12px;background:linear-gradient(150deg,#1b2625,#0c0f0f);display:grid;place-items:center;font-family:'Material Symbols Rounded';font-size:20px;color:#2cc4b6">shopping_cart</span><span style="display:flex;flex-direction:column;gap:1px"><span style="font-weight:600;font-size:15px">E-commerce SEO</span><span style="font-size:13px;font-weight:400;color:#6b7675">SEO za online prodavnice</span></span></a>
+            </div>
+          </div>
+        
+      </div>
+      <a href="geo-optimizacija" style="color:#2b3433">GEO optimizacija</a>
+      <a href="izrada-sajtova" style="color:#2b3433">Izrada sajtova</a>
+      <div class="wa-dd" style="position:relative;display:flex;align-items:center">
+        <a href="#" style="display:flex;align-items:center;gap:2px;color:#0d7f76">SEO alati<span style="font-family:'Material Symbols Rounded';font-size:20px;color:inherit">expand_more</span></a>
+          <div class="wa-ddm" style="position:absolute;top:100%;left:-24px;padding-top:18px;z-index:40">
+            <div style="width:320px;padding:10px;background:#ffffff;border:1px solid #e3ecea;border-radius:18px;box-shadow:0 30px 60px -28px rgba(12,15,15,0.35);display:flex;flex-direction:column;gap:2px">
+              <a href="robots-txt-generator" style="display:flex;align-items:center;gap:14px;padding:10px 12px;border-radius:12px;color:#0c0f0f" class="h0"><span style="flex:none;width:40px;height:40px;border-radius:12px;background:linear-gradient(150deg,#1b2625,#0c0f0f);display:grid;place-items:center;font-family:'Material Symbols Rounded';font-size:20px;color:#2cc4b6">smart_toy</span><span style="display:flex;flex-direction:column;gap:1px"><span style="font-weight:600;font-size:15px">Robots.txt generator</span><span style="font-size:13px;font-weight:400;color:#6b7675">Pristup za Google i AI botove</span></span></a>
+              <a href="schema-generator" style="display:flex;align-items:center;gap:14px;padding:10px 12px;border-radius:12px;color:#0c0f0f" class="h0"><span style="flex:none;width:40px;height:40px;border-radius:12px;background:linear-gradient(150deg,#1b2625,#0c0f0f);display:grid;place-items:center;font-family:'Material Symbols Rounded';font-size:20px;color:#2cc4b6">data_object</span><span style="display:flex;flex-direction:column;gap:1px"><span style="font-weight:600;font-size:15px">Schema generator</span><span style="font-size:13px;font-weight:400;color:#6b7675">JSON-LD za lokalne firme</span></span></a>
+              <a href="llms-txt-generator" style="display:flex;align-items:center;gap:14px;padding:10px 12px;border-radius:12px;color:#0c0f0f" class="h0" aria-current="page"><span style="flex:none;width:40px;height:40px;border-radius:12px;background:linear-gradient(150deg,#1b2625,#0c0f0f);display:grid;place-items:center;font-family:'Material Symbols Rounded';font-size:20px;color:#2cc4b6">description</span><span style="display:flex;flex-direction:column;gap:1px"><span style="font-weight:600;font-size:15px">llms.txt generator</span><span style="font-size:13px;font-weight:400;color:#6b7675">Pregled sajta za AI alate</span></span></a>
+              <a href="serp-preview" style="display:flex;align-items:center;gap:14px;padding:10px 12px;border-radius:12px;color:#0c0f0f" class="h0"><span style="flex:none;width:40px;height:40px;border-radius:12px;background:linear-gradient(150deg,#1b2625,#0c0f0f);display:grid;place-items:center;font-family:'Material Symbols Rounded';font-size:20px;color:#2cc4b6">search</span><span style="display:flex;flex-direction:column;gap:1px"><span style="font-weight:600;font-size:15px">Pregled Google rezultata</span><span style="font-size:13px;font-weight:400;color:#6b7675">Naslov i opis u pikselima</span></span></a>
+            </div>
+          </div>
+      </div>
+      <a href="prirucnik" style="color:#2b3433">Priručnik</a>
+      <a href="o-nama" style="color:#2b3433">O nama</a>
+      <a href="kontakt" style="color:#2b3433">Kontakt</a>
+    </div>
+  <button class="wa-burger" type="button" aria-label="Otvori meni" aria-expanded="false" aria-controls="wa-mnav"><span></span><span></span><span></span></button></nav>
+<div id="wa-mnav" class="wa-mnav"><a href="./">Početna</a><button type="button" class="wa-mexp" aria-expanded="false" aria-controls="wa-msub">Optimizacija sajta<i></i></button><div class="wa-msub" id="wa-msub"><a href="seo-konsalting">Konsalting SEO</a><a href="ecommerce-seo">E-commerce SEO</a></div><a href="geo-optimizacija">GEO optimizacija</a><a href="izrada-sajtova">Izrada sajtova</a><button type="button" class="wa-mexp" aria-expanded="false" aria-controls="wa-msub2" data-cur="">SEO alati<i></i></button><div class="wa-msub" id="wa-msub2"><a href="robots-txt-generator">Robots.txt generator</a><a href="schema-generator">Schema generator</a><a href="llms-txt-generator" aria-current="page">llms.txt generator</a><a href="serp-preview">Pregled Google rezultata</a></div><a href="prirucnik">Priručnik</a><a href="o-nama">O nama</a><a href="kontakt">Kontakt</a></div></div>
+
+<section style="position:relative;overflow:hidden;padding:72px 24px 70px;margin-top:-80px;padding-top:160px;background:#f6faf9">
+  <div style="position:absolute;inset:0;background-image:linear-gradient(#e7efee 1px,transparent 1px),linear-gradient(90deg,#e7efee 1px,transparent 1px);background-size:56px 56px;opacity:0.7;pointer-events:none"></div>
+  <div style="position:absolute;right:-160px;top:20px;width:640px;height:640px;border-radius:50%;background:radial-gradient(circle,rgba(26,168,157,0.16),rgba(26,168,157,0) 65%);pointer-events:none"></div>
+  <div style="position:relative;max-width:1180px;margin:0 auto;display:flex;flex-direction:column;gap:24px">
+    <nav aria-label="Putanja" style="font-size:14px;color:#6b7675"><a href="./">Početna</a> <span aria-hidden="true">/</span> SEO alati <span aria-hidden="true">/</span> <span style="color:#0c0f0f">llms.txt generator</span></nav>
+    <div style="align-self:flex-start;display:flex;align-items:center;gap:10px;padding:8px 16px;border:1px solid #cfe5e2;background:#ffffff;border-radius:999px;font-size:14px;font-weight:500;color:#0d7f76">
+      <span style="width:7px;height:7px;border-radius:50%;background:#1aa89d"></span>Isprobaj alat<span style="width:1px;height:14px;background:#9fd9d2"></span>GEO
+    </div>
+    <h1 style="font-family:Lexend;font-weight:700;font-size:clamp(38px,5.2vw,66px);line-height:1.04;letter-spacing:-0.035em;text-wrap:balance;max-width:900px">llms.txt <span style="color:#0d7f76">generator</span></h1>
+    <p style="font-size:19px;line-height:1.6;color:#4a5554;max-width:720px;text-wrap:pretty">Napravite llms.txt sa najvažnijim stranicama sajta za par minuta. Uvezite listu stranica iz sitemap-a, dopunite opise i preuzmite fajl, uz iskren odgovor na pitanje da li vam uopšte treba.</p>
+    <div style="display:flex;gap:10px;flex-wrap:wrap">
+      <span style="display:flex;align-items:center;gap:8px;padding:8px 14px;background:#ffffff;border:1px solid #e1eae8;border-radius:999px;font-size:14px;color:#2b3433"><span class="ms" style="font-size:18px;color:#1aa89d;font-variation-settings:'FILL' 1">check_circle</span>Uvoz iz sitemap-a</span>
+      <span style="display:flex;align-items:center;gap:8px;padding:8px 14px;background:#ffffff;border:1px solid #e1eae8;border-radius:999px;font-size:14px;color:#2b3433"><span class="ms" style="font-size:18px;color:#1aa89d;font-variation-settings:'FILL' 1">check_circle</span>Po llmstxt.org formatu</span>
+      <span style="display:flex;align-items:center;gap:8px;padding:8px 14px;background:#ffffff;border:1px solid #e1eae8;border-radius:999px;font-size:14px;color:#2b3433"><span class="ms" style="font-size:18px;color:#1aa89d;font-variation-settings:'FILL' 1">check_circle</span>Bez obećanja koja ne stoje</span>
+    </div>
+  </div>
+</section>
+
+<section style="padding:0 24px 90px;background:linear-gradient(#f6faf9 0,#f6faf9 120px,#ffffff 120px)">
+  <div class="rt-wrap">
+    <div class="rt-card" id="alat">
+      <div class="rt-panel">
+        <div class="rt-grid">
+          <div>
+            <div class="rt-note rt-note--info" style="margin-bottom:16px"><span class="ms">info</span><div><b>Pre nego što počnete:</b> Google je 2026. potvrdio da llms.txt ne koristi ni za pretragu ni za AI Overviews. Fajl je kratak, uredan pregled sajta za AI alate i agente koji ga čitaju. Nije prečica do AI odgovora. <a href="#da-li-pomaze">Više o tome</a></div></div>
+            <div class="rt-step">
+              <div class="rt-step-h"><span class="rt-num">1</span><div><h3>O sajtu</h3><p>Naziv i opis koje AI može da prenese doslovno.</p></div></div>
+              <div class="rt-row">
+                <div class="rt-field"><label class="rt-label" for="l-name">Naziv firme ili sajta *</label><input class="rt-input" id="l-name" type="text" placeholder="Dental Studio Smile"></div>
+                <div class="rt-field"><label class="rt-label" for="l-domain">Domen</label><input class="rt-input" id="l-domain" type="text" inputmode="url" autocapitalize="off" spellcheck="false" placeholder="vasajt.rs"></div>
+              </div>
+              <div class="rt-field">
+                <div class="rt-label-row"><label class="rt-label" for="l-sum">Kratak opis *</label><span class="rt-counter" id="l-sum-c"></span></div>
+                <textarea class="rt-ta" id="l-sum" style="font-family:'DM Sans',sans-serif;font-size:15px;min-height:76px" placeholder="Ko ste, šta radite, za koga i gde. Jedna do dve rečenice."></textarea>
+              </div>
+              <div class="rt-field">
+                <label class="rt-label" for="l-det">Dodatne informacije <span style="font-weight:400;color:#6b7675">(opciono)</span></label>
+                <textarea class="rt-ta" id="l-det" style="font-family:'DM Sans',sans-serif;font-size:15px;min-height:76px" placeholder="Radno vreme, gradovi u kojima radite, jezici, važne napomene."></textarea>
+              </div>
+            </div>
+
+            <div class="rt-step">
+              <div class="rt-step-h"><span class="rt-num">2</span><div><h3>Brzi uvoz <span style="font-weight:400;color:#6b7675;font-size:15px">(opciono)</span></h3><p>Lista URL-ova, sitemap.xml ili postojeći llms.txt.</p></div></div>
+              <label class="rt-sr" for="l-imp">Sadržaj za uvoz</label>
+              <textarea class="rt-ta" id="l-imp" spellcheck="false" placeholder="https://vasajt.rs/usluge/beljenje-zuba/&#10;https://vasajt.rs/usluge/implanti/&#10;https://vasajt.rs/kontakt/"></textarea>
+              <div style="display:flex;gap:10px;flex-wrap:wrap;align-items:center">
+                <button type="button" class="rt-btn rt-btn--dark" id="l-imp-btn"><span class="ms">upload</span>Uvezi</button>
+                <span class="rt-hint">Grupišemo stranice po folderu. Nazive posle proverite i dopunite.</span>
+              </div>
+            </div>
+
+            <div class="rt-step">
+              <div class="rt-step-h"><span class="rt-num">3</span><div><h3>Sekcije i stranice</h3><p>Samo najvažnije stranice, sa kratkim opisom.</p></div></div>
+              <div id="l-secs" style="display:flex;flex-direction:column;gap:12px"></div>
+              <div style="display:flex;gap:8px;flex-wrap:wrap">
+                <button type="button" class="rt-mini" id="l-add-sec"><span class="ms">add</span>Dodaj sekciju</button>
+                <button type="button" class="rt-mini" id="l-add-opt"><span class="ms">add</span>Dodaj sekciju „Optional“</button>
+              </div>
+            </div>
+            <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:16px">
+              <button type="button" class="rt-btn rt-btn--ghost" id="l-sample"><span class="ms">auto_awesome</span>Učitaj primer</button>
+              <button type="button" class="rt-btn rt-btn--ghost" id="l-clear">Očisti sve</button>
+            </div>
+          </div>
+
+          <div class="rt-out">
+            <div class="rt-code-card">
+              <div class="rt-code-top">
+                <b><span class="ms" style="color:#2cc4b6">description</span>llms.txt <small id="l-lines"></small></b>
+                <div class="rt-btns">
+                  <button type="button" class="rt-btn rt-btn--light" id="l-copy"><span class="ms">content_copy</span>Kopiraj</button>
+                  <button type="button" class="rt-btn rt-btn--teal" id="l-dl"><span class="ms">download</span>Preuzmi</button>
+                </div>
+              </div>
+              <pre class="rt-code" id="l-code" aria-live="polite"></pre>
+            </div>
+            <div class="rt-notes" id="l-notes" aria-live="polite"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section style="padding:90px 24px;background:#f6faf9;border-top:1px solid #eef3f2">
+  <div class="rt-wrap" style="display:flex;flex-direction:column;gap:36px">
+    <div style="display:flex;flex-direction:column;gap:14px;max-width:780px">
+      <div class="rt-eyebrow">SLEDEĆI KORAK</div>
+      <h2 class="rt-h2">llms.txt je sitnica. Evo šta stvarno pomera AI vidljivost.</h2>
+      <p class="rt-lead">U vodiču „Vidljivost brenda u AI odgovorima“ prolazimo kroz korake koji imaju dokazan uticaj: pristup botovima, schema, sadržaj i Google profil firme.</p>
+    </div>
+    <div class="rt-guides">
+      <a class="rt-guide rt-guide--dark" href="https://webanswer.gumroad.com/l/vodic-za-vidljivost-brenda-u-ai-odgovorima" target="_blank" rel="noopener">
+        <span class="tag">Vodič · PDF</span>
+        <h3>Vidljivost brenda u AI odgovorima</h3>
+        <p>Kako da vas Google i AI asistenti preporučuju: ChatGPT, Gemini, AI Overviews i schema markup, korak po korak.</p>
+        <span class="go"><span class="price">29 €</span><span style="display:flex;align-items:center;gap:6px">Pogledaj vodič <span class="ms" style="font-size:20px">arrow_forward</span></span></span>
+      </a>
+      <a class="rt-guide" href="https://webanswer.gumroad.com/l/poklon-vodic" target="_blank" rel="noopener">
+        <span class="tag">Poklon ebook</span>
+        <h3>Sajt koji Google i AI vide</h3>
+        <p>Poklon vodič u 9 koraka za vlasnike malih firmi: Search Console, Google profil firme i prvi koraci ka AI pretrazi.</p>
+        <span class="go"><span class="price">0 €</span><span style="display:flex;align-items:center;gap:6px">Preuzmi poklon ebook <span class="ms" style="font-size:20px">arrow_forward</span></span></span>
+      </a>
+      <a class="rt-guide" href="./#seo-provera">
+        <span class="tag">Provera sajta</span>
+        <h3>Koliko je vaš sajt vidljiv?</h3>
+        <p>Unesite adresu sajta i za pola minuta dobijte SEO skor, brzinu na telefonu i proveru vidljivosti za ChatGPT, Gemini i Google AI Overviews.</p>
+        <span class="go"><span class="price"></span><span style="display:flex;align-items:center;gap:6px">Proveri svoj sajt bez obaveza <span class="ms" style="font-size:20px">arrow_forward</span></span></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section style="padding:90px 24px;background:#ffffff">
+  <article class="rt-prose" style="max-width:820px;margin:0 auto">
+    <div class="rt-eyebrow">VODIČ</div>
+    <h2 style="margin-top:0">Šta je llms.txt</h2>
+    <p>llms.txt je tekstualni fajl u Markdown formatu na adresi <code>vasajt.rs/llms.txt</code>. Ideja je jednostavna: umesto da AI alat pretražuje ceo sajt, dobija kratak spisak najvažnijih stranica sa opisom, kao sadržaj na početku knjige.</p>
+    <p>Format je 2024. predložio Jeremy Howard (Answer.AI). Nije zvaničan standard kao robots.txt, nego predlog koji neki sajtovi i alati koriste.</p>
+
+    <h2 id="da-li-pomaze">Da li llms.txt pomaže da se pojavite u AI odgovorima?</h2>
+    <p>Iskren odgovor: za sada nema dokaza da pomaže.</p>
+    <ul>
+      <li><b>Google ga ne koristi.</b> U vodiču za AI pretragu iz 2026. Google je napisao da llms.txt i slični „AI fajlovi“ nisu potrebni za Google pretragu, AI Overviews ni AI Mode i da ne utiču na rangiranje.</li>
+      <li><b>Veliki AI alati nisu potvrdili da ga koriste</b> za izbor izvora u odgovorima.</li>
+      <li><b>Chrome Lighthouse</b> je 2026. dodao eksperimentalnu proveru llms.txt fajla u delu za AI agente koji koriste browser. To je znak da bi fajl mogao da postane koristan agentima, ali ne i dokaz da donosi posete.</li>
+    </ul>
+    <p>Zato ga ne prodajemo kao prečicu. Ako vam treba 10 minuta da ga napravite, nema štete. Ako birate gde da uložite vreme, prvo uradite stvari ispod.</p>
+
+    <h2>Šta zaista pomaže AI vidljivosti</h2>
+    <ol>
+      <li><b>Pustite AI botove na sajt.</b> Ako robots.txt blokira OAI-SearchBot ili PerplexityBot, ništa drugo ne pomaže. Proverite u našem <a href="robots-txt-generator">robots.txt alatu</a>.</li>
+      <li><b>Jasno opišite firmu schema kodom.</b> Naziv, adresa, radno vreme i profili u formatu koji mašine razumeju. Napravite ga u <a href="schema-generator">schema generatoru</a>.</li>
+      <li><b>Pišite stranice koje odgovaraju na pitanja.</b> Šta radite, za koga, koliko košta, gde ste. AI citira stranice koje daju jasne odgovore.</li>
+      <li><b>Sredite Google profil firme i ocene.</b> Za lokalne pretrage to je izvor koji AI asistenti najčešće koriste.</li>
+    </ol>
+
+    <h2>Kako izgleda llms.txt</h2>
+    <p>Fajl ima jasan redosled: naslov sa nazivom, kratak opis u citatu, opciono dodatne informacije, pa sekcije sa linkovima. Sekcija „Optional“ je za sporedne stranice koje AI može da preskoči.</p>
+    <pre># Dental Studio Smile
+
+&gt; Stomatološka ordinacija na Vračaru u Beogradu.
+
+## Usluge
+
+- [Beljenje zuba](https://dentalsmile.rs/usluge/beljenje-zuba/): Cene i trajanje
+- [Zubni implanti](https://dentalsmile.rs/usluge/implanti/): Ugradnja i garancija
+
+## Optional
+
+- [Blog](https://dentalsmile.rs/blog/): Saveti o nezi zuba</pre>
+
+    <h2>Kako da postavite fajl</h2>
+    <p>Preuzmite fajl dugmetom „Preuzmi“ i postavite ga u glavni folder sajta, tako da bude dostupan na <code>vasajt.rs/llms.txt</code>. Na WordPress-u Yoast SEO i Rank Math imaju opciju da ga prave automatski. Pre nego što je uključite, proverite šta će ući u fajl, jer automatski spisak često uključi i stranice koje nisu bitne.</p>
+
+    <h2>Saveti za dobar llms.txt</h2>
+    <ul>
+      <li><b>Prva rečenica je najvažnija.</b> Opis u citatu je ono što AI najčešće prenese kada ga pitaju „čime se bavi ova firma“.</li>
+      <li><b>Manje je bolje.</b> 20 do 50 najvažnijih stranica, a ne ceo sitemap.</li>
+      <li><b>Opis uz svaki link.</b> Pet do deset reči o tome šta se nalazi na stranici.</li>
+      <li><b>Održavajte ga.</b> Fajl sa ugašenim stranicama šteti više nego što pomaže.</li>
+    </ul>
+    <h2 id="faq">Česta pitanja</h2>
+    <div class="rt-faq">
+      <details><summary>Da li Google koristi llms.txt?</summary><p>Ne. Google je 2026. u vodiču za AI pretragu napisao da llms.txt nije potreban za Google pretragu, AI Overviews ni AI Mode i da ne utiče na rangiranje.</p></details>
+      <details><summary>Da li llms.txt zamenjuje robots.txt ili sitemap?</summary><p>Ne. Robots.txt određuje koji botovi smeju da čitaju sajt, a sitemap navodi sve stranice za pretraživače. llms.txt je samo kratak, ručno izabran pregled najvažnijih stranica.</p></details>
+      <details><summary>Da li llms.txt može da šteti?</summary><p>Ne, ako je tačan. Problem je zastareo fajl sa ugašenim stranicama ili pogrešnim podacima, pa ga ažurirajte kad menjate sajt.</p></details>
+      <details><summary>Šta je llms-full.txt?</summary><p>To je proširena verzija sa celim tekstom važnih stranica u jednom fajlu. Ima smisla za dokumentaciju i baze znanja, a za većinu sajtova firmi nije potrebna.</p></details>
+      <details><summary>Koliko stranica da stavim u llms.txt?</summary><p>Samo najvažnije: usluge, proizvode, cene, kontakt i ključne vodiče. Za većinu firmi to je 10 do 50 linkova.</p></details>
+    </div>
+  </article>
+</section>
+
+<section style="padding:90px 24px;background:#ffffff;border-top:1px solid #eef3f2">
+  <div class="rt-wrap" style="display:flex;flex-direction:column;gap:32px">
+    <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:16px;flex-wrap:wrap">
+      <div style="display:flex;flex-direction:column;gap:14px"><div class="rt-eyebrow">SEO ALATI</div><h2 class="rt-h2">Još alata za vidljivost sajta</h2></div>
+    </div>
+    <div class="rt-tools">
+      <a class="rt-toolcard" href="robots-txt-generator"><span class="ms ic">smart_toy</span><h3>Robots.txt generator sa AI botovima</h3><p>Odlučite koji AI botovi smeju da čitaju sajt i proverite da li postojeći robots.txt blokira ChatGPT ili Perplexity.</p><span class="go">Otvori alat <span class="ms" style="font-size:20px">arrow_forward</span></span></a>
+      <a class="rt-toolcard" href="serp-preview"><span class="ms ic">search</span><h3>Pregled Google rezultata</h3><p>Proverite naslov i meta opis u pikselima, na desktopu i telefonu, sa srpskim slovima.</p><span class="go">Otvori alat <span class="ms" style="font-size:20px">arrow_forward</span></span></a>
+      <a class="rt-toolcard" href="schema-generator"><span class="ms ic">data_object</span><h3>Schema generator za lokalne firme</h3><p>Adresa, radno vreme, lokacija i kontakt u JSON-LD kodu koji Google i AI razumeju.</p><span class="go">Otvori alat <span class="ms" style="font-size:20px">arrow_forward</span></span></a>
+    </div>
+  </div>
+</section>
+
+<section style="padding:90px 24px;background:#f6faf9;border-top:1px solid #eef3f2">
+  <div style="max-width:1180px;margin:0 auto;display:flex;flex-direction:column;align-items:center;gap:24px;text-align:center">
+    <div class="rt-eyebrow">GEO OPTIMIZACIJA</div>
+    <h2 class="rt-h2" style="max-width:760px">Želite da vas AI preporučuje umesto konkurencije?</h2>
+    <p class="rt-lead" style="max-width:640px">Proverićemo kako vas vide Google, ChatGPT i Gemini i dati vam jasan plan šta prvo treba popraviti.</p>
+    <div style="display:flex;gap:12px;flex-wrap:wrap;justify-content:center">
+      <a href="kontakt" style="display:flex;align-items:center;gap:10px;background:#0d7f76;color:#ffffff;padding:18px 28px;border-radius:12px;font-weight:600;font-size:16px;box-shadow:0 14px 30px -12px rgba(13,127,118,0.55)" class="h2">Zatraži analizu <span class="ms" style="font-size:20px">arrow_forward</span></a>
+      <a href="geo-optimizacija" style="display:flex;align-items:center;gap:10px;background:#ffffff;color:#0c0f0f;padding:18px 28px;border-radius:12px;font-weight:600;font-size:16px;border:1px solid #d9e5e3" class="hb">GEO optimizacija</a>
+    </div>
+  </div>
+</section>
+
+<footer style="padding:80px 24px 32px;background:#ffffff;border-top:1px solid #eef3f2">
+  <div style="max-width:1180px;margin:0 auto;display:flex;flex-direction:column;gap:56px">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,170px),1fr));gap:40px">
+      <div style="display:flex;flex-direction:column;gap:20px">
+        <div style="display:flex;align-items:center;gap:10px">
+          <img src="assets/img/logo-web-answer-studio.webp" alt="Logo Web Answer Studio" style="display:block;height:46px;width:auto" width="440" height="120" decoding="async" loading="lazy">
+        </div>
+        <p style="font-size:15px;line-height:1.65;color:#4a5554">Dizajn, redizajn i optimizacija sajtova. Pravimo brze, moderne sajtove koji se vide na Google-u i donose upite.</p>
+        <a href="kontakt" style="align-self:flex-start;background:#0d7f76;color:#ffffff;padding:12px 20px;border-radius:10px;font-weight:600;font-size:15px" class="h2">Zatraži ponudu</a>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:14px;font-size:15px">
+        <div style="font-family:Lexend;font-weight:600;font-size:17px;margin-bottom:6px">Usluge</div>
+        <a href="seo-konsalting" style="color:#4a5554">Konsalting SEO</a><a href="ecommerce-seo" style="color:#4a5554">E-commerce SEO</a><a href="geo-optimizacija" style="color:#4a5554">GEO optimizacija</a><a href="izrada-sajtova" style="color:#4a5554">Izrada sajtova</a>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:14px;font-size:15px">
+        <div style="font-family:Lexend;font-weight:600;font-size:17px;margin-bottom:6px">SEO alati</div>
+        <a href="robots-txt-generator" style="color:#4a5554">Robots.txt generator</a><a href="schema-generator" style="color:#4a5554">Schema generator</a><a href="llms-txt-generator" style="color:#4a5554">llms.txt generator</a><a href="serp-preview" style="color:#4a5554">Pregled Google rezultata</a>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:14px;font-size:15px">
+        <div style="font-family:Lexend;font-weight:600;font-size:17px;margin-bottom:6px">Navigacija</div>
+        <a href="./" style="color:#4a5554">Početna</a><a href="prirucnik" style="color:#4a5554">Priručnik</a><a href="kontakt" style="color:#4a5554">Kontakt</a>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:14px;font-size:15px">
+        <div style="font-family:Lexend;font-weight:600;font-size:17px;margin-bottom:6px">Kontakt</div>
+        <a href="mailto:webanswerstudio@gmail.com" style="display:flex;align-items:center;gap:10px;color:#4a5554"><span style="font-family:'Material Symbols Rounded';font-size:20px;color:#0d7f76">mail</span>webanswerstudio@gmail.com</a>
+        <a href="tel:+381642906197" style="display:flex;align-items:center;gap:10px;color:#4a5554"><span style="font-family:'Material Symbols Rounded';font-size:20px;color:#0d7f76">call</span>+381 64 2906197</a>
+        <a href="o-nama" style="display:flex;align-items:center;gap:10px;color:#4a5554"><span style="font-family:'Material Symbols Rounded';font-size:20px;color:#0d7f76">groups</span>O nama</a>
+        <a href="https://www.instagram.com/webanswerstudio/" rel="noopener" target="_blank" style="display:flex;align-items:center;gap:10px;color:#4a5554"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0d7f76" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="0.6" fill="#0d7f76"></circle></svg>Instagram</a>
+      </div>
+    </div>
+    <div style="display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-top:24px;border-top:1px solid #eef3f2;font-size:14px;color:#6b7675">
+      <span>© 2026 Web Answer Studio. Sva prava zadržana.</span>
+      <a href="politika-privatnosti" style="color:#6b7675">Politika privatnosti</a>
+    </div>
+  </div>
+</footer>
+
+</div>
+<div class="rt-toast" id="rt-toast" role="status"><span class="ms" style="font-size:18px;color:#2cc4b6">check_circle</span><span></span></div>
+<script type="application/json" id="dc-b">{"b":[{"t":"on","e":"mouseenter","p":"navIn","f":[]},{"t":"on","e":"mouseleave","p":"navOut","f":[]},{"t":"if","p":"navOpen","f":[]}],"p":{"showGrid":true,"ctaStyle":"Tamni"}}</script>
+<script src="assets/js/site.js" defer></script>
+<script>
+window.WA=(function(){
+  'use strict';
+  var $=function(id){return document.getElementById(id)};
+  function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]})}
+  var tt;
+  function toast(msg){var t=$('rt-toast');if(!t)return;t.lastElementChild.textContent=msg;t.classList.add('on');clearTimeout(tt);tt=setTimeout(function(){t.classList.remove('on')},2200)}
+  function copy(txt,okMsg){
+    var p=(navigator.clipboard&&window.isSecureContext)?navigator.clipboard.writeText(txt):new Promise(function(res,rej){var ta=document.createElement('textarea');ta.value=txt;ta.style.position='fixed';ta.style.opacity='0';document.body.appendChild(ta);ta.select();try{document.execCommand('copy');res()}catch(e){rej(e)}document.body.removeChild(ta)});
+    p.then(function(){toast(okMsg||'Kopirano')},function(){toast('Kopiranje nije uspelo, označite tekst ručno')});
+  }
+  function download(txt,name,type){
+    var u=URL.createObjectURL(new Blob([txt],{type:(type||'text/plain')+';charset=utf-8'})),a=document.createElement('a');
+    a.href=u;a.download=name;document.body.appendChild(a);a.click();a.remove();setTimeout(function(){URL.revokeObjectURL(u)},1000);
+    toast(name+' je preuzet');
+  }
+  function note(type,html){
+    var ic={ok:'check_circle',info:'info',warn:'warning',crit:'error'}[type];
+    return '<div class="rt-note rt-note--'+type+'"><span class="ms">'+ic+'</span><div>'+html+'</div></div>';
+  }
+  function lines(v){return String(v||'').split(/\r?\n/).map(function(s){return s.trim()}).filter(Boolean)}
+  function isUrl(v){return /^https?:\/\/[^\s\/]+\.[^\s\/]{2,}/i.test(v||'')}
+  function onReady(f){if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',f);else f()}
+  return {$:$,esc:esc,toast:toast,copy:copy,download:download,note:note,lines:lines,isUrl:isUrl,onReady:onReady};
+})();
+
+(function(){
+'use strict';
+var W=window.WA,$=W.$,esc=W.esc,N=W.note;
+var SECS=[];
+var SEG={usluge:'Usluge',usluga:'Usluge',services:'Usluge',proizvodi:'Proizvodi',products:'Proizvodi',shop:'Proizvodi',prodavnica:'Proizvodi',product:'Proizvodi',kategorija:'Kategorije',category:'Kategorije','product-category':'Kategorije',blog:'Blog',vesti:'Blog',news:'Blog',saveti:'Blog',tim:'O nama',about:'O nama','o-nama':'O nama',kontakt:'Kontakt',contact:'Kontakt',cenovnik:'Cene',cene:'Cene',pricing:'Cene',faq:'Česta pitanja','cesta-pitanja':'Česta pitanja',lokacije:'Lokacije',locations:'Lokacije',portfolio:'Radovi',projekti:'Radovi',radovi:'Radovi'};
+
+function cleanHost(v){v=(v||'').trim().toLowerCase().replace(/^[a-z]+:\/\//,'').replace(/[\/?#].*$/,'');return /^[a-z0-9.-]+\.[a-z0-9-]{2,}$/.test(v)?v:''}
+function titleFromSlug(s){
+  s=(s||'').replace(/\.(html?|php)$/,'').replace(/[-_]+/g,' ').trim();
+  try{s=decodeURIComponent(s)}catch(e){}
+  return s?s.charAt(0).toUpperCase()+s.slice(1):'Početna';
+}
+function render(){
+  $('l-secs').innerHTML=SECS.map(function(s,i){
+    var opt=s.title.trim().toLowerCase()==='optional';
+    return '<div class="ls"><div class="ls-top"><input class="rt-input" data-s="'+i+'" data-f="title" value="'+esc(s.title)+'" placeholder="Naziv sekcije, npr. Usluge" aria-label="Naziv sekcije">'+(opt?'<span class="ls-tag">Sporedno</span>':'')+
+      '<button type="button" class="rt-mini rt-mini--x" data-dels="'+i+'" aria-label="Ukloni sekciju"><span class="ms">delete</span></button></div>'+
+      (s.links.length?'<div class="ll-head"><span>Naziv</span><span>URL</span><span>Kratak opis</span><span></span></div>':'')+
+      s.links.map(function(l,j){
+        return '<div class="ll"><input data-s="'+i+'" data-l="'+j+'" data-f="name" value="'+esc(l.name)+'" placeholder="Naziv stranice" aria-label="Naziv stranice"><input data-s="'+i+'" data-l="'+j+'" data-f="url" value="'+esc(l.url)+'" placeholder="https://..." spellcheck="false" aria-label="URL"><input data-s="'+i+'" data-l="'+j+'" data-f="desc" value="'+esc(l.desc)+'" placeholder="Šta se nalazi na stranici" aria-label="Opis"><button type="button" class="rt-mini rt-mini--x" data-s="'+i+'" data-dell="'+j+'" aria-label="Ukloni link"><span class="ms">close</span></button></div>';
+      }).join('')+
+      '<button type="button" class="rt-mini" data-addl="'+i+'" style="align-self:flex-start"><span class="ms">add</span>Dodaj stranicu</button></div>';
+  }).join('');
+}
+function md(){
+  var name=$('l-name').value.trim(),sum=$('l-sum').value.replace(/\s+/g,' ').trim(),det=$('l-det').value.trim();
+  var out=['# '+(name||'Naziv sajta'),''];
+  if(sum){out.push('> '+sum,'')}
+  if(det){out.push(det.replace(/\n{3,}/g,'\n\n').replace(/^#+\s*/gm,''),'')}
+  var secs=SECS.filter(function(s){return s.title.trim()&&s.links.some(function(l){return l.url.trim()})});
+  secs.sort(function(a,b){return (a.title.trim().toLowerCase()==='optional')-(b.title.trim().toLowerCase()==='optional')});
+  secs.forEach(function(s){
+    out.push('## '+s.title.trim(),'');
+    s.links.forEach(function(l){
+      if(!l.url.trim())return;
+      out.push('- ['+(l.name.trim()||l.url.trim()).replace(/[\[\]]/g,'')+']('+l.url.trim()+')'+(l.desc.trim()?': '+l.desc.trim():''));
+    });
+    out.push('');
+  });
+  return out.join('\n').replace(/\n+$/,'')+'\n';
+}
+function hl(t){
+  return t.split('\n').map(function(l){
+    if(/^# /.test(l))return '<span class="h1">'+esc(l)+'</span>';
+    if(/^## /.test(l))return '<span class="h2">'+esc(l)+'</span>';
+    if(/^> /.test(l))return '<span class="q">'+esc(l)+'</span>';
+    var m=l.match(/^- \[(.*?)\]\((.*?)\)(.*)$/);
+    if(m)return '- [<span class="lk">'+esc(m[1])+'</span>](<span class="u">'+esc(m[2])+'</span>)'+esc(m[3]);
+    return esc(l);
+  }).join('\n');
+}
+function build(){
+  var t=md();build.txt=t;
+  $('l-code').innerHTML=hl(t);
+  $('l-lines').textContent=t.split('\n').length+' redova';
+  var sum=$('l-sum').value.trim();$('l-sum-c').textContent=sum.length+' znakova';
+  var n=[],host=cleanHost($('l-domain').value),all=[],bad=[],foreign=[],nodesc=0,dup=[],seen={},empty=[];
+  SECS.forEach(function(s){
+    var real=s.links.filter(function(l){return l.url.trim()});
+    if(!real.length)empty.push(s.title.trim()||'(bez naziva)');
+    else if(!s.title.trim())n.push(N('warn','Jedna sekcija nema naziv i nije uključena u fajl.'));
+    real.forEach(function(l){
+      var u=l.url.trim();all.push(u);
+      if(!W.isUrl(u))bad.push(u);
+      else if(host&&cleanHost(u).replace(/^www\./,'')!==host.replace(/^www\./,''))foreign.push(u);
+      if(!l.desc.trim())nodesc++;
+      if(seen[u]&&dup.indexOf(u)<0)dup.push(u);seen[u]=1;
+    });
+  });
+  if(!$('l-name').value.trim())n.push(N('crit','<b>Unesite naziv.</b> Naslov (H1) je jedini obavezan deo llms.txt fajla.'));
+  if(!sum)n.push(N('warn','<b>Dodajte kratak opis.</b> To je rečenica koju AI najčešće prenese kada ga pitaju čime se bavite.'));
+  else if(sum.length>300)n.push(N('info','Opis je dugačak. Jedna do dve rečenice su dovoljne, detalje stavite u polje ispod.'));
+  if(bad.length)n.push(N('crit','Linkovi moraju biti pune adrese sa https://: '+bad.slice(0,3).map(function(u){return '<code>'+esc(u)+'</code>'}).join(', ')+(bad.length>3?' i još '+(bad.length-3):'')+'.'));
+  if(foreign.length)n.push(N('info',foreign.length+' link(ova) vodi van domena '+esc(host)+'. To je u redu za profile i partnere, ali proverite da nije greška.'));
+  if(dup.length)n.push(N('warn','Isti link se pojavljuje više puta: <code>'+esc(dup[0])+'</code>'+(dup.length>1?' i još '+(dup.length-1):'')+'.'));
+  if(empty.length&&SECS.length)n.push(N('info','Prazne sekcije nisu uključene: '+empty.map(esc).join(', ')+'.'));
+  if(!all.length)n.push(N('warn','Dodajte bar jednu sekciju sa linkovima, na primer usluge i kontakt.'));
+  if(nodesc)n.push(N('info',nodesc+' link(ova) nema opis. Kratak opis pomaže AI-u da izabere pravu stranicu.'));
+  if(all.length>80)n.push(N('warn','Imate '+all.length+' linkova. llms.txt je izbor najvažnijih stranica, a ne kopija sitemap-a. Zadržite do 30–50.'));
+  if(!n.some(function(x){return /rt-note--(crit|warn)/.test(x)}))n.unshift(N('ok','<b>Fajl je spreman.</b> Postavite ga na <code>'+esc(host||'vasajt.rs')+'/llms.txt</code>.'));
+  $('l-notes').innerHTML=n.join('');
+}
+function importText(txt){
+  txt=(txt||'').trim();if(!txt)return W.toast('Prvo nalepite sadržaj');
+  if(/^#\s+\S/m.test(txt)){
+    var cur=null,sum=[],det=[];SECS=[];
+    txt.split(/\r?\n/).forEach(function(l){
+      var m;
+      if((m=l.match(/^#\s+(.*)$/))){$('l-name').value=m[1].trim();return}
+      if((m=l.match(/^##\s+(.*)$/))){cur={title:m[1].trim(),links:[]};SECS.push(cur);return}
+      if(cur&&(m=l.match(/^\s*[-*]\s*\[(.*?)\]\((.*?)\)\s*(?::\s*(.*))?$/))){cur.links.push({name:m[1],url:m[2],desc:(m[3]||'').trim()});return}
+      if(!cur&&(m=l.match(/^>\s?(.*)$/))){sum.push(m[1].trim());return}
+      if(!cur)det.push(l);
+    });
+    $('l-sum').value=sum.join(' ').trim();
+    $('l-det').value=det.join('\n').trim();
+    var h=SECS.reduce(function(a,s){return a||(s.links[0]&&cleanHost(s.links[0].url))},'');if(h)$('l-domain').value=h;
+    render();build();return W.toast('llms.txt je uvezen');
+  }
+  var urls=[];
+  var locs=txt.match(/<loc>\s*([^<\s]+)\s*<\/loc>/gi);
+  if(locs)urls=locs.map(function(x){return x.replace(/<\/?loc>/gi,'').trim().replace(/&amp;/g,'&')});
+  else urls=txt.split(/[\s,]+/).filter(function(u){return /^https?:\/\//i.test(u)});
+  if(!urls.length)return W.toast('Nismo našli nijedan URL');
+  if(urls.some(function(u){return /sitemap[^\/]*\.xml/i.test(u)})&&urls.every(function(u){return /\.xml/i.test(u)}))return W.toast('Ovo je indeks sitemap-a. Nalepite sadržaj pojedinačnog sitemap-a.');
+  var groups={},order=[];
+  urls.slice(0,300).forEach(function(u){
+    var p;try{p=new URL(u)}catch(e){return}
+    var segs=p.pathname.split('/').filter(Boolean),key=segs.length>1?segs[0]:'';
+    var title=key?(SEG[key.toLowerCase()]||titleFromSlug(key)):'Glavne stranice';
+    if(!key&&segs.length===1&&SEG[segs[0].toLowerCase()]==='Kontakt')title='Glavne stranice';
+    if(!groups[title]){groups[title]=[];order.push(title)}
+    groups[title].push({name:segs.length?titleFromSlug(segs[segs.length-1]):'Početna',url:u,desc:''});
+  });
+  var existing=SECS.filter(function(s){return s.links.some(function(l){return l.url.trim()})});
+  SECS=existing.concat(order.map(function(t){return {title:t,links:groups[t]}}));
+  if(!$('l-domain').value)$('l-domain').value=cleanHost(urls[0]);
+  render();build();
+  W.toast('Uvezeno '+Math.min(urls.length,300)+' stranica u '+order.length+' sekcija');
+  if(urls.length>300)W.toast('Uvezeno prvih 300 stranica. Izaberite samo najvažnije.');
+}
+var SAMPLE={name:'Dental Studio Smile',domain:'dentalsmile.rs',sum:'Stomatološka ordinacija na Vračaru u Beogradu. Beljenje zuba, implanti, protetika i lečenje bez bola za odrasle i decu.',det:'- Radno vreme: ponedeljak–petak 9–20, subota 9–15\n- Adresa: Njegoševa 25, 11000 Beograd\n- Pregledi se zakazuju online ili telefonom: +381 11 123 4567',
+secs:[{title:'Usluge',links:[{name:'Beljenje zuba',url:'https://dentalsmile.rs/usluge/beljenje-zuba/',desc:'Ordinacijsko i kućno beljenje, trajanje i cene'},{name:'Zubni implanti',url:'https://dentalsmile.rs/usluge/implanti/',desc:'Ugradnja implanta korak po korak, garancija'},{name:'Dečja stomatologija',url:'https://dentalsmile.rs/usluge/decja-stomatologija/',desc:'Pregledi i lečenje za decu od 3 godine'}]},
+{title:'Informacije',links:[{name:'Cenovnik',url:'https://dentalsmile.rs/cenovnik/',desc:'Aktuelne cene svih usluga'},{name:'Kontakt i lokacija',url:'https://dentalsmile.rs/kontakt/',desc:'Adresa, mapa, parking i radno vreme'}]},
+{title:'Optional',links:[{name:'Blog',url:'https://dentalsmile.rs/blog/',desc:'Saveti o nezi zuba'}]}]};
+
+W.onReady(function(){
+  SECS=[{title:'Usluge',links:[{name:'',url:'',desc:''}]},{title:'Kontakt',links:[{name:'Kontakt',url:'',desc:'Adresa, telefon i radno vreme'}]}];
+  render();build();
+  ['l-name','l-domain','l-sum','l-det'].forEach(function(id){$(id).addEventListener('input',build)});
+  $('l-secs').addEventListener('input',function(e){
+    var t=e.target,s=SECS[+t.dataset.s];if(!s)return;
+    if(t.dataset.l!==undefined)s.links[+t.dataset.l][t.dataset.f]=t.value;
+    else{var wasOpt=s.title.trim().toLowerCase()==='optional';s.title=t.value;if(wasOpt!==(t.value.trim().toLowerCase()==='optional')){var pos=t.selectionStart;render();var el=document.querySelector('[data-s="'+t.dataset.s+'"][data-f="title"]');el.focus();el.setSelectionRange(pos,pos)}}
+    build();
+  });
+  $('l-secs').addEventListener('click',function(e){
+    var b=e.target.closest('button');if(!b)return;
+    if(b.dataset.dels!==undefined)SECS.splice(+b.dataset.dels,1);
+    else if(b.dataset.dell!==undefined)SECS[+b.dataset.s].links.splice(+b.dataset.dell,1);
+    else if(b.dataset.addl!==undefined)SECS[+b.dataset.addl].links.push({name:'',url:'',desc:''});
+    else return;
+    render();build();
+  });
+  $('l-add-sec').addEventListener('click',function(){SECS.push({title:'',links:[{name:'',url:'',desc:''}]});render();build();var ins=$('l-secs').querySelectorAll('.ls-top input');ins[ins.length-1].focus()});
+  $('l-add-opt').addEventListener('click',function(){if(SECS.some(function(s){return s.title.trim().toLowerCase()==='optional'}))return W.toast('Sekcija Optional već postoji');SECS.push({title:'Optional',links:[{name:'',url:'',desc:''}]});render();build()});
+  $('l-imp-btn').addEventListener('click',function(){importText($('l-imp').value)});
+  $('l-copy').addEventListener('click',function(){W.copy(build.txt,'llms.txt je kopiran')});
+  $('l-dl').addEventListener('click',function(){W.download(build.txt,'llms.txt','text/markdown')});
+  $('l-sample').addEventListener('click',function(){
+    $('l-name').value=SAMPLE.name;$('l-domain').value=SAMPLE.domain;$('l-sum').value=SAMPLE.sum;$('l-det').value=SAMPLE.det;
+    SECS=JSON.parse(JSON.stringify(SAMPLE.secs));render();build();W.toast('Primer je učitan');
+  });
+  $('l-clear').addEventListener('click',function(){['l-name','l-domain','l-sum','l-det','l-imp'].forEach(function(id){$(id).value=''});SECS=[];render();build()});
+});
+})();
+
+</script>
+</body>
+</html>

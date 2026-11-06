@@ -29,7 +29,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="image" type="image/webp" href="assets/img/logo-web-answer-studio.webp" fetchpriority="high">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend:wght@600;700&amp;family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&amp;display=swap">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400..500,0..1,0&amp;icon_names=ads_click,apartment,arrow_forward,auto_awesome,call,category,check_circle,design_services,expand_more,fact_check,flag,groups,hourglass_top,inventory_,smart_toy2,location_on,mail,manage_search,medical_services,public,restaurant,search,search_off,shopping_bag,shopping_cart,smart_toy,spa,storefront,support_agent,touch_app,travel_explore&amp;display=block">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400..500,0..1,0&amp;icon_names=ads_click,apartment,arrow_forward,auto_awesome,call,category,check_circle,data_object,description,design_services,expand_more,fact_check,flag,groups,hourglass_top,inventory_,search,smart_toy2,location_on,mail,manage_search,medical_services,public,restaurant,search,search_off,shopping_bag,shopping_cart,smart_toy,spa,storefront,support_agent,touch_app,travel_explore&amp;display=block">
 <link rel="stylesheet" href="assets/css/seo-provera.css">
 <style>
 html,body{margin:0;padding:0;background:#ffffff;color:#0c0f0f;font-family:'DM Sans',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
@@ -71,6 +71,7 @@ h1,h2,h3,h4,p{margin:0}
 .wa-msub a{min-height:40px;font-size:14px;color:#4a5554}
 .wa-mnav a.wa-mcta{justify-content:center;margin-top:6px;background:#0c0f0f;color:#ffffff;font-weight:600}
 .wa-mnav a.wa-mcta:hover{background:#0d7f76;color:#ffffff}
+.wa-tool:hover{transform:translateY(-4px)!important;border-color:#9fd9d2!important;box-shadow:0 30px 60px -36px rgba(13,127,118,0.5)!important;color:#0c0f0f!important}
 .wa-dd .wa-ddm{display:none}.wa-dd:hover .wa-ddm,.wa-dd:focus-within .wa-ddm{display:block}
 @media (max-width:980px){.wa-links,.wa-cta{display:none!important}.wa-burger{display:flex}}
 </style>
@@ -237,6 +238,9 @@ h1,h2,h3,h4,p{margin:0}
           <div class="wa-ddm" style="position:absolute;top:100%;left:-24px;padding-top:18px;z-index:40">
             <div style="width:320px;padding:10px;background:#ffffff;border:1px solid #e3ecea;border-radius:18px;box-shadow:0 30px 60px -28px rgba(12,15,15,0.35);display:flex;flex-direction:column;gap:2px">
               <a href="robots-txt-generator" style="display:flex;align-items:center;gap:14px;padding:10px 12px;border-radius:12px;color:#0c0f0f" class="h0"><span style="flex:none;width:40px;height:40px;border-radius:12px;background:linear-gradient(150deg,#1b2625,#0c0f0f);display:grid;place-items:center;font-family:'Material Symbols Rounded';font-size:20px;color:#2cc4b6">smart_toy</span><span style="display:flex;flex-direction:column;gap:1px"><span style="font-weight:600;font-size:15px">Robots.txt generator</span><span style="font-size:13px;font-weight:400;color:#6b7675">Pristup za Google i AI botove</span></span></a>
+              <a href="schema-generator" style="display:flex;align-items:center;gap:14px;padding:10px 12px;border-radius:12px;color:#0c0f0f" class="h0"><span style="flex:none;width:40px;height:40px;border-radius:12px;background:linear-gradient(150deg,#1b2625,#0c0f0f);display:grid;place-items:center;font-family:'Material Symbols Rounded';font-size:20px;color:#2cc4b6">data_object</span><span style="display:flex;flex-direction:column;gap:1px"><span style="font-weight:600;font-size:15px">Schema generator</span><span style="font-size:13px;font-weight:400;color:#6b7675">JSON-LD za lokalne firme</span></span></a>
+              <a href="llms-txt-generator" style="display:flex;align-items:center;gap:14px;padding:10px 12px;border-radius:12px;color:#0c0f0f" class="h0"><span style="flex:none;width:40px;height:40px;border-radius:12px;background:linear-gradient(150deg,#1b2625,#0c0f0f);display:grid;place-items:center;font-family:'Material Symbols Rounded';font-size:20px;color:#2cc4b6">description</span><span style="display:flex;flex-direction:column;gap:1px"><span style="font-weight:600;font-size:15px">llms.txt generator</span><span style="font-size:13px;font-weight:400;color:#6b7675">Pregled sajta za AI alate</span></span></a>
+              <a href="serp-preview" style="display:flex;align-items:center;gap:14px;padding:10px 12px;border-radius:12px;color:#0c0f0f" class="h0"><span style="flex:none;width:40px;height:40px;border-radius:12px;background:linear-gradient(150deg,#1b2625,#0c0f0f);display:grid;place-items:center;font-family:'Material Symbols Rounded';font-size:20px;color:#2cc4b6">search</span><span style="display:flex;flex-direction:column;gap:1px"><span style="font-weight:600;font-size:15px">Pregled Google rezultata</span><span style="font-size:13px;font-weight:400;color:#6b7675">Naslov i opis u pikselima</span></span></a>
             </div>
           </div>
       </div>
@@ -245,7 +249,7 @@ h1,h2,h3,h4,p{margin:0}
       <a href="kontakt" style="color:#2b3433">Kontakt</a>
     </div>
   <button class="wa-burger" type="button" aria-label="Otvori meni" aria-expanded="false" aria-controls="wa-mnav"><span></span><span></span><span></span></button></nav>
-<div id="wa-mnav" class="wa-mnav"><a href="./" aria-current="page">Početna</a><button type="button" class="wa-mexp" aria-expanded="false" aria-controls="wa-msub">Optimizacija sajta<i></i></button><div class="wa-msub" id="wa-msub"><a href="seo-konsalting">Konsalting SEO</a><a href="ecommerce-seo">E-commerce SEO</a></div><a href="geo-optimizacija">GEO optimizacija</a><a href="izrada-sajtova">Izrada sajtova</a><button type="button" class="wa-mexp" aria-expanded="false" aria-controls="wa-msub2">SEO alati<i></i></button><div class="wa-msub" id="wa-msub2"><a href="robots-txt-generator">Robots.txt generator</a></div><a href="prirucnik">Priručnik</a><a href="o-nama">O nama</a><a href="kontakt">Kontakt</a></div></div>
+<div id="wa-mnav" class="wa-mnav"><a href="./" aria-current="page">Početna</a><button type="button" class="wa-mexp" aria-expanded="false" aria-controls="wa-msub">Optimizacija sajta<i></i></button><div class="wa-msub" id="wa-msub"><a href="seo-konsalting">Konsalting SEO</a><a href="ecommerce-seo">E-commerce SEO</a></div><a href="geo-optimizacija">GEO optimizacija</a><a href="izrada-sajtova">Izrada sajtova</a><button type="button" class="wa-mexp" aria-expanded="false" aria-controls="wa-msub2">SEO alati<i></i></button><div class="wa-msub" id="wa-msub2"><a href="robots-txt-generator">Robots.txt generator</a><a href="schema-generator">Schema generator</a><a href="llms-txt-generator">llms.txt generator</a><a href="serp-preview">Pregled Google rezultata</a></div><a href="prirucnik">Priručnik</a><a href="o-nama">O nama</a><a href="kontakt">Kontakt</a></div></div>
 
 <section style="position:relative;overflow:hidden;padding:72px 24px 110px;margin-top:-80px;padding-top:160px;background:#f6faf9">
   
@@ -661,6 +665,90 @@ h1,h2,h3,h4,p{margin:0}
   </div>
 </section>
 
+<section id="seo-alati" style="padding:100px 24px;background:#ffffff;border-top:1px solid #eef3f2">
+  <div style="max-width:1180px;margin:0 auto;display:flex;flex-direction:column;gap:48px">
+    <div style="display:flex;flex-direction:column;gap:16px;align-items:center;text-align:center;max-width:760px;margin:0 auto">
+      <div style="font-size:13px;font-weight:700;letter-spacing:0.18em;color:#0d7f76">SEO ALATI</div>
+      <h2 style="font-family:Lexend;font-weight:700;font-size:clamp(34px,4vw,52px);line-height:1.08;letter-spacing:-0.03em;text-wrap:balance">Alati za vidljivost na Google-u i u AI pretrazi</h2>
+      <p style="font-size:18px;line-height:1.6;color:#4a5554;text-wrap:pretty">Isti alati koje koristim u radu sa klijentima. Rade direktno u browseru, bez registracije.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));gap:20px">
+      <a href="robots-txt-generator" style="display:flex;flex-direction:column;background:#ffffff;border:1px solid #e3ecea;border-radius:24px;overflow:hidden;color:#0c0f0f;transition:transform .25s,box-shadow .25s,border-color .25s" class="wa-tool">
+        <div style="position:relative;min-height:194px;padding:20px;display:flex;flex-direction:column;justify-content:space-between;gap:14px;background:linear-gradient(160deg,#16201f,#0c0f0f);overflow:hidden">
+          <div style="position:absolute;inset:0;background-image:linear-gradient(rgba(44,196,182,0.07) 1px,transparent 1px),linear-gradient(90deg,rgba(44,196,182,0.07) 1px,transparent 1px);background-size:24px 24px;pointer-events:none"></div>
+          <div style="position:absolute;right:-60px;top:-60px;width:200px;height:200px;border-radius:50%;background:radial-gradient(circle,rgba(44,196,182,0.22),rgba(44,196,182,0) 65%);pointer-events:none"></div>
+          <div style="position:relative;display:flex;align-items:center;justify-content:space-between;gap:10px">
+            <span style="flex:none;width:48px;height:48px;border-radius:14px;background:rgba(44,196,182,0.12);border:1px solid rgba(44,196,182,0.32);display:grid;place-items:center;font-family:'Material Symbols Rounded';font-size:26px;color:#2cc4b6">smart_toy</span>
+            <span style="padding:5px 10px;border-radius:999px;border:1px solid #2a3534;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:12px;font-weight:600;color:#b8c8c5">robots.txt</span>
+          </div>
+          <div style="position:relative;display:flex;flex-direction:column;gap:3px;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:12.5px;line-height:1.5;color:#e6f2f0;white-space:nowrap;overflow:hidden"><div><span style="color:#2cc4b6">User-agent:</span> OAI-SearchBot</div><div><span style="color:#8ee0a8">Allow:</span> /</div><div><span style="color:#2cc4b6">User-agent:</span> *</div><div><span style="color:#ff9b85">Disallow:</span> /wp-admin/</div></div>
+        </div>
+        <div style="flex:1;display:flex;flex-direction:column;gap:10px;padding:24px">
+          <div style="font-size:12px;font-weight:700;letter-spacing:0.14em;color:#0d7f76">AI BOTOVI</div>
+          <h3 style="font-family:Lexend;font-weight:600;font-size:21px;line-height:1.25;letter-spacing:-0.02em">Robots.txt generator</h3>
+          <p style="font-size:15px;line-height:1.6;color:#4a5554;text-wrap:pretty">Odlučite koji AI botovi smeju da čitaju sajt i proverite da li postojeći fajl blokira ChatGPT ili Perplexity.</p>
+          <span style="margin-top:auto;padding-top:8px;display:flex;align-items:center;gap:6px;font-weight:700;font-size:15px;color:#0d7f76">Isprobaj alat <span style="font-family:'Material Symbols Rounded';font-size:20px">arrow_forward</span></span>
+        </div>
+      </a>
+      <a href="schema-generator" style="display:flex;flex-direction:column;background:#ffffff;border:1px solid #e3ecea;border-radius:24px;overflow:hidden;color:#0c0f0f;transition:transform .25s,box-shadow .25s,border-color .25s" class="wa-tool">
+        <div style="position:relative;min-height:194px;padding:20px;display:flex;flex-direction:column;justify-content:space-between;gap:14px;background:linear-gradient(160deg,#16201f,#0c0f0f);overflow:hidden">
+          <div style="position:absolute;inset:0;background-image:linear-gradient(rgba(44,196,182,0.07) 1px,transparent 1px),linear-gradient(90deg,rgba(44,196,182,0.07) 1px,transparent 1px);background-size:24px 24px;pointer-events:none"></div>
+          <div style="position:absolute;right:-60px;top:-60px;width:200px;height:200px;border-radius:50%;background:radial-gradient(circle,rgba(44,196,182,0.22),rgba(44,196,182,0) 65%);pointer-events:none"></div>
+          <div style="position:relative;display:flex;align-items:center;justify-content:space-between;gap:10px">
+            <span style="flex:none;width:48px;height:48px;border-radius:14px;background:rgba(44,196,182,0.12);border:1px solid rgba(44,196,182,0.32);display:grid;place-items:center;font-family:'Material Symbols Rounded';font-size:26px;color:#2cc4b6">data_object</span>
+            <span style="padding:5px 10px;border-radius:999px;border:1px solid #2a3534;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:12px;font-weight:600;color:#b8c8c5">JSON-LD</span>
+          </div>
+          <div style="position:relative;display:flex;flex-direction:column;gap:3px;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:12.5px;line-height:1.5;color:#e6f2f0;white-space:nowrap;overflow:hidden"><div style="color:#6f8582">{</div><div>&nbsp;&nbsp;<span style="color:#2cc4b6">"@type"</span>: <span style="color:#8ee0a8">"LocalBusiness"</span>,</div><div>&nbsp;&nbsp;<span style="color:#2cc4b6">"openingHours"</span>: <span style="color:#8ee0a8">"Mo-Fr 09-17"</span></div><div style="color:#6f8582">}</div></div>
+        </div>
+        <div style="flex:1;display:flex;flex-direction:column;gap:10px;padding:24px">
+          <div style="font-size:12px;font-weight:700;letter-spacing:0.14em;color:#0d7f76">LOKALNI SEO</div>
+          <h3 style="font-family:Lexend;font-weight:600;font-size:21px;line-height:1.25;letter-spacing:-0.02em">Schema generator</h3>
+          <p style="font-size:15px;line-height:1.6;color:#4a5554;text-wrap:pretty">Adresa, radno vreme, lokacija i kontakt u kodu koji Google i AI asistenti razumeju.</p>
+          <span style="margin-top:auto;padding-top:8px;display:flex;align-items:center;gap:6px;font-weight:700;font-size:15px;color:#0d7f76">Isprobaj alat <span style="font-family:'Material Symbols Rounded';font-size:20px">arrow_forward</span></span>
+        </div>
+      </a>
+      <a href="llms-txt-generator" style="display:flex;flex-direction:column;background:#ffffff;border:1px solid #e3ecea;border-radius:24px;overflow:hidden;color:#0c0f0f;transition:transform .25s,box-shadow .25s,border-color .25s" class="wa-tool">
+        <div style="position:relative;min-height:194px;padding:20px;display:flex;flex-direction:column;justify-content:space-between;gap:14px;background:linear-gradient(160deg,#16201f,#0c0f0f);overflow:hidden">
+          <div style="position:absolute;inset:0;background-image:linear-gradient(rgba(44,196,182,0.07) 1px,transparent 1px),linear-gradient(90deg,rgba(44,196,182,0.07) 1px,transparent 1px);background-size:24px 24px;pointer-events:none"></div>
+          <div style="position:absolute;right:-60px;top:-60px;width:200px;height:200px;border-radius:50%;background:radial-gradient(circle,rgba(44,196,182,0.22),rgba(44,196,182,0) 65%);pointer-events:none"></div>
+          <div style="position:relative;display:flex;align-items:center;justify-content:space-between;gap:10px">
+            <span style="flex:none;width:48px;height:48px;border-radius:14px;background:rgba(44,196,182,0.12);border:1px solid rgba(44,196,182,0.32);display:grid;place-items:center;font-family:'Material Symbols Rounded';font-size:26px;color:#2cc4b6">description</span>
+            <span style="padding:5px 10px;border-radius:999px;border:1px solid #2a3534;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:12px;font-weight:600;color:#b8c8c5">llms.txt</span>
+          </div>
+          <div style="position:relative;display:flex;flex-direction:column;gap:3px;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:12.5px;line-height:1.5;color:#e6f2f0;white-space:nowrap;overflow:hidden"><div style="color:#ffffff;font-weight:700"># Vaša firma</div><div style="color:#8fa3a0">&gt; Ko ste i šta radite</div><div>- <span style="color:#2cc4b6">[Usluge]</span>(/usluge)</div><div>- <span style="color:#2cc4b6">[Kontakt]</span>(/kontakt)</div></div>
+        </div>
+        <div style="flex:1;display:flex;flex-direction:column;gap:10px;padding:24px">
+          <div style="font-size:12px;font-weight:700;letter-spacing:0.14em;color:#0d7f76">GEO</div>
+          <h3 style="font-family:Lexend;font-weight:600;font-size:21px;line-height:1.25;letter-spacing:-0.02em">llms.txt generator</h3>
+          <p style="font-size:15px;line-height:1.6;color:#4a5554;text-wrap:pretty">Pregled najvažnijih stranica sajta za AI alate, uz iskren odgovor šta fajl radi, a šta ne.</p>
+          <span style="margin-top:auto;padding-top:8px;display:flex;align-items:center;gap:6px;font-weight:700;font-size:15px;color:#0d7f76">Isprobaj alat <span style="font-family:'Material Symbols Rounded';font-size:20px">arrow_forward</span></span>
+        </div>
+      </a>
+      <a href="serp-preview" style="display:flex;flex-direction:column;background:#ffffff;border:1px solid #e3ecea;border-radius:24px;overflow:hidden;color:#0c0f0f;transition:transform .25s,box-shadow .25s,border-color .25s" class="wa-tool">
+        <div style="position:relative;min-height:194px;padding:20px;display:flex;flex-direction:column;justify-content:space-between;gap:14px;background:linear-gradient(160deg,#16201f,#0c0f0f);overflow:hidden">
+          <div style="position:absolute;inset:0;background-image:linear-gradient(rgba(44,196,182,0.07) 1px,transparent 1px),linear-gradient(90deg,rgba(44,196,182,0.07) 1px,transparent 1px);background-size:24px 24px;pointer-events:none"></div>
+          <div style="position:absolute;right:-60px;top:-60px;width:200px;height:200px;border-radius:50%;background:radial-gradient(circle,rgba(44,196,182,0.22),rgba(44,196,182,0) 65%);pointer-events:none"></div>
+          <div style="position:relative;display:flex;align-items:center;justify-content:space-between;gap:10px">
+            <span style="flex:none;width:48px;height:48px;border-radius:14px;background:rgba(44,196,182,0.12);border:1px solid rgba(44,196,182,0.32);display:grid;place-items:center;font-family:'Material Symbols Rounded';font-size:26px;color:#2cc4b6">search</span>
+            <span style="padding:5px 10px;border-radius:999px;border:1px solid #2a3534;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:12px;font-weight:600;color:#b8c8c5">SERP</span>
+          </div>
+          <div style="position:relative;display:flex;flex-direction:column;gap:4px;padding:12px 14px;background:#ffffff;border-radius:12px;box-shadow:0 14px 30px -16px rgba(0,0,0,0.7)">
+            <div style="display:flex;align-items:center;gap:7px;font-size:11px;color:#4d5156"><span style="flex:none;width:16px;height:16px;border-radius:50%;background:#eef8f6;border:1px solid #cfe5e2"></span>vasajt.rs</div>
+            <div style="font-size:14px;line-height:1.3;color:#1a0dab;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">Stomatolog Vračar | Ordinacija Osmeh</div>
+            <div style="display:flex;align-items:center;gap:8px"><span style="flex:1;height:4px;border-radius:4px;background:#e3ecea;overflow:hidden"><span style="display:block;width:84%;height:100%;background:#1aa89d"></span></span><span style="font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:10.5px;font-weight:600;color:#0d7f76">505/580 px</span></div>
+          </div>
+        </div>
+        <div style="flex:1;display:flex;flex-direction:column;gap:10px;padding:24px">
+          <div style="font-size:12px;font-weight:700;letter-spacing:0.14em;color:#0d7f76">GOOGLE REZULTATI</div>
+          <h3 style="font-family:Lexend;font-weight:600;font-size:21px;line-height:1.25;letter-spacing:-0.02em">Pregled Google rezultata</h3>
+          <p style="font-size:15px;line-height:1.6;color:#4a5554;text-wrap:pretty">Proverite da li naslov i meta opis staju na desktopu i telefonu, mereno u pikselima.</p>
+          <span style="margin-top:auto;padding-top:8px;display:flex;align-items:center;gap:6px;font-weight:700;font-size:15px;color:#0d7f76">Isprobaj alat <span style="font-family:'Material Symbols Rounded';font-size:20px">arrow_forward</span></span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
 <section style="padding:90px 24px;background:#f6faf9;border-top:1px solid #eef3f2">
   <div style="max-width:1180px;margin:0 auto;display:flex;flex-direction:column;align-items:center;gap:36px;text-align:center">
     <div style="width:100%;max-width:980px;display:flex;flex-direction:column;gap:20px">
@@ -689,7 +777,7 @@ h1,h2,h3,h4,p{margin:0}
       </div>
       <div style="display:flex;flex-direction:column;gap:14px;font-size:15px">
         <div style="font-family:Lexend;font-weight:600;font-size:17px;margin-bottom:6px">SEO alati</div>
-        <a href="robots-txt-generator" style="color:#4a5554">Robots.txt generator</a>
+        <a href="robots-txt-generator" style="color:#4a5554">Robots.txt generator</a><a href="schema-generator" style="color:#4a5554">Schema generator</a><a href="llms-txt-generator" style="color:#4a5554">llms.txt generator</a><a href="serp-preview" style="color:#4a5554">Pregled Google rezultata</a>
       </div>
       <div style="display:flex;flex-direction:column;gap:14px;font-size:15px">
         <div style="font-family:Lexend;font-weight:600;font-size:17px;margin-bottom:6px">Navigacija</div>

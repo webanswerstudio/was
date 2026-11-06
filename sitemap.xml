@@ -50,4 +50,19 @@
     <lastmod>2026-11-06</lastmod>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://webanswerstudio.com/schema-generator</loc>
+    <lastmod>2026-11-06</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://webanswerstudio.com/llms-txt-generator</loc>
+    <lastmod>2026-11-06</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://webanswerstudio.com/serp-preview</loc>
+    <lastmod>2026-11-06</lastmod>
+    <priority>0.8</priority>
+  </url>
 </urlset>
