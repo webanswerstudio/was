@@ -29,7 +29,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="image" type="image/webp" href="assets/img/logo-web-answer-studio.webp" fetchpriority="high">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend:wght@500;600;700&amp;family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&amp;display=swap">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400..500,0..1,0&amp;icon_names=add,arrow_forward,article,bug_report,build,call,check,check_circle,description,expand_more,format_list_numbered,forum,groups,handshake,help,link,link_off,location_on,mail,play_arrow,remove,shopping_bag,shopping_cart,storefront,support_agent,verified_user,videocam&amp;display=block">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400..500,0..1,0&amp;icon_names=add,arrow_forward,article,bug_report,build,call,check,check_circle,description,expand_more,format_list_numbered,forum,groups,handshake,help,link,link_off,location_on,mail,play_arrow,remove,shopping_bag,shopping_cart,smart_toy,storefront,support_agent,verified_user,videocam&amp;display=block">
 <style>
 html,body{margin:0;padding:0;background:#ffffff;color:#0c0f0f;font-family:'DM Sans',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
 *{box-sizing:border-box}
@@ -64,6 +64,7 @@ h1,h2,h3,h4,p{margin:0}
 .wa-msub a{min-height:40px;font-size:14px;color:#4a5554}
 .wa-mnav a.wa-mcta{justify-content:center;margin-top:6px;background:#0c0f0f;color:#ffffff;font-weight:600}
 .wa-mnav a.wa-mcta:hover{background:#0d7f76;color:#ffffff}
+.wa-dd .wa-ddm{display:none}.wa-dd:hover .wa-ddm,.wa-dd:focus-within .wa-ddm{display:block}
 @media (max-width:980px){.wa-links,.wa-cta{display:none!important}.wa-burger{display:flex}}
 </style>
 <script type="application/ld+json">
@@ -271,13 +272,20 @@ h1,h2,h3,h4,p{margin:0}
       </div>
       <a href="geo-optimizacija" style="color:#2b3433">GEO optimizacija</a>
       <a href="izrada-sajtova" style="color:#2b3433">Izrada sajtova</a>
+      <div class="wa-dd" style="position:relative;display:flex;align-items:center">
+        <a href="#" style="display:flex;align-items:center;gap:2px;color:#2b3433">SEO alati<span style="font-family:'Material Symbols Rounded';font-size:20px;color:inherit">expand_more</span></a>
+          <div class="wa-ddm" style="position:absolute;top:100%;left:-24px;padding-top:18px;z-index:40">
+            <div style="width:320px;padding:10px;background:#ffffff;border:1px solid #e3ecea;border-radius:18px;box-shadow:0 30px 60px -28px rgba(12,15,15,0.35);display:flex;flex-direction:column;gap:2px">
+              <a href="robots-txt-generator" style="display:flex;align-items:center;gap:14px;padding:10px 12px;border-radius:12px;color:#0c0f0f" class="h0"><span style="flex:none;width:40px;height:40px;border-radius:12px;background:linear-gradient(150deg,#1b2625,#0c0f0f);display:grid;place-items:center;font-family:'Material Symbols Rounded';font-size:20px;color:#2cc4b6">smart_toy</span><span style="display:flex;flex-direction:column;gap:1px"><span style="font-weight:600;font-size:15px">Robots.txt generator</span><span style="font-size:13px;font-weight:400;color:#6b7675">Pristup za Google i AI botove</span></span></a>
+            </div>
+          </div>
+      </div>
       <a href="prirucnik" style="color:#2b3433">Priručnik</a>
       <a href="o-nama" style="color:#2b3433">O nama</a>
       <a href="kontakt" style="color:#2b3433">Kontakt</a>
     </div>
-    <a href="kontakt" style="background:#0c0f0f;color:#ffffff;padding:12px 20px;border-radius:10px;font-weight:600;font-size:15px" class="h2 wa-cta">Zatraži analizu</a>
   <button class="wa-burger" type="button" aria-label="Otvori meni" aria-expanded="false" aria-controls="wa-mnav"><span></span><span></span><span></span></button></nav>
-<div id="wa-mnav" class="wa-mnav"><a href="./">Početna</a><button type="button" class="wa-mexp" aria-expanded="false" aria-controls="wa-msub" data-cur="">Optimizacija sajta<i></i></button><div class="wa-msub" id="wa-msub"><a href="seo-konsalting" aria-current="page">Konsalting SEO</a><a href="ecommerce-seo">E-commerce SEO</a></div><a href="geo-optimizacija">GEO optimizacija</a><a href="izrada-sajtova">Izrada sajtova</a><a href="prirucnik">Priručnik</a><a href="o-nama">O nama</a><a href="kontakt">Kontakt</a><a class="wa-mcta" href="kontakt">Zatraži analizu</a></div></div>
+<div id="wa-mnav" class="wa-mnav"><a href="./">Početna</a><button type="button" class="wa-mexp" aria-expanded="false" aria-controls="wa-msub" data-cur="">Optimizacija sajta<i></i></button><div class="wa-msub" id="wa-msub"><a href="seo-konsalting" aria-current="page">Konsalting SEO</a><a href="ecommerce-seo">E-commerce SEO</a></div><a href="geo-optimizacija">GEO optimizacija</a><a href="izrada-sajtova">Izrada sajtova</a><button type="button" class="wa-mexp" aria-expanded="false" aria-controls="wa-msub2">SEO alati<i></i></button><div class="wa-msub" id="wa-msub2"><a href="robots-txt-generator">Robots.txt generator</a></div><a href="prirucnik">Priručnik</a><a href="o-nama">O nama</a><a href="kontakt">Kontakt</a></div></div>
 
 <section style="position:relative;overflow:hidden;padding:160px 24px 100px;margin-top:-80px;background:#f6faf9">
   
@@ -758,7 +766,7 @@ h1,h2,h3,h4,p{margin:0}
 
 <footer style="padding:80px 24px 32px;background:#ffffff;border-top:1px solid #eef3f2">
   <div style="max-width:1180px;margin:0 auto;display:flex;flex-direction:column;gap:56px">
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:40px">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,170px),1fr));gap:40px">
       <div style="display:flex;flex-direction:column;gap:20px">
         <img src="assets/img/logo-web-answer-studio.webp" alt="Logo Web Answer Studio" style="display:block;height:46px;width:auto;align-self:flex-start" width="440" height="120" decoding="async" loading="lazy">
         <p style="font-size:15px;line-height:1.65;color:#4a5554">SEO, GEO i izrada sajtova. Pravimo sajtove koji se vide na Google-u i u AI pretrazi i donose upite.</p>
@@ -767,6 +775,10 @@ h1,h2,h3,h4,p{margin:0}
       <div style="display:flex;flex-direction:column;gap:14px;font-size:15px">
         <div style="font-family:Lexend;font-weight:600;font-size:17px;margin-bottom:6px">Usluge</div>
         <a href="seo-konsalting" style="color:#4a5554">Konsalting SEO</a><a href="ecommerce-seo" style="color:#4a5554">E-commerce SEO</a><a href="geo-optimizacija" style="color:#4a5554">GEO optimizacija</a><a href="izrada-sajtova" style="color:#4a5554">Izrada sajtova</a>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:14px;font-size:15px">
+        <div style="font-family:Lexend;font-weight:600;font-size:17px;margin-bottom:6px">SEO alati</div>
+        <a href="robots-txt-generator" style="color:#4a5554">Robots.txt generator</a>
       </div>
       <div style="display:flex;flex-direction:column;gap:14px;font-size:15px">
         <div style="font-family:Lexend;font-weight:600;font-size:17px;margin-bottom:6px">Navigacija</div>

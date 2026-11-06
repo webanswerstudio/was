@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="sr-Latn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Robots.txt generator i provera AI botova | Web Answer Studio</title>
+<meta name="description" content="Robots.txt generator sa AI botovima: odlučite ko sme da čita vaš sajt (ChatGPT, Claude, Gemini, Perplexity) i proverite postojeći robots.txt.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://webanswerstudio.com/robots-txt-generator">
+<link rel="icon" type="image/png" sizes="48x48" href="favicon-48.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="theme-color" content="#ffffff">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Web Answer Studio">
+<meta property="og:locale" content="sr_RS">
+<meta property="og:title" content="Robots.txt generator i provera AI botova">
+<meta property="og:description" content="Napravite robots.txt za Google i AI pretragu ili proverite da li vaš sajt slučajno blokira ChatGPT, Claude i Perplexity.">
+<meta property="og:url" content="https://webanswerstudio.com/robots-txt-generator">
+<meta property="og:image" content="https://webanswerstudio.com/assets/img/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Robots.txt generator i provera AI botova">
+<meta name="twitter:description" content="Napravite robots.txt za Google i AI pretragu ili proverite da li vaš sajt slučajno blokira ChatGPT, Claude i Perplexity.">
+<meta name="twitter:image" content="https://webanswerstudio.com/assets/img/og-image.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend:wght@600;700&amp;family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&amp;display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400..500,0..1,0&amp;icon_names=arrow_forward,call,check_circle,content_copy,content_paste,description,download,error,expand_more,fact_check,groups,info,mail,model_training,person_search,shopping_cart,smart_toy,support_agent,travel_explore,tune,warning&amp;display=block">
+<style>
+html,body{margin:0;padding:0;background:#ffffff;color:#0c0f0f;font-family:'DM Sans',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+*{box-sizing:border-box}
+a{color:#0d7f76;text-decoration:none}
+a:hover{color:#0c0f0f}
+h1,h2,h3,h4,p{margin:0}
+@keyframes orb{to{transform:rotate(360deg)}}
+@keyframes orbr{to{transform:rotate(-360deg)}}
+@keyframes hglow{0%,100%{transform:scale(1)}50%{transform:scale(1.05)}}
+.h0:hover{background:#eef8f6!important;color:#0c0f0f!important}
+.h1:hover{background:#0d7f76!important;color:#ffffff!important}
+.h2:hover{background:#0c0f0f!important;color:#ffffff!important}
+.h3:hover{background:#eef8f6!important;border-color:#9fd9d2!important;transform:translateY(-4px)!important;box-shadow:0 28px 50px -32px rgba(13,127,118,0.5)!important}
+.h4:hover{transform:translateY(-4px)!important;border-color:#9fd9d2!important;box-shadow:0 30px 60px -36px rgba(13,127,118,0.5)!important}
+.h5:hover{border-color:#0c0f0f!important;color:#0c0f0f!important}
+.h6:hover{background:#ffffff!important;color:#0c0f0f!important}
+.h7:hover{border-color:#2cc4b6!important;color:#2cc4b6!important}
+.h8:hover{transform:translateY(-3px)!important;border-color:#9fd9d2!important}
+.h9:hover{background:#eef8f6!important;border-color:#9fd9d2!important;transform:translateY(-4px)!important;box-shadow:0 24px 44px -30px rgba(13,127,118,0.5)!important}
+.ha:hover{background:#e9f6f4!important;border-color:#9fd9d2!important;transform:translateY(-4px)!important;box-shadow:0 28px 50px -32px rgba(13,127,118,0.5)!important}
+.hb:hover{border-color:#0d7f76!important;color:#0d7f76!important}
+.hc:hover{border-color:#9fd9d2!important;transform:translateY(-3px)!important;box-shadow:0 28px 50px -32px rgba(13,127,118,0.5)!important}
+[data-hide]{display:none!important}
+.wa-burger{display:none;width:46px;height:46px;padding:0;border:1px solid #e3ecea;border-radius:12px;background:#ffffff;cursor:pointer;flex-direction:column;align-items:center;justify-content:center;gap:5px}
+.wa-burger span{display:block;width:20px;height:2px;border-radius:2px;background:#0c0f0f;transition:transform .25s,opacity .2s}
+.wa-burger[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.wa-burger[aria-expanded="true"] span:nth-child(2){opacity:0}
+.wa-burger[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+.wa-mnav{display:none;position:absolute;left:24px;right:24px;top:100%;margin-top:8px;max-height:calc(100vh - 110px);overflow:auto;padding:6px;background:#ffffff;border:1px solid #e3ecea;border-radius:16px;box-shadow:0 30px 60px -28px rgba(12,15,15,0.35);flex-direction:column}
+.wa-mnav[data-open]{display:flex}
+.wa-mnav a,.wa-mexp{display:flex;align-items:center;justify-content:space-between;width:100%;min-height:44px;padding:0 12px;border:0;border-radius:10px;background:transparent;font-family:inherit;font-size:15px;font-weight:500;color:#0c0f0f;text-align:left;cursor:pointer}
+.wa-mnav a:hover,.wa-mexp:hover{background:#eef8f6;color:#0c0f0f}
+.wa-mnav a[aria-current],.wa-mexp[data-cur]{color:#0d7f76;font-weight:600}
+.wa-mexp i{width:8px;height:8px;margin-right:4px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:translateY(-2px) rotate(45deg);transition:transform .2s}
+.wa-mexp[aria-expanded="true"] i{transform:translateY(2px) rotate(-135deg)}
+.wa-msub{display:none;flex-direction:column;margin:0 0 4px 12px;padding-left:8px;border-left:2px solid #e3ecea}
+.wa-msub[data-open]{display:flex}
+.wa-msub a{min-height:40px;font-size:14px;color:#4a5554}
+.wa-mnav a.wa-mcta{justify-content:center;margin-top:6px;background:#0c0f0f;color:#ffffff;font-weight:600}
+.wa-mnav a.wa-mcta:hover{background:#0d7f76;color:#ffffff}
+.wa-dd .wa-ddm{display:none}.wa-dd:hover .wa-ddm,.wa-dd:focus-within .wa-ddm{display:block}
+@media (max-width:980px){.wa-links,.wa-cta{display:none!important}.wa-burger{display:flex}}
+/* ---------- Robots.txt alat ---------- */
+.ms{font-family:'Material Symbols Rounded';font-weight:normal;font-style:normal;line-height:1;letter-spacing:normal;text-transform:none;white-space:nowrap;direction:ltr;-webkit-font-feature-settings:'liga';font-feature-settings:'liga'}
+.rt-wrap{max-width:1180px;margin:0 auto}
+.rt-eyebrow{font-size:13px;font-weight:700;letter-spacing:.18em;color:#0d7f76}
+.rt-h2{font-family:Lexend;font-weight:700;font-size:clamp(30px,3.6vw,46px);line-height:1.1;letter-spacing:-.03em;text-wrap:balance}
+.rt-lead{font-size:18px;line-height:1.65;color:#4a5554;text-wrap:pretty}
+.rt-card{position:relative;background:#ffffff;border:1px solid #e3ecea;border-radius:26px;box-shadow:0 40px 80px -50px rgba(12,15,15,.35);overflow:hidden}
+.rt-tabs{display:flex;gap:6px;padding:8px;margin:22px 22px 0;background:#f2f7f6;border:1px solid #e3ecea;border-radius:14px;width:max-content;max-width:calc(100% - 44px);flex-wrap:wrap}
+.rt-tab{display:flex;align-items:center;gap:8px;border:0;background:transparent;padding:11px 18px;border-radius:10px;font:600 15px 'DM Sans',sans-serif;color:#4a5554;cursor:pointer;transition:background .2s,color .2s}
+.rt-tab .ms{font-size:20px}
+.rt-tab[aria-selected="true"]{background:#0c0f0f;color:#ffffff;box-shadow:0 10px 20px -12px rgba(12,15,15,.6)}
+.rt-tab:not([aria-selected="true"]):hover{background:#ffffff;color:#0c0f0f}
+.rt-panel{padding:22px}
+.rt-grid{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,1fr);gap:22px;align-items:start}
+@media (max-width:960px){.rt-grid{grid-template-columns:minmax(0,1fr)}.rt-out{position:static}}
+.rt-step{border:1px solid #e6eeed;background:#f6faf9;border-radius:20px;padding:22px;display:flex;flex-direction:column;gap:16px}
+.rt-step+.rt-step{margin-top:16px}
+.rt-step-h{display:flex;align-items:center;gap:12px}
+.rt-num{flex:none;width:32px;height:32px;border-radius:10px;background:linear-gradient(150deg,#1b2625,#0c0f0f);color:#2cc4b6;display:grid;place-items:center;font:700 15px Lexend}
+.rt-step-h h3{font-family:Lexend;font-weight:600;font-size:18px;line-height:1.3}
+.rt-step-h p{font-size:14px;color:#6b7675;margin-top:2px}
+.rt-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,210px),1fr));gap:14px}
+.rt-field{display:flex;flex-direction:column;gap:7px}
+.rt-label{font-size:14px;font-weight:600;color:#0c0f0f}
+.rt-hint{font-size:13px;line-height:1.5;color:#6b7675}
+.rt-input,.rt-select,.rt-ta{width:100%;font:500 15px 'DM Sans',sans-serif;color:#0c0f0f;background:#ffffff;border:1px solid #d9e5e3;border-radius:12px;padding:12px 14px;outline:none;transition:border-color .2s,box-shadow .2s}
+.rt-ta{font:500 14px/1.6 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;resize:vertical;min-height:92px}
+.rt-input:focus,.rt-select:focus,.rt-ta:focus{border-color:#1aa89d;box-shadow:0 0 0 4px rgba(26,168,157,.14)}
+.rt-select{appearance:none;background-image:linear-gradient(45deg,transparent 50%,#4a5554 50%),linear-gradient(135deg,#4a5554 50%,transparent 50%);background-position:calc(100% - 20px) 52%,calc(100% - 14px) 52%;background-size:6px 6px;background-repeat:no-repeat;padding-right:40px;cursor:pointer}
+.rt-presets{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,180px),1fr));gap:10px}
+.rt-preset{position:relative;text-align:left;border:1.5px solid #dfe9e7;background:#ffffff;border-radius:14px;padding:14px 14px 14px 16px;cursor:pointer;font-family:inherit;display:flex;flex-direction:column;gap:4px;transition:border-color .2s,background .2s,transform .2s}
+.rt-preset:hover{border-color:#9fd9d2;transform:translateY(-2px)}
+.rt-preset[aria-pressed="true"]{border-color:#0d7f76;background:#eef8f6}
+.rt-preset strong{font:600 15px Lexend;color:#0c0f0f;padding-right:22px}
+.rt-preset span{font-size:13px;line-height:1.45;color:#4a5554}
+.rt-preset em{font-style:normal;align-self:flex-start;margin-top:4px;font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#0d7f76;background:#dff3f0;padding:3px 8px;border-radius:999px}
+.rt-preset[aria-pressed="true"]::after{content:'check_circle';font-family:'Material Symbols Rounded';position:absolute;top:12px;right:12px;font-size:20px;color:#0d7f76;font-variation-settings:'FILL' 1}
+.rt-cat{display:flex;flex-direction:column;gap:6px}
+.rt-cat-h{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:6px}
+.rt-cat-h b{display:flex;align-items:center;gap:8px;font:600 15px Lexend}
+.rt-cat-h small{font-size:13px;color:#6b7675}
+.rt-bot{display:flex;align-items:center;gap:12px;padding:10px 12px;background:#ffffff;border:1px solid #e6eeed;border-radius:12px}
+.rt-bot-i{flex:1;min-width:0;display:flex;flex-direction:column;gap:2px}
+.rt-bot-n{font:600 14px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;color:#0c0f0f;word-break:break-word}
+.rt-bot-d{font-size:13px;line-height:1.4;color:#6b7675}
+.rt-bot-d b{font-weight:600;color:#4a5554}
+.rt-sw{flex:none;display:flex;align-items:center;gap:8px;border:0;background:transparent;cursor:pointer;font:600 13px 'DM Sans',sans-serif;color:#0d7f76;padding:4px}
+.rt-sw i{position:relative;width:42px;height:24px;border-radius:999px;background:#0d7f76;transition:background .2s}
+.rt-sw i::after{content:'';position:absolute;top:3px;left:21px;width:18px;height:18px;border-radius:50%;background:#ffffff;box-shadow:0 2px 4px rgba(0,0,0,.2);transition:left .2s}
+.rt-sw[aria-checked="false"]{color:#b4442f}
+.rt-sw[aria-checked="false"] i{background:#d9cfcc}
+.rt-sw[aria-checked="false"] i::after{left:3px}
+.rt-sw span{min-width:66px;text-align:right}
+.rt-dot{width:9px;height:9px;border-radius:50%;flex:none}
+.rt-check{display:flex;align-items:flex-start;gap:10px;font-size:14px;line-height:1.5;color:#2b3433;cursor:pointer}
+.rt-check input{margin-top:3px;width:17px;height:17px;accent-color:#0d7f76;flex:none}
+.rt-out{position:sticky;top:110px;display:flex;flex-direction:column;gap:14px}
+.rt-code-card{background:#0c0f0f;border-radius:20px;overflow:hidden;box-shadow:0 30px 60px -36px rgba(13,127,118,.6)}
+.rt-code-top{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:14px 16px 14px 20px;border-bottom:1px solid #1e2928;flex-wrap:wrap}
+.rt-code-top b{display:flex;align-items:center;gap:10px;color:#ffffff;font:600 15px Lexend}
+.rt-code-top b small{font:500 12px 'DM Sans',sans-serif;color:#8fa3a0}
+.rt-btns{display:flex;gap:8px;flex-wrap:wrap}
+.rt-btn{display:inline-flex;align-items:center;gap:7px;border:0;cursor:pointer;font:600 14px 'DM Sans',sans-serif;padding:10px 14px;border-radius:10px;transition:background .2s,color .2s,transform .15s}
+.rt-btn .ms{font-size:18px}
+.rt-btn:active{transform:scale(.97)}
+.rt-btn--light{background:#1b2625;color:#e6f2f0}
+.rt-btn--light:hover{background:#26413d;color:#ffffff}
+.rt-btn--teal{background:#2cc4b6;color:#0c0f0f}
+.rt-btn--teal:hover{background:#ffffff}
+.rt-btn--dark{background:#0c0f0f;color:#ffffff;padding:13px 20px;font-size:15px}
+.rt-btn--dark:hover{background:#0d7f76}
+.rt-btn--ghost{background:#ffffff;color:#0c0f0f;border:1px solid #d9e5e3;padding:12px 18px;font-size:15px}
+.rt-btn--ghost:hover{border-color:#0d7f76;color:#0d7f76}
+.rt-code{margin:0;padding:18px 20px 22px;max-height:440px;overflow:auto;font:500 13.5px/1.7 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;color:#e6f2f0;white-space:pre;tab-size:2}
+.rt-code .c{color:#6f8582}
+.rt-code .k{color:#2cc4b6}
+.rt-code .kd{color:#ff9b85}
+.rt-code .ka{color:#8ee0a8}
+.rt-notes{display:flex;flex-direction:column;gap:8px}
+.rt-note{display:flex;gap:10px;align-items:flex-start;padding:12px 14px;border-radius:12px;font-size:14px;line-height:1.5;border:1px solid}
+.rt-note .ms{font-size:20px;flex:none;margin-top:1px;font-variation-settings:'FILL' 1}
+.rt-note--ok{background:#eef8f6;border-color:#cfe5e2;color:#0b5f58}
+.rt-note--info{background:#f3f6ff;border-color:#dde4fb;color:#2f3f86}
+.rt-note--warn{background:#fff7e8;border-color:#f5dfb3;color:#7a4b00}
+.rt-note--crit{background:#fdf0ed;border-color:#f3cfc6;color:#9a2f1c}
+.rt-note b{font-weight:700}
+.rt-toast{position:fixed;left:50%;bottom:28px;transform:translate(-50%,20px);opacity:0;pointer-events:none;background:#0c0f0f;color:#ffffff;padding:12px 18px;border-radius:12px;font-weight:600;font-size:14px;transition:opacity .25s,transform .25s;z-index:60;display:flex;align-items:center;gap:8px}
+.rt-toast.on{opacity:1;transform:translate(-50%,0)}
+/* checker */
+.rt-chk-top{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:22px;align-items:start}
+@media (max-width:960px){.rt-chk-top{grid-template-columns:minmax(0,1fr)}}
+.rt-chk-ta{min-height:320px}
+.rt-chk-actions{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.rt-sum{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,96px),1fr));gap:10px}
+.rt-sum div{background:#ffffff;border:1px solid #e6eeed;border-radius:14px;padding:14px;display:flex;flex-direction:column;gap:4px}
+.rt-sum b{font:700 26px Lexend;letter-spacing:-.02em}
+.rt-sum span{font-size:13px;color:#6b7675;line-height:1.35}
+.rt-table{width:100%;border-collapse:separate;border-spacing:0;font-size:14px}
+.rt-table th{text-align:left;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#6b7675;padding:0 12px 10px}
+.rt-table td{padding:11px 12px;background:#ffffff;border-top:1px solid #e6eeed;vertical-align:top}
+.rt-table tr td:first-child{border-left:1px solid #e6eeed}
+.rt-table tr td:last-child{border-right:1px solid #e6eeed}
+.rt-table tbody tr:last-child td{border-bottom:1px solid #e6eeed}
+.rt-table .grp td{background:#f6faf9;font:600 13px Lexend;color:#2b3433;padding:9px 12px}
+.rt-table code{font:600 13px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+.rt-table small{display:block;color:#6b7675;font-size:12.5px;margin-top:2px;line-height:1.4}
+.rt-pill{display:inline-flex;align-items:center;gap:6px;padding:4px 10px;border-radius:999px;font-size:12.5px;font-weight:700;white-space:nowrap}
+.rt-pill--ok{background:#dff3f0;color:#0b5f58}
+.rt-pill--bad{background:#fbe1da;color:#9a2f1c}
+.rt-pill--mid{background:#fff0d2;color:#7a4b00}
+.rt-tbl-wrap{overflow-x:auto;margin:0 -2px;padding:0 2px}
+.rt-empty{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;text-align:center;min-height:320px;border:1.5px dashed #cfe0dd;border-radius:20px;padding:24px;color:#6b7675;font-size:15px;background:#f9fcfb}
+.rt-empty .ms{font-size:38px;color:#1aa89d}
+/* sadržaj */
+.rt-prose{display:flex;flex-direction:column;gap:18px;font-size:17px;line-height:1.75;color:#2b3433}
+.rt-prose h2{font-family:Lexend;font-weight:700;font-size:clamp(26px,2.8vw,34px);line-height:1.15;letter-spacing:-.025em;color:#0c0f0f;margin-top:26px;text-wrap:balance}
+.rt-prose h3{font-family:Lexend;font-weight:600;font-size:20px;color:#0c0f0f;margin-top:8px}
+.rt-prose ul,.rt-prose ol{margin:0;padding-left:22px;display:flex;flex-direction:column;gap:8px}
+.rt-prose code{font:600 .88em ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;background:#eef4f3;padding:2px 6px;border-radius:6px}
+.rt-prose pre{margin:0;background:#0c0f0f;color:#e6f2f0;border-radius:16px;padding:18px 20px;overflow:auto;font:500 14px/1.7 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+.rt-types{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));gap:16px;margin-top:6px}
+.rt-type{padding:24px;background:#f6faf9;border:1px solid #e6eeed;border-radius:20px;display:flex;flex-direction:column;gap:10px;font-size:15.5px;line-height:1.6}
+.rt-type .ic{width:48px;height:48px;border-radius:14px;background:linear-gradient(150deg,#1b2625,#0c0f0f);display:grid;place-items:center;color:#2cc4b6;font-size:24px}
+.rt-type h3{margin:0;font-size:18px}
+.rt-type p{color:#4a5554}
+.rt-type code{font-size:.85em}
+.rt-faq{display:flex;flex-direction:column;gap:12px}
+.rt-faq details{background:#ffffff;border:1px solid #e3ecea;border-radius:16px;padding:0 22px;transition:border-color .2s}
+.rt-faq details[open]{border-color:#9fd9d2}
+.rt-faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:20px 0;font:600 17px Lexend;color:#0c0f0f}
+.rt-faq summary::-webkit-details-marker{display:none}
+.rt-faq summary::after{content:'expand_more';font-family:'Material Symbols Rounded';font-size:24px;color:#0d7f76;transition:transform .2s;flex:none}
+.rt-faq details[open] summary::after{transform:rotate(180deg)}
+.rt-faq details p{padding:0 0 20px;font-size:16px;line-height:1.7;color:#4a5554}
+.rt-guides{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:18px}
+.rt-guide{position:relative;display:flex;flex-direction:column;gap:12px;padding:28px;border-radius:24px;border:1px solid #e3ecea;background:#ffffff;color:#0c0f0f;transition:transform .25s,border-color .25s,box-shadow .25s}
+.rt-guide:hover{transform:translateY(-4px);border-color:#9fd9d2;box-shadow:0 28px 50px -32px rgba(13,127,118,.5);color:#0c0f0f}
+.rt-guide--dark{background:linear-gradient(160deg,#16201f,#0c0f0f);border-color:#0c0f0f;color:#ffffff}
+.rt-guide--dark:hover{color:#ffffff;border-color:#2cc4b6}
+.rt-guide .tag{align-self:flex-start;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:5px 10px;border-radius:999px;background:#dff3f0;color:#0b5f58}
+.rt-guide--dark .tag{background:rgba(44,196,182,.16);color:#2cc4b6}
+.rt-guide h3{font:600 21px/1.25 Lexend}
+.rt-guide p{font-size:15.5px;line-height:1.6;color:#4a5554}
+.rt-guide--dark p{color:#b8c8c5}
+.rt-guide .go{margin-top:auto;padding-top:8px;display:flex;align-items:center;justify-content:space-between;gap:10px;font-weight:700;font-size:15px;color:#0d7f76}
+.rt-guide--dark .go{color:#2cc4b6}
+.rt-guide .price{font:700 20px Lexend;color:inherit}
+@media (max-width:600px){.rt-panel{padding:14px}.rt-step{padding:16px}.rt-tabs{margin:14px 14px 0;max-width:calc(100% - 28px)}.rt-tab{padding:10px 12px;font-size:14px}.rt-sum b{font-size:22px}}
+.rt-sr{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
+</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebApplication",
+   "@id": "https://webanswerstudio.com/robots-txt-generator#app",
+   "name": "Robots.txt generator sa AI botovima",
+   "url": "https://webanswerstudio.com/robots-txt-generator",
+   "inLanguage": "sr-Latn",
+   "applicationCategory": "DeveloperApplication",
+   "operatingSystem": "Any",
+   "browserRequirements": "Requires JavaScript",
+   "description": "Alat za izradu i proveru robots.txt fajla, sa podešavanjima za AI botove (ChatGPT, Claude, Gemini, Perplexity).",
+   "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "EUR"
+   },
+   "provider": {
+    "@id": "https://webanswerstudio.com/#organization"
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Početna",
+     "item": "https://webanswerstudio.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Robots.txt generator",
+     "item": "https://webanswerstudio.com/robots-txt-generator"
+    }
+   ]
+  },
+  {
+   "@type": "FAQPage",
+   "@id": "https://webanswerstudio.com/robots-txt-generator#faq",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Da li robots.txt utiče na pojavljivanje u ChatGPT-u?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Da. ChatGPT pretraga koristi bota OAI-SearchBot. Ako ga robots.txt blokira, vaš sajt neće biti prikazan kao izvor u ChatGPT odgovorima. Blokiranje bota GPTBot utiče samo na trening modela, ne i na pretragu."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Da li da blokiram GPTBot i ClaudeBot?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Zavisi od toga šta prodajete. Ako je sadržaj vaš proizvod (plaćeni tekstovi, kursevi), blokiranje trening botova ima smisla. Za firme koje prodaju usluge ili proizvode bolje je da ih pustite, jer tako AI modeli više znaju o vašem brendu."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Da li blokiranje Google-Extended uklanja sajt iz AI Overviews?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Ne. AI Overviews je deo Google pretrage i koristi Googlebot. Google-Extended kontroliše samo trening Gemini modela i odgovore u Gemini aplikaciji."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Gde se nalazi robots.txt fajl?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Uvek u glavnom folderu sajta, na adresi vasajt.rs/robots.txt. Svaki poddomen, na primer shop.vasajt.rs, ima svoj poseban robots.txt."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Za koliko vremena botovi primete izmenu?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Google obično osvežava robots.txt u roku od 24 sata. OpenAI i Perplexity navode da im treba do 24 sata da izmena počne da važi za njihovu pretragu."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Da li robots.txt štiti privatne stranice?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Ne. Fajl je javan i svako može da ga pročita. Ugledni botovi ga poštuju, ali to je molba, a ne zaštita. Privatne stranice zaštitite lozinkom, a stranice koje ne želite u Google-u označite sa noindex."
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+</head>
+<body>
+<div style="min-height:100vh;background:#ffffff">
+
+<div style="position:sticky;top:0;z-index:20;padding:16px 24px 0">
+  <nav style="max-width:1180px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:clamp(12px,1.6vw,24px);flex-wrap:wrap;padding:14px 18px 14px 24px;background:rgba(255,255,255,0.92);backdrop-filter:blur(12px);border:1px solid #e3ecea;border-radius:16px;box-shadow:0 10px 30px -18px rgba(12,15,15,0.25)" aria-label="Glavna navigacija">
+    <a href="#" style="display:flex;align-items:center;gap:10px;color:#0c0f0f">
+      <img src="assets/img/logo-web-answer-studio.webp" alt="Logo Web Answer Studio" style="display:block;height:46px;width:auto" width="440" height="120" decoding="async" fetchpriority="high">
+    </a>
+    <div style="display:flex;gap:clamp(14px,1.8vw,28px);flex-wrap:wrap;align-items:center;font-size:15px;font-weight:500" class="wa-links">
+      <a href="./" style="color:#2b3433">Početna</a>
+      <div style="position:relative;display:flex;align-items:center" data-b="0 1">
+        <a href="#" style="display:flex;align-items:center;gap:2px;color:#2b3433">Optimizacija sajta<span style="font-family:'Material Symbols Rounded';font-size:20px;color:inherit">expand_more</span></a>
+        
+          <div style="position:absolute;top:100%;left:-24px;padding-top:18px;z-index:40" data-if="2" data-hide="">
+            <div style="width:320px;padding:10px;background:#ffffff;border:1px solid #e3ecea;border-radius:18px;box-shadow:0 30px 60px -28px rgba(12,15,15,0.35);display:flex;flex-direction:column;gap:2px">
+              <a href="seo-konsalting" style="display:flex;align-items:center;gap:14px;padding:10px 12px;border-radius:12px;color:#0c0f0f" class="h0"><span style="flex:none;width:40px;height:40px;border-radius:12px;background:linear-gradient(150deg,#1b2625,#0c0f0f);display:grid;place-items:center;font-family:'Material Symbols Rounded';font-size:20px;color:#2cc4b6">support_agent</span><span style="display:flex;flex-direction:column;gap:1px"><span style="font-weight:600;font-size:15px">Konsalting SEO</span><span style="font-size:13px;font-weight:400;color:#6b7675">Savet i optimizacija sajta</span></span></a>
+              <a href="ecommerce-seo" style="display:flex;align-items:center;gap:14px;padding:10px 12px;border-radius:12px;color:#0c0f0f" class="h0"><span style="flex:none;width:40px;height:40px;border-radius:12px;background:linear-gradient(150deg,#1b2625,#0c0f0f);display:grid;place-items:center;font-family:'Material Symbols Rounded';font-size:20px;color:#2cc4b6">shopping_cart</span><span style="display:flex;flex-direction:column;gap:1px"><span style="font-weight:600;font-size:15px">E-commerce SEO</span><span style="font-size:13px;font-weight:400;color:#6b7675">SEO za online prodavnice</span></span></a>
+            </div>
+          </div>
+        
+      </div>
+      <a href="geo-optimizacija" style="color:#2b3433">GEO optimizacija</a>
+      <a href="izrada-sajtova" style="color:#2b3433">Izrada sajtova</a>
+      <div class="wa-dd" style="position:relative;display:flex;align-items:center">
+        <a href="#" style="display:flex;align-items:center;gap:2px;color:#0d7f76">SEO alati<span style="font-family:'Material Symbols Rounded';font-size:20px;color:inherit">expand_more</span></a>
+          <div class="wa-ddm" style="position:absolute;top:100%;left:-24px;padding-top:18px;z-index:40">
+            <div style="width:320px;padding:10px;background:#ffffff;border:1px solid #e3ecea;border-radius:18px;box-shadow:0 30px 60px -28px rgba(12,15,15,0.35);display:flex;flex-direction:column;gap:2px">
+              <a href="robots-txt-generator" style="display:flex;align-items:center;gap:14px;padding:10px 12px;border-radius:12px;color:#0c0f0f" class="h0" aria-current="page"><span style="flex:none;width:40px;height:40px;border-radius:12px;background:linear-gradient(150deg,#1b2625,#0c0f0f);display:grid;place-items:center;font-family:'Material Symbols Rounded';font-size:20px;color:#2cc4b6">smart_toy</span><span style="display:flex;flex-direction:column;gap:1px"><span style="font-weight:600;font-size:15px">Robots.txt generator</span><span style="font-size:13px;font-weight:400;color:#6b7675">Pristup za Google i AI botove</span></span></a>
+            </div>
+          </div>
+      </div>
+      <a href="prirucnik" style="color:#2b3433">Priručnik</a>
+      <a href="o-nama" style="color:#2b3433">O nama</a>
+      <a href="kontakt" style="color:#2b3433">Kontakt</a>
+    </div>
+  <button class="wa-burger" type="button" aria-label="Otvori meni" aria-expanded="false" aria-controls="wa-mnav"><span></span><span></span><span></span></button></nav>
+<div id="wa-mnav" class="wa-mnav"><a href="./">Početna</a><button type="button" class="wa-mexp" aria-expanded="false" aria-controls="wa-msub">Optimizacija sajta<i></i></button><div class="wa-msub" id="wa-msub"><a href="seo-konsalting">Konsalting SEO</a><a href="ecommerce-seo">E-commerce SEO</a></div><a href="geo-optimizacija">GEO optimizacija</a><a href="izrada-sajtova">Izrada sajtova</a><button type="button" class="wa-mexp" aria-expanded="false" aria-controls="wa-msub2" data-cur="">SEO alati<i></i></button><div class="wa-msub" id="wa-msub2"><a href="robots-txt-generator" aria-current="page">Robots.txt generator</a></div><a href="prirucnik">Priručnik</a><a href="o-nama">O nama</a><a href="kontakt">Kontakt</a></div></div>
+
+<section style="position:relative;overflow:hidden;padding:72px 24px 70px;margin-top:-80px;padding-top:160px;background:#f6faf9">
+  <div style="position:absolute;inset:0;background-image:linear-gradient(#e7efee 1px,transparent 1px),linear-gradient(90deg,#e7efee 1px,transparent 1px);background-size:56px 56px;opacity:0.7;pointer-events:none"></div>
+  <div style="position:absolute;right:-160px;top:20px;width:640px;height:640px;border-radius:50%;background:radial-gradient(circle,rgba(26,168,157,0.16),rgba(26,168,157,0) 65%);pointer-events:none"></div>
+  <div style="position:relative;max-width:1180px;margin:0 auto;display:flex;flex-direction:column;gap:24px">
+    <nav aria-label="Putanja" style="font-size:14px;color:#6b7675"><a href="./">Početna</a> <span aria-hidden="true">/</span> SEO alati <span aria-hidden="true">/</span> <span style="color:#0c0f0f">Robots.txt generator</span></nav>
+    <div style="align-self:flex-start;display:flex;align-items:center;gap:10px;padding:8px 16px;border:1px solid #cfe5e2;background:#ffffff;border-radius:999px;font-size:14px;font-weight:500;color:#0d7f76">
+      <span style="width:7px;height:7px;border-radius:50%;background:#1aa89d"></span>Isprobaj alat<span style="width:1px;height:14px;background:#9fd9d2"></span>SEO<span style="width:1px;height:14px;background:#9fd9d2"></span>GEO
+    </div>
+    <h1 style="font-family:Lexend;font-weight:700;font-size:clamp(38px,5.2vw,66px);line-height:1.04;letter-spacing:-0.035em;text-wrap:balance;max-width:900px">Robots.txt generator <span style="color:#0d7f76">sa AI botovima</span></h1>
+    <p style="font-size:19px;line-height:1.6;color:#4a5554;max-width:720px;text-wrap:pretty">Odlučite ko sme da čita vaš sajt: Google, ChatGPT, Claude, Gemini ili Perplexity. Napravite novi robots.txt za par minuta ili nalepite postojeći i proverite da li slučajno blokirate AI pretragu.</p>
+    <div style="display:flex;gap:10px;flex-wrap:wrap">
+      <span style="display:flex;align-items:center;gap:8px;padding:8px 14px;background:#ffffff;border:1px solid #e1eae8;border-radius:999px;font-size:14px;color:#2b3433"><span class="ms" style="font-size:18px;color:#1aa89d;font-variation-settings:'FILL' 1">check_circle</span>Proveri svoj robots.txt</span>
+      <span style="display:flex;align-items:center;gap:8px;padding:8px 14px;background:#ffffff;border:1px solid #e1eae8;border-radius:999px;font-size:14px;color:#2b3433"><span class="ms" style="font-size:18px;color:#1aa89d;font-variation-settings:'FILL' 1">check_circle</span>16 AI botova</span>
+      <span style="display:flex;align-items:center;gap:8px;padding:8px 14px;background:#ffffff;border:1px solid #e1eae8;border-radius:999px;font-size:14px;color:#2b3433"><span class="ms" style="font-size:18px;color:#1aa89d;font-variation-settings:'FILL' 1">check_circle</span>Sve radi u vašem browseru</span>
+    </div>
+  </div>
+</section>
+
+<section style="padding:0 24px 90px;background:linear-gradient(#f6faf9 0,#f6faf9 120px,#ffffff 120px)">
+  <div class="rt-wrap">
+    <div class="rt-card" id="alat">
+      <div class="rt-tabs" role="tablist" aria-label="Izaberite alat">
+        <button class="rt-tab" role="tab" id="tab-gen" aria-controls="panel-gen" aria-selected="true"><span class="ms">tune</span>Napravi robots.txt</button>
+        <button class="rt-tab" role="tab" id="tab-chk" aria-controls="panel-chk" aria-selected="false" tabindex="-1"><span class="ms">fact_check</span>Proveri postojeći</button>
+      </div>
+
+      <!-- GENERATOR -->
+      <div class="rt-panel" role="tabpanel" id="panel-gen" aria-labelledby="tab-gen">
+        <div class="rt-grid">
+          <div>
+            <div class="rt-step">
+              <div class="rt-step-h"><span class="rt-num">1</span><div><h3>Osnovna pravila</h3><p>Važe za Google, Bing i sve ostale botove.</p></div></div>
+              <div class="rt-row">
+                <div class="rt-field">
+                  <label class="rt-label" for="g-domain">Adresa sajta</label>
+                  <input class="rt-input" id="g-domain" type="text" inputmode="url" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="vasajt.rs">
+                </div>
+                <div class="rt-field">
+                  <label class="rt-label" for="g-platform">Platforma</label>
+                  <select class="rt-select" id="g-platform">
+                    <option value="wordpress">WordPress</option>
+                    <option value="woocommerce">WooCommerce prodavnica</option>
+                    <option value="static">Statički / custom sajt</option>
+                    <option value="custom">Prilagođeno</option>
+                  </select>
+                </div>
+              </div>
+              <div class="rt-row">
+                <div class="rt-field">
+                  <label class="rt-label" for="g-dis">Zabrani putanje</label>
+                  <textarea class="rt-ta" id="g-dis" spellcheck="false" placeholder="/admin/"></textarea>
+                  <span class="rt-hint">Jedna putanja po redu. Mogu <code>*</code> i <code>$</code>.</span>
+                </div>
+                <div class="rt-field">
+                  <label class="rt-label" for="g-allow">Dozvoli izuzetke</label>
+                  <textarea class="rt-ta" id="g-allow" spellcheck="false" placeholder="/admin/javno/"></textarea>
+                  <span class="rt-hint" id="g-plat-hint">Izuzeci unutar zabranjenih foldera.</span>
+                </div>
+              </div>
+              <div class="rt-field">
+                <label class="rt-label" for="g-sitemap">Sitemap</label>
+                <textarea class="rt-ta" id="g-sitemap" spellcheck="false" style="min-height:60px" placeholder="https://vasajt.rs/sitemap.xml"></textarea>
+                <span class="rt-hint">Puna adresa, jedna po redu. Za WordPress sa Yoast ili Rank Math dodatkom to je obično <code>/sitemap_index.xml</code>.</span>
+              </div>
+            </div>
+
+            <div class="rt-step">
+              <div class="rt-step-h"><span class="rt-num">2</span><div><h3>AI botovi</h3><p>Izaberite pristup jednim klikom ili podesite svaki bot posebno.</p></div></div>
+              <div class="rt-presets" id="g-presets">
+                <button type="button" class="rt-preset" data-preset="all" aria-pressed="true"><strong>Maksimalna vidljivost</strong><span>Svi AI botovi mogu da čitaju sajt.</span><em>Preporučeno za firme</em></button>
+                <button type="button" class="rt-preset" data-preset="notrain" aria-pressed="false"><strong>Vidljivost bez treninga</strong><span>AI vas citira, ali ne uči na vašem sadržaju.</span></button>
+                <button type="button" class="rt-preset" data-preset="none" aria-pressed="false"><strong>Blokiraj sve AI</strong><span>Nestajete iz ChatGPT, Claude i Perplexity pretrage.</span></button>
+              </div>
+              <div id="g-bots"></div>
+              <label class="rt-check"><input type="checkbox" id="g-explicit" checked><span>Navedi dozvoljene AI botove i poimenično. Fajl je pregledniji i jasno pokazuje da su dobrodošli.</span></label>
+            </div>
+          </div>
+
+          <div class="rt-out">
+            <div class="rt-code-card">
+              <div class="rt-code-top">
+                <b><span class="ms" style="color:#2cc4b6">description</span>robots.txt <small id="g-lines"></small></b>
+                <div class="rt-btns">
+                  <button type="button" class="rt-btn rt-btn--light" id="g-copy"><span class="ms">content_copy</span>Kopiraj</button>
+                  <button type="button" class="rt-btn rt-btn--teal" id="g-dl"><span class="ms">download</span>Preuzmi</button>
+                </div>
+              </div>
+              <pre class="rt-code" id="g-code" aria-live="polite"></pre>
+            </div>
+            <div class="rt-notes" id="g-notes" aria-live="polite"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROVERA -->
+      <div class="rt-panel" role="tabpanel" id="panel-chk" aria-labelledby="tab-chk" hidden>
+        <div class="rt-chk-top">
+          <div class="rt-step" style="margin:0">
+            <div class="rt-step-h"><span class="rt-num">1</span><div><h3>Nalepite svoj robots.txt</h3><p>Otvorite <code>vasajt.rs/robots.txt</code>, kopirajte sve i nalepite ovde.</p></div></div>
+            <label class="rt-sr" for="c-text">Sadržaj robots.txt fajla</label>
+            <textarea class="rt-ta rt-chk-ta" id="c-text" spellcheck="false" placeholder="User-agent: *&#10;Disallow: /wp-admin/&#10;&#10;Sitemap: https://vasajt.rs/sitemap_index.xml"></textarea>
+            <div class="rt-chk-actions">
+              <button type="button" class="rt-btn rt-btn--dark" id="c-run"><span class="ms">fact_check</span>Proveri robots.txt</button>
+              <button type="button" class="rt-btn rt-btn--ghost" id="c-sample">Učitaj primer</button>
+            </div>
+            <span class="rt-hint">Provera se radi u vašem browseru. Ništa se ne šalje na server.</span>
+          </div>
+          <div id="c-out">
+            <div class="rt-empty"><span class="ms">smart_toy</span><b style="color:#0c0f0f;font-family:Lexend;font-size:18px">Koje botove vaš sajt pušta?</b>Ovde ćete videti status za Google, Bing i 16 AI botova, uz greške u fajlu.</div>
+          </div>
+        </div>
+        <div id="c-detail" style="margin-top:22px"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="padding:90px 24px;background:#f6faf9;border-top:1px solid #eef3f2">
+  <div class="rt-wrap" style="display:flex;flex-direction:column;gap:36px">
+    <div style="display:flex;flex-direction:column;gap:14px;max-width:780px">
+      <div class="rt-eyebrow">SLEDEĆI KORAK</div>
+      <h2 class="rt-h2">Pristup je tek početak. AI mora i da vas razume.</h2>
+      <p class="rt-lead">Robots.txt samo otvara vrata. Da bi vas ChatGPT, Gemini i Google AI Overviews zaista preporučili, sajt mora jasno da kaže ko ste, šta radite i gde ste.</p>
+    </div>
+    <div class="rt-guides">
+      <a class="rt-guide rt-guide--dark" href="https://webanswer.gumroad.com/l/vodic-za-vidljivost-brenda-u-ai-odgovorima" target="_blank" rel="noopener">
+        <span class="tag">Vodič · PDF</span>
+        <h3>Vidljivost brenda u AI odgovorima</h3>
+        <p>Kako da vas Google i AI asistenti preporučuju: ChatGPT, Gemini, AI Overviews i schema markup, korak po korak.</p>
+        <span class="go"><span class="price">29 €</span><span style="display:flex;align-items:center;gap:6px">Pogledaj vodič <span class="ms" style="font-size:20px">arrow_forward</span></span></span>
+      </a>
+      <a class="rt-guide" href="https://webanswer.gumroad.com/l/poklon-vodic" target="_blank" rel="noopener">
+        <span class="tag">Poklon ebook</span>
+        <h3>Sajt koji Google i AI vide</h3>
+        <p>Poklon vodič u 9 koraka za vlasnike malih firmi: Search Console, Google profil firme i prvi koraci ka AI pretrazi.</p>
+        <span class="go"><span class="price">0 €</span><span style="display:flex;align-items:center;gap:6px">Preuzmi poklon ebook <span class="ms" style="font-size:20px">arrow_forward</span></span></span>
+      </a>
+      <a class="rt-guide" href="./#seo-provera">
+        <span class="tag">Provera sajta</span>
+        <h3>Koliko je vaš sajt vidljiv?</h3>
+        <p>Unesite adresu sajta i za pola minuta dobijte SEO skor, brzinu na telefonu i proveru vidljivosti za ChatGPT, Gemini i Google AI Overviews.</p>
+        <span class="go"><span></span><span style="display:flex;align-items:center;gap:6px">Proveri svoj sajt bez obaveza <span class="ms" style="font-size:20px">arrow_forward</span></span></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section style="padding:90px 24px;background:#ffffff">
+  <article class="rt-prose" style="max-width:820px;margin:0 auto">
+    <div class="rt-eyebrow">VODIČ</div>
+    <h2 style="margin-top:0">Šta je robots.txt i zašto je danas važan i za AI</h2>
+    <p>Robots.txt je običan tekstualni fajl na adresi <code>vasajt.rs/robots.txt</code>. Botovi ga čitaju pre nego što pređu na ostatak sajta, jer im kaže gde smeju, a gde ne smeju da idu. Dugo su ga zanimali samo Google i Bing. Danas ga čitaju i botovi koje šalju ChatGPT, Claude, Gemini, Perplexity i drugi AI alati.</p>
+    <p>Tu nastaje problem. Mnogi sajtovi su AI botove blokirali usput: preko dodatka za bezbednost, šablona sa interneta ili podešavanja na hostingu. Vlasnik o tome ništa ne zna, a kad kupac pita ChatGPT „koji je dobar zubar na Vračaru", AI ne može da pročita njegov sajt i preporuči konkurenciju.</p>
+
+    <h2>Tri vrste AI botova</h2>
+    <p>AI botovi ne rade svi isto. Pre nego što bilo koga blokirate, bitno je da znate ko šta radi.</p>
+    <div class="rt-types">
+      <div class="rt-type"><span class="ms ic">travel_explore</span><h3>AI pretraga</h3><p>Prave indeks iz kog AI bira izvore za odgovore i linkove. Primeri: <code>OAI-SearchBot</code>, <code>Claude-SearchBot</code>, <code>PerplexityBot</code>.</p><p><b style="color:#0c0f0f">Ako ih blokirate:</b> ne pojavljujete se kao izvor u AI odgovorima.</p></div>
+      <div class="rt-type"><span class="ms ic">person_search</span><h3>Asistenti na zahtev</h3><p>Otvaraju stranicu kada korisnik to traži u razgovoru, na primer kad nalepi vaš link. Primeri: <code>ChatGPT-User</code>, <code>Claude-User</code>.</p><p><b style="color:#0c0f0f">Ako ih blokirate:</b> AI ne može da pročita vaš sajt ni kad ga korisnik direktno pita.</p></div>
+      <div class="rt-type"><span class="ms ic">model_training</span><h3>Trening modela</h3><p>Skupljaju sadržaj za učenje budućih modela. Primeri: <code>GPTBot</code>, <code>ClaudeBot</code>, <code>Google-Extended</code>, <code>CCBot</code>.</p><p><b style="color:#0c0f0f">Ako ih blokirate:</b> novi modeli manje znaju o vama, ali vas pretraga i dalje može citirati.</p></div>
+    </div>
+
+    <h2>Da li treba da blokirate AI botove?</h2>
+    <p>Za većinu firmi odgovor je ne. Ako prodajete usluge ili proizvode, želite da AI zna za vas i da vas preporuči. Svaki blokiran bot je jedan kanal manje kroz koji kupci mogu da vas nađu.</p>
+    <ul>
+      <li><b>Lokalne firme, ordinacije, saloni, restorani, agencije:</b> izaberite „Maksimalna vidljivost".</li>
+      <li><b>Online prodavnice:</b> takođe „Maksimalna vidljivost", uz zabranu korpe, naplate i naloga.</li>
+      <li><b>Sajtovi koji prodaju sam sadržaj</b> (plaćeni tekstovi, kursevi, baze podataka): „Vidljivost bez treninga". AI vas citira i šalje posete, ali ne uči na vašem sadržaju.</li>
+      <li><b>Blokiranje svih AI botova</b> ima smisla samo ako zaista ne želite nikakvo prisustvo u AI odgovorima.</li>
+    </ul>
+
+    <h2>Google AI Overviews i Google-Extended</h2>
+    <p>Česta zabuna: <code>Google-Extended</code> ne određuje da li se pojavljujete u Google AI Overviews. Taj prikaz je deo obične Google pretrage i koristi isti <code>Googlebot</code> kao i rezultati pretrage. Google-Extended kontroliše da li Google sme da koristi vaš sadržaj za trening Gemini modela i za odgovore u Gemini aplikaciji.</p>
+    <p>Zato nikada ne blokirajte <code>Googlebot</code> ako želite da budete u AI Overviews. Isto važi za <code>Bingbot</code>: na Bing pretrazi se oslanja Microsoft Copilot.</p>
+
+    <h2>Kako da postavite robots.txt</h2>
+    <h3>WordPress</h3>
+    <p>Ako koristite Yoast SEO, idite na <b>Yoast SEO → Alati → Uređivač datoteka</b>. Kod Rank Math dodatka je to <b>Rank Math → Opšta podešavanja → Uredi robots.txt</b>. Nalepite sadržaj iz generatora i sačuvajte. Ako na serveru već postoji fizički <code>robots.txt</code> fajl, on ima prednost i njega menjate preko hostinga.</p>
+    <h3>Ostali sajtovi</h3>
+    <p>Preuzmite fajl dugmetom „Preuzmi" i postavite ga u glavni folder sajta (najčešće <code>public_html</code>), preko File Managera na hostingu ili FTP-a. Fajl mora da se zove tačno <code>robots.txt</code> i da bude dostupan na <code>vasajt.rs/robots.txt</code>.</p>
+    <h3>Shopify</h3>
+    <p>Shopify sam pravi robots.txt. Izmene se rade kroz šablon <code>robots.txt.liquid</code> u temi, pa iz generatora prenesite samo deo sa AI botovima.</p>
+    <h3>Cloudflare</h3>
+    <p>Ako sajt ide preko Cloudflare-a, proverite podešavanja za AI botove u Cloudflare panelu. Cloudflare može da blokira AI botove pre nego što uopšte stignu do vašeg robots.txt fajla, pa tada ni ispravan fajl ne pomaže.</p>
+
+    <h2>Najčešće greške</h2>
+    <ul>
+      <li><b><code>Disallow: /</code> ostao posle izrade sajta.</b> Na test verziji se ceo sajt blokira, a ta linija često „preživi" i objavljivanje. Rezultat: Google i AI ne vide ništa.</li>
+      <li><b>Blokirani CSS i JavaScript.</b> Pravila poput <code>Disallow: /wp-content/</code> sprečavaju Google da vidi kako sajt izgleda.</li>
+      <li><b>Robots.txt umesto noindex.</b> Robots.txt ne uklanja stranice iz Google-a. Blokirana stranica i dalje može da se pojavi u rezultatima, samo bez opisa. Za uklanjanje se koristi <code>noindex</code>.</li>
+      <li><b>Zastareli nazivi botova.</b> <code>anthropic-ai</code> i <code>Claude-Web</code> više ne rade. Anthropic danas koristi <code>ClaudeBot</code>, <code>Claude-SearchBot</code> i <code>Claude-User</code>.</li>
+      <li><b>Robots.txt kao zaštita.</b> Fajl je javan i predstavlja molbu, ne bravu. Privatne stranice štitite lozinkom.</li>
+    </ul>
+
+    <h2 id="faq">Česta pitanja</h2>
+    <div class="rt-faq">
+      <details><summary>Da li robots.txt utiče na pojavljivanje u ChatGPT-u?</summary><p>Da. ChatGPT pretraga koristi bota OAI-SearchBot. Ako ga robots.txt blokira, vaš sajt neće biti prikazan kao izvor u ChatGPT odgovorima. Blokiranje bota GPTBot utiče samo na trening modela, ne i na pretragu.</p></details>
+      <details><summary>Da li da blokiram GPTBot i ClaudeBot?</summary><p>Zavisi od toga šta prodajete. Ako je sadržaj vaš proizvod (plaćeni tekstovi, kursevi), blokiranje trening botova ima smisla. Za firme koje prodaju usluge ili proizvode bolje je da ih pustite, jer tako AI modeli više znaju o vašem brendu.</p></details>
+      <details><summary>Da li blokiranje Google-Extended uklanja sajt iz AI Overviews?</summary><p>Ne. AI Overviews je deo Google pretrage i koristi Googlebot. Google-Extended kontroliše samo trening Gemini modela i odgovore u Gemini aplikaciji.</p></details>
+      <details><summary>Gde se nalazi robots.txt fajl?</summary><p>Uvek u glavnom folderu sajta, na adresi vasajt.rs/robots.txt. Svaki poddomen, na primer shop.vasajt.rs, ima svoj poseban robots.txt.</p></details>
+      <details><summary>Za koliko vremena botovi primete izmenu?</summary><p>Google obično osvežava robots.txt u roku od 24 sata. OpenAI i Perplexity navode da im treba do 24 sata da izmena počne da važi za njihovu pretragu.</p></details>
+      <details><summary>Da li robots.txt štiti privatne stranice?</summary><p>Ne. Fajl je javan i svako može da ga pročita. Ugledni botovi ga poštuju, ali to je molba, a ne zaštita. Privatne stranice zaštitite lozinkom, a stranice koje ne želite u Google-u označite sa noindex.</p></details>
+    </div>
+  </article>
+</section>
+
+<section style="padding:90px 24px;background:#f6faf9;border-top:1px solid #eef3f2">
+  <div style="max-width:1180px;margin:0 auto;display:flex;flex-direction:column;align-items:center;gap:24px;text-align:center">
+    <div class="rt-eyebrow">GEO OPTIMIZACIJA</div>
+    <h2 class="rt-h2" style="max-width:760px">Želite da vas AI preporučuje umesto konkurencije?</h2>
+    <p class="rt-lead" style="max-width:640px">Proverićemo kako vas vide Google, ChatGPT i Gemini i dati vam jasan plan šta prvo treba popraviti.</p>
+    <div style="display:flex;gap:12px;flex-wrap:wrap;justify-content:center">
+      <a href="kontakt" style="display:flex;align-items:center;gap:10px;background:#0d7f76;color:#ffffff;padding:18px 28px;border-radius:12px;font-weight:600;font-size:16px;box-shadow:0 14px 30px -12px rgba(13,127,118,0.55)" class="h2">Zatraži analizu <span class="ms" style="font-size:20px">arrow_forward</span></a>
+      <a href="geo-optimizacija" style="display:flex;align-items:center;gap:10px;background:#ffffff;color:#0c0f0f;padding:18px 28px;border-radius:12px;font-weight:600;font-size:16px;border:1px solid #d9e5e3" class="hb">GEO optimizacija</a>
+    </div>
+  </div>
+</section>
+
+<footer style="padding:80px 24px 32px;background:#ffffff;border-top:1px solid #eef3f2">
+  <div style="max-width:1180px;margin:0 auto;display:flex;flex-direction:column;gap:56px">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,170px),1fr));gap:40px">
+      <div style="display:flex;flex-direction:column;gap:20px">
+        <div style="display:flex;align-items:center;gap:10px">
+          <img src="assets/img/logo-web-answer-studio.webp" alt="Logo Web Answer Studio" style="display:block;height:46px;width:auto" width="440" height="120" decoding="async" loading="lazy">
+        </div>
+        <p style="font-size:15px;line-height:1.65;color:#4a5554">Dizajn, redizajn i optimizacija sajtova. Pravimo brze, moderne sajtove koji se vide na Google-u i donose upite.</p>
+        <a href="kontakt" style="align-self:flex-start;background:#0d7f76;color:#ffffff;padding:12px 20px;border-radius:10px;font-weight:600;font-size:15px" class="h2">Zatraži ponudu</a>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:14px;font-size:15px">
+        <div style="font-family:Lexend;font-weight:600;font-size:17px;margin-bottom:6px">Usluge</div>
+        <a href="seo-konsalting" style="color:#4a5554">Konsalting SEO</a><a href="ecommerce-seo" style="color:#4a5554">E-commerce SEO</a><a href="geo-optimizacija" style="color:#4a5554">GEO optimizacija</a><a href="izrada-sajtova" style="color:#4a5554">Izrada sajtova</a>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:14px;font-size:15px">
+        <div style="font-family:Lexend;font-weight:600;font-size:17px;margin-bottom:6px">SEO alati</div>
+        <a href="robots-txt-generator" style="color:#4a5554">Robots.txt generator</a>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:14px;font-size:15px">
+        <div style="font-family:Lexend;font-weight:600;font-size:17px;margin-bottom:6px">Navigacija</div>
+        <a href="./" style="color:#4a5554">Početna</a><a href="prirucnik" style="color:#4a5554">Priručnik</a><a href="kontakt" style="color:#4a5554">Kontakt</a>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:14px;font-size:15px">
+        <div style="font-family:Lexend;font-weight:600;font-size:17px;margin-bottom:6px">Kontakt</div>
+        <a href="mailto:webanswerstudio@gmail.com" style="display:flex;align-items:center;gap:10px;color:#4a5554"><span style="font-family:'Material Symbols Rounded';font-size:20px;color:#0d7f76">mail</span>webanswerstudio@gmail.com</a>
+        <a href="tel:+381642906197" style="display:flex;align-items:center;gap:10px;color:#4a5554"><span style="font-family:'Material Symbols Rounded';font-size:20px;color:#0d7f76">call</span>+381 64 2906197</a>
+        <a href="o-nama" style="display:flex;align-items:center;gap:10px;color:#4a5554"><span style="font-family:'Material Symbols Rounded';font-size:20px;color:#0d7f76">groups</span>O nama</a>
+        <a href="https://www.instagram.com/webanswerstudio/" rel="noopener" target="_blank" style="display:flex;align-items:center;gap:10px;color:#4a5554"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0d7f76" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="0.6" fill="#0d7f76"></circle></svg>Instagram</a>
+      </div>
+    </div>
+    <div style="display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-top:24px;border-top:1px solid #eef3f2;font-size:14px;color:#6b7675">
+      <span>© 2026 Web Answer Studio. Sva prava zadržana.</span>
+      <a href="politika-privatnosti" style="color:#6b7675">Politika privatnosti</a>
+    </div>
+  </div>
+</footer>
+
+</div>
+<div class="rt-toast" id="rt-toast" role="status"><span class="ms" style="font-size:18px;color:#2cc4b6">check_circle</span><span></span></div>
+<script type="application/json" id="dc-b">{"b":[{"t":"on","e":"mouseenter","p":"navIn","f":[]},{"t":"on","e":"mouseleave","p":"navOut","f":[]},{"t":"if","p":"navOpen","f":[]}],"p":{"showGrid":true,"ctaStyle":"Tamni"}}</script>
+<script src="assets/js/site.js" defer></script>
+<script>
+(function(){
+'use strict';
+var $=function(id){return document.getElementById(id)};
+
+/* ---------- Podaci o botovima ---------- */
+var CATS={
+  search:{label:'AI pretraga',sub:'Citiranje u AI odgovorima',color:'#1aa89d'},
+  user:{label:'Asistenti na zahtev',sub:'Kada korisnik pošalje vaš link',color:'#5b6cff'},
+  train:{label:'Trening modela',sub:'Učenje budućih AI modela',color:'#e0a100'}
+};
+var BOTS=[
+  {t:'OAI-SearchBot',co:'OpenAI',cat:'search',d:'ChatGPT pretraga i linkovi ka izvorima'},
+  {t:'Claude-SearchBot',co:'Anthropic',cat:'search',d:'Indeks za pretragu u Claude-u'},
+  {t:'PerplexityBot',co:'Perplexity',cat:'search',d:'Indeks za Perplexity odgovore'},
+  {t:'DuckAssistBot',co:'DuckDuckGo',cat:'search',d:'AI odgovori u DuckDuckGo pretrazi'},
+  {t:'ChatGPT-User',co:'OpenAI',cat:'user',d:'Otvara stranicu kad korisnik to traži',soft:true},
+  {t:'Claude-User',co:'Anthropic',cat:'user',d:'Otvara stranicu kad korisnik to traži'},
+  {t:'Perplexity-User',co:'Perplexity',cat:'user',d:'Otvara stranicu kad korisnik to traži',soft:true},
+  {t:'MistralAI-User',co:'Mistral',cat:'user',d:'Le Chat otvara stranicu na zahtev'},
+  {t:'GPTBot',co:'OpenAI',cat:'train',d:'Trening GPT modela'},
+  {t:'ClaudeBot',co:'Anthropic',cat:'train',d:'Trening Claude modela'},
+  {t:'Google-Extended',co:'Google',cat:'train',d:'Trening Gemini modela i Gemini aplikacija (ne utiče na AI Overviews)'},
+  {t:'Applebot-Extended',co:'Apple',cat:'train',d:'Trening Apple Intelligence modela'},
+  {t:'Meta-ExternalAgent',co:'Meta',cat:'train',d:'Trening Llama modela i Meta AI'},
+  {t:'CCBot',co:'Common Crawl',cat:'train',d:'Javna baza koju koriste mnogi AI modeli'},
+  {t:'Amazonbot',co:'Amazon',cat:'train',d:'Alexa i Amazon AI servisi'},
+  {t:'Bytespider',co:'ByteDance',cat:'train',d:'Trening ByteDance (TikTok) modela'}
+];
+var CLASSIC=[
+  {t:'Googlebot',co:'Google',d:'Google pretraga i AI Overviews'},
+  {t:'Bingbot',co:'Microsoft',d:'Bing pretraga i Microsoft Copilot'}
+];
+var DEPRECATED={'anthropic-ai':'ClaudeBot','claude-web':'ClaudeBot / Claude-User'};
+
+var PLATFORMS={
+  wordpress:{dis:['/wp-admin/'],allow:['/wp-admin/admin-ajax.php'],sitemap:'/sitemap_index.xml',hint:'Za WordPress dozvoljavamo admin-ajax.php jer ga koriste teme i dodaci.'},
+  woocommerce:{dis:['/wp-admin/','/cart/','/checkout/','/my-account/','/*?add-to-cart=','/*?orderby='],allow:['/wp-admin/admin-ajax.php'],sitemap:'/sitemap_index.xml',hint:'Ako su vam stranice na srpskom (npr. /korpa/, /placanje/, /moj-nalog/), izmenite putanje.'},
+  static:{dis:[],allow:[],sitemap:'/sitemap.xml',hint:'Dodajte samo foldere koje zaista ne želite da botovi obilaze.'},
+  custom:null
+};
+var PRESETS={
+  all:function(){return true},
+  notrain:function(b){return b.cat!=='train'},
+  none:function(){return false}
+};
+
+/* ---------- Pomoćne ---------- */
+function esc(s){return String(s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]})}
+function lines(v){return v.split(/\r?\n/).map(function(s){return s.trim()}).filter(Boolean)}
+function cleanHost(v){
+  v=(v||'').trim().toLowerCase();
+  if(!v)return '';
+  v=v.replace(/^[a-z]+:\/\//,'').replace(/[\/?#].*$/,'').replace(/:\d+$/,'');
+  return /^[a-z0-9.-]+\.[a-z0-9-]{2,}$/.test(v)?v:'';
+}
+var toastT;
+function toast(msg){var t=$('rt-toast');t.lastElementChild.textContent=msg;t.classList.add('on');clearTimeout(toastT);toastT=setTimeout(function(){t.classList.remove('on')},2200)}
+function copyText(txt){
+  if(navigator.clipboard&&window.isSecureContext){return navigator.clipboard.writeText(txt)}
+  return new Promise(function(res,rej){var ta=document.createElement('textarea');ta.value=txt;ta.style.position='fixed';ta.style.opacity='0';document.body.appendChild(ta);ta.select();try{document.execCommand('copy');res()}catch(e){rej(e)}document.body.removeChild(ta)});
+}
+function note(type,html){
+  var ic={ok:'check_circle',info:'info',warn:'warning',crit:'error'}[type];
+  return '<div class="rt-note rt-note--'+type+'"><span class="ms">'+ic+'</span><div>'+html+'</div></div>';
+}
+function highlight(txt){
+  return txt.split('\n').map(function(l){
+    if(/^\s*#/.test(l))return '<span class="c">'+esc(l)+'</span>';
+    var m=l.match(/^([A-Za-z-]+)(\s*:\s*)(.*)$/);
+    if(!m)return esc(l);
+    var k=m[1].toLowerCase(),cls=k==='disallow'?'kd':(k==='allow'?'ka':'k');
+    return '<span class="'+cls+'">'+esc(m[1])+'</span>'+esc(m[2])+esc(m[3]);
+  }).join('\n');
+}
+
+/* ---------- Generator ---------- */
+var S={platform:'wordpress',sitemapTouched:false,bots:{}};
+BOTS.forEach(function(b){S.bots[b.t]=true});
+
+function renderBots(){
+  var html='';
+  ['search','user','train'].forEach(function(c){
+    var C=CATS[c];
+    html+='<div class="rt-cat"><div class="rt-cat-h"><b><span class="rt-dot" style="background:'+C.color+'"></span>'+C.label+'</b><small>'+C.sub+'</small></div>';
+    BOTS.filter(function(b){return b.cat===c}).forEach(function(b){
+      var on=S.bots[b.t];
+      html+='<div class="rt-bot"><div class="rt-bot-i"><span class="rt-bot-n">'+b.t+'</span><span class="rt-bot-d"><b>'+b.co+'</b> · '+b.d+'</span></div>'+
+        '<button type="button" class="rt-sw" role="switch" data-bot="'+b.t+'" aria-checked="'+on+'" aria-label="'+b.t+'"><span>'+(on?'Dozvoljen':'Blokiran')+'</span><i></i></button></div>';
+    });
+    html+='</div>';
+  });
+  $('g-bots').innerHTML=html;
+}
+function currentPreset(){
+  for(var k in PRESETS){
+    if(BOTS.every(function(b){return S.bots[b.t]===PRESETS[k](b)}))return k;
+  }
+  return null;
+}
+function syncPresetButtons(){
+  var p=currentPreset();
+  document.querySelectorAll('.rt-preset').forEach(function(btn){btn.setAttribute('aria-pressed',String(btn.dataset.preset===p))});
+}
+function applyPlatform(p,keepPaths){
+  S.platform=p;$('g-platform').value=p;
+  var P=PLATFORMS[p];
+  if(P&&!keepPaths){$('g-dis').value=P.dis.join('\n');$('g-allow').value=P.allow.join('\n')}
+  $('g-plat-hint').textContent=P?P.hint:'Izuzeci unutar zabranjenih foldera.';
+  suggestSitemap();
+}
+function suggestSitemap(){
+  if(S.sitemapTouched)return;
+  var h=cleanHost($('g-domain').value),P=PLATFORMS[S.platform];
+  $('g-sitemap').value=h&&P?'https://'+h+P.sitemap:'';
+}
+
+function build(){
+  var host=cleanHost($('g-domain').value);
+  var dis=lines($('g-dis').value),allow=lines($('g-allow').value),maps=lines($('g-sitemap').value);
+  var base=dis.map(function(p){return 'Disallow: '+p}).concat(allow.map(function(p){return 'Allow: '+p}));
+  if(!base.length)base=['Allow: /'];
+  var out=['# robots.txt'+(host?' za '+host:''),'# Napravljeno: webanswerstudio.com/robots-txt-generator','','# Svi botovi (Google, Bing i ostali)','User-agent: *'].concat(base);
+  var allowed=BOTS.filter(function(b){return S.bots[b.t]}),blocked=BOTS.filter(function(b){return !S.bots[b.t]});
+  if($('g-explicit').checked&&allowed.length){
+    out.push('','# AI botovi: dozvoljen pristup');
+    allowed.forEach(function(b){out.push('User-agent: '+b.t)});
+    out=out.concat(base);
+  }
+  if(blocked.length){
+    out.push('','# AI botovi: blokiran pristup');
+    blocked.forEach(function(b){out.push('User-agent: '+b.t)});
+    out.push('Disallow: /');
+  }
+  if(maps.length){out.push('');maps.forEach(function(m){out.push('Sitemap: '+m)})}
+  var txt=out.join('\n')+'\n';
+  $('g-code').innerHTML=highlight(txt);
+  $('g-lines').textContent=out.length+' redova';
+  S.txt=txt;
+  validate(host,dis,allow,maps,blocked);
+  syncPresetButtons();
+}
+function validate(host,dis,allow,maps,blocked){
+  var n=[];
+  var badPath=dis.concat(allow).filter(function(p){return !/^[\/*]/.test(p)});
+  if(dis.some(function(p){return p==='/'||p==='/*'}))n.push(note('crit','<b>Blokirali ste ceo sajt</b> za sve botove, uključujući Google. Uklonite <code>/</code> iz zabranjenih putanja, osim ako je ovo test verzija sajta.'));
+  if(badPath.length)n.push(note('crit','Putanja mora da počne sa <code>/</code>: '+badPath.map(function(p){return '<code>'+esc(p)+'</code>'}).join(', ')));
+  if(dis.some(function(p){return /^\/wp-(content|includes)\/?$/.test(p)}))n.push(note('warn','Zabrana za <code>/wp-content/</code> ili <code>/wp-includes/</code> blokira CSS i JavaScript. Google tada ne vidi kako sajt izgleda.'));
+  var badMap=maps.filter(function(m){return !/^https?:\/\/[^\s\/]+\.[^\s\/]+/i.test(m)});
+  if(badMap.length)n.push(note('crit','Sitemap mora biti puna adresa, npr. <code>https://'+(host||'vasajt.rs')+'/sitemap.xml</code>.'));
+  else if(host&&maps.some(function(m){return cleanHost(m)!==host}))n.push(note('warn','Sitemap je na drugom domenu od <code>'+esc(host)+'</code>. Proverite da li je to namerno (npr. www i bez www).'));
+  if(!maps.length)n.push(note('info','Dodajte sitemap. Tako Google i AI botovi brže nalaze sve stranice.'));
+  var bs=blocked.filter(function(b){return b.cat==='search'}),bu=blocked.filter(function(b){return b.cat==='user'}),bt=blocked.filter(function(b){return b.cat==='train'});
+  if(bs.length)n.push(note('warn','<b>Blokirana AI pretraga:</b> '+bs.map(function(b){return b.t}).join(', ')+'. Sajt neće biti izvor u tim AI odgovorima.'));
+  if(bu.some(function(b){return b.soft}))n.push(note('info','ChatGPT-User i Perplexity-User rade na zahtev korisnika i, po sopstvenoj dokumentaciji, mogu da ne poštuju robots.txt.'));
+  if(bt.some(function(b){return b.t==='Google-Extended'}))n.push(note('info','Google-Extended ne utiče na Google pretragu ni AI Overviews, samo na Gemini trening i Gemini aplikaciju.'));
+  if(!blocked.length)n.push(note('ok','<b>Svi AI botovi imaju pristup.</b> Ovo je najbolja postavka za vidljivost u ChatGPT-u, Claude-u, Gemini-ju i Perplexity-ju.'));
+  else if(!bs.length&&!bu.length&&bt.length)n.push(note('ok','<b>AI pretraga ima pristup.</b> Možete biti citirani, a sadržaj nije dostupan za trening blokiranih modela.'));
+  $('g-notes').innerHTML=n.join('');
+}
+
+/* ---------- Parser i provera ---------- */
+function parseRobots(text){
+  var res={groups:[],sitemaps:[],issues:[],other:{}};
+  text=text.replace(/^﻿/,'');
+  if(/<\s*(!doctype|html|head|body)\b/i.test(text))res.issues.push(['crit','Ovo izgleda kao HTML stranica, a ne robots.txt. Ako ga vaš sajt tako vraća, botovi ne vide nikakva pravila.']);
+  var cur=null,lastUA=false;
+  text.split(/\r?\n/).forEach(function(raw,i){
+    var line=raw.replace(/#.*$/,'').trim();
+    if(!line)return;
+    var m=line.match(/^([A-Za-z][A-Za-z-]*)\s*:\s*(.*)$/);
+    if(!m){res.issues.push(['warn','Red '+(i+1)+' nije ispravan: <code>'+esc(line.slice(0,60))+'</code>']);return}
+    var k=m[1].toLowerCase(),v=m[2].trim();
+    if(k==='user-agent'){
+      if(!cur||!lastUA){cur={agents:[],rules:[],line:i+1};res.groups.push(cur)}
+      cur.agents.push(v.toLowerCase());lastUA=true;return;
+    }
+    if(k==='allow'||k==='disallow'){
+      if(!cur)res.issues.push(['warn','Pravilo u redu '+(i+1)+' stoji pre bilo kog <code>User-agent</code> reda i botovi ga ignorišu.']);
+      else cur.rules.push({type:k,path:v});
+      lastUA=false;return;
+    }
+    if(k==='sitemap'){res.sitemaps.push(v);return}
+    lastUA=false;
+    if(k==='crawl-delay'){res.other.crawl=true;return}
+    if(k==='noindex'||k==='nofollow'){res.other.noindex=true;return}
+    if(k==='host'||k==='clean-param'){res.other.yandex=true;return}
+    if(k==='useragent'||k==='user_agent')res.issues.push(['crit','Red '+(i+1)+': piše se <code>User-agent</code> (sa crticom), inače botovi ne prepoznaju grupu.']);
+    else if(k==='dissallow'||k==='disalow')res.issues.push(['crit','Red '+(i+1)+': greška u kucanju, ispravno je <code>Disallow</code>.']);
+    else res.issues.push(['warn','Nepoznata direktiva <code>'+esc(m[1])+'</code> u redu '+(i+1)+'.']);
+  });
+  return res;
+}
+var reCache={};
+function patMatch(pat,path){
+  var re=reCache[pat];
+  if(!re){
+    var end=/\$$/.test(pat),p=end?pat.slice(0,-1):pat;
+    re=new RegExp('^'+p.split('*').map(function(s){return s.replace(/[.+?^${}()|[\]\\]/g,'\\$&')}).join('.*')+(end?'$':''));
+    reCache[pat]=re;
+  }
+  return re.test(path);
+}
+function isAllowed(rules,path){
+  var best=null;
+  rules.forEach(function(r){
+    if(!r.path)return;
+    if(!patMatch(r.path,path))return;
+    var len=r.path.length;
+    if(!best||len>best.len||(len===best.len&&r.type==='allow'))best={len:len,type:r.type};
+  });
+  return !best||best.type==='allow';
+}
+function groupsFor(parsed,token){
+  var t=token.toLowerCase();
+  var g=parsed.groups.filter(function(x){return x.agents.indexOf(t)>-1});
+  if(g.length)return {groups:g,via:token};
+  g=parsed.groups.filter(function(x){return x.agents.indexOf('*')>-1});
+  return {groups:g,via:g.length?'*':null};
+}
+function evalBot(parsed,token){
+  var r=groupsFor(parsed,token),rules=[];
+  r.groups.forEach(function(g){rules=rules.concat(g.rules)});
+  var root=isAllowed(rules,'/'),page=isAllowed(rules,'/primer-stranice/');
+  var st=(!root&&!page)?'bad':((!root||!page)?'mid':'ok');
+  var limited=rules.some(function(x){return x.type==='disallow'&&x.path});
+  return {status:st,via:r.via,limited:limited};
+}
+function pill(st,limited){
+  if(st==='bad')return '<span class="rt-pill rt-pill--bad">Blokiran</span>';
+  if(st==='mid')return '<span class="rt-pill rt-pill--mid">Delimično</span>';
+  return '<span class="rt-pill rt-pill--ok">Dozvoljen</span>'+(limited?'<small>uz izuzetke</small>':'');
+}
+function viaText(v,token){
+  if(v==='*')return 'Važi <code>User-agent: *</code>';
+  if(v)return 'Posebna grupa <code>'+esc(token)+'</code>';
+  return 'Nema pravila, sve dozvoljeno';
+}
+var lastParsed=null;
+function runCheck(){
+  var text=$('c-text').value;
+  if(!text.trim()){$('c-out').innerHTML='<div class="rt-empty"><span class="ms">content_paste</span>Prvo nalepite sadržaj robots.txt fajla.</div>';$('c-detail').innerHTML='';return}
+  var P=parseRobots(text);lastParsed=P;
+  var res={};
+  CLASSIC.concat(BOTS).forEach(function(b){res[b.t]=evalBot(P,b.t)});
+  var findings=[];
+  P.issues.filter(function(x){return x[0]==='crit'}).forEach(function(x){findings.push(note('crit',x[1]))});
+  if(res.Googlebot.status!=='ok')findings.push(note('crit','<b>Googlebot je '+(res.Googlebot.status==='bad'?'blokiran':'delimično blokiran')+'.</b> Bez njega nema ni Google pretrage ni AI Overviews.'));
+  if(res.Bingbot.status==='bad')findings.push(note('crit','<b>Bingbot je blokiran.</b> Gubite Bing pretragu i Microsoft Copilot.'));
+  var bS=BOTS.filter(function(b){return b.cat==='search'&&res[b.t].status!=='ok'});
+  var bU=BOTS.filter(function(b){return b.cat==='user'&&res[b.t].status!=='ok'});
+  var bT=BOTS.filter(function(b){return b.cat==='train'&&res[b.t].status!=='ok'});
+  if(bS.length)findings.push(note('warn','<b>AI pretraga ne može da čita sajt:</b> '+bS.map(function(b){return b.t}).join(', ')+'. Nećete biti citirani kao izvor u tim alatima.'));
+  if(bU.length)findings.push(note('warn','<b>AI asistenti ne mogu da otvore sajt na zahtev:</b> '+bU.map(function(b){return b.t}).join(', ')+'.'));
+  if(bT.length)findings.push(note('info','Trening je blokiran za: '+bT.map(function(b){return b.t}).join(', ')+'. To je vaš izbor i ne utiče direktno na citiranje u pretrazi.'));
+  var dep=[];P.groups.forEach(function(g){g.agents.forEach(function(a){if(DEPRECATED[a]&&dep.indexOf(a)<0)dep.push(a)})});
+  if(dep.length)findings.push(note('warn','Zastareli nazivi botova: '+dep.map(function(a){return '<code>'+esc(a)+'</code> (danas '+DEPRECATED[a]+')'}).join(', ')+'. Ta pravila više ništa ne rade.'));
+  if(!P.sitemaps.length)findings.push(note('warn','Nema <code>Sitemap</code> linije. Dodajte je da bi botovi brže našli sve stranice.'));
+  else{var bad=P.sitemaps.filter(function(m){return !/^https?:\/\//i.test(m)});if(bad.length)findings.push(note('crit','Sitemap mora biti puna adresa sa https://: '+bad.map(function(m){return '<code>'+esc(m)+'</code>'}).join(', ')))}
+  if(P.other.noindex)findings.push(note('warn','<code>Noindex</code> u robots.txt fajlu Google ne podržava od 2019. Za uklanjanje stranica koristite meta tag.'));
+  if(P.other.crawl)findings.push(note('info','<code>Crawl-delay</code> Google ignoriše. Neki drugi botovi ga poštuju.'));
+  P.issues.filter(function(x){return x[0]!=='crit'}).forEach(function(x){findings.push(note(x[0],x[1]))});
+  if(!P.groups.length&&!P.issues.length)findings.push(note('info','Fajl nema nijednu <code>User-agent</code> grupu, pa je sve dozvoljeno svim botovima.'));
+  var okAi=BOTS.filter(function(b){return res[b.t].status==='ok'}).length;
+  if(!findings.some(function(f){return /rt-note--(crit|warn)/.test(f)}))findings.unshift(note('ok','<b>Sve izgleda dobro.</b> Google, Bing i AI pretraga imaju pristup sajtu.'));
+
+  var sum='<div class="rt-step" style="margin:0"><div class="rt-step-h"><span class="rt-num">2</span><div><h3>Rezultat</h3><p>Grupa pravila: '+P.groups.length+' · Sitemap linija: '+P.sitemaps.length+'</p></div></div>'+
+    '<div class="rt-sum">'+
+      '<div><b style="color:'+(res.Googlebot.status==='ok'?'#0d7f76':'#b4442f')+'">'+(res.Googlebot.status==='ok'?'Da':'Ne')+'</b><span>Google ima pristup</span></div>'+
+      '<div><b style="color:'+(bS.length?'#b4442f':'#0d7f76')+'">'+(4-bS.length)+'/4</b><span>AI pretraživača ima pristup</span></div>'+
+      '<div><b>'+okAi+'/'+BOTS.length+'</b><span>AI botova ukupno ima pristup</span></div>'+
+    '</div><div class="rt-notes">'+findings.join('')+'</div>'+
+    '<div class="rt-chk-actions"><button type="button" class="rt-btn rt-btn--dark" id="c-import"><span class="ms">tune</span>Popravi u generatoru</button></div></div>';
+  $('c-out').innerHTML=sum;
+  $('c-import').addEventListener('click',importToGen);
+
+  var rows='<div class="rt-step" style="margin:0"><div class="rt-step-h"><span class="rt-num">3</span><div><h3>Status po botu</h3><p>Kako svaki bot vidi vaš robots.txt.</p></div></div><div class="rt-tbl-wrap"><table class="rt-table"><thead><tr><th>Bot</th><th>Status</th><th>Koje pravilo važi</th></tr></thead><tbody>';
+  rows+='<tr class="grp"><td colspan="3">Klasični pretraživači</td></tr>';
+  CLASSIC.forEach(function(b){var r=res[b.t];rows+='<tr><td><code>'+b.t+'</code><small>'+b.co+' · '+b.d+'</small></td><td>'+pill(r.status,r.limited)+'</td><td>'+viaText(r.via,b.t)+'</td></tr>'});
+  ['search','user','train'].forEach(function(c){
+    rows+='<tr class="grp"><td colspan="3">'+CATS[c].label+'</td></tr>';
+    BOTS.filter(function(b){return b.cat===c}).forEach(function(b){var r=res[b.t];rows+='<tr><td><code>'+b.t+'</code><small>'+b.co+' · '+b.d+'</small></td><td>'+pill(r.status,r.limited)+'</td><td>'+viaText(r.via,b.t)+'</td></tr>'});
+  });
+  rows+='</tbody></table></div></div>';
+  $('c-detail').innerHTML=rows;
+  S.lastRes=res;
+}
+function importToGen(){
+  var P=lastParsed;if(!P)return;
+  var star=P.groups.filter(function(g){return g.agents.indexOf('*')>-1}),dis=[],allow=[];
+  star.forEach(function(g){g.rules.forEach(function(r){if(!r.path)return;(r.type==='disallow'?dis:allow).push(r.path)})});
+  applyPlatform('custom',true);
+  $('g-dis').value=dis.join('\n');$('g-allow').value=allow.join('\n');
+  S.sitemapTouched=true;$('g-sitemap').value=P.sitemaps.join('\n');
+  if(!cleanHost($('g-domain').value)&&P.sitemaps.length){var h=cleanHost(P.sitemaps[0]);if(h)$('g-domain').value=h}
+  BOTS.forEach(function(b){S.bots[b.t]=S.lastRes[b.t].status!=='bad'});
+  renderBots();build();selectTab('gen');
+  $('alat').scrollIntoView({behavior:'smooth',block:'start'});
+  toast('Pravila su prenesena u generator');
+}
+
+var SAMPLE=['User-agent: *','Disallow: /wp-admin/','Allow: /wp-admin/admin-ajax.php','','User-agent: GPTBot','User-agent: OAI-SearchBot','Disallow: /','','User-agent: anthropic-ai','User-agent: Claude-Web','Disallow: /','','User-agent: PerplexityBot','Disallow: /','','Crawl-delay: 10',''].join('\n');
+
+/* ---------- Tabovi ---------- */
+function selectTab(which){
+  ['gen','chk'].forEach(function(k){
+    var on=k===which,t=$('tab-'+k);
+    t.setAttribute('aria-selected',String(on));t.tabIndex=on?0:-1;
+    $('panel-'+k).hidden=!on;
+  });
+  try{history.replaceState(null,'',which==='chk'?'#provera':location.pathname+location.search)}catch(e){}
+}
+
+/* ---------- Događaji ---------- */
+function init(){
+  renderBots();
+  applyPlatform('wordpress');
+  build();
+  $('g-domain').addEventListener('input',function(){suggestSitemap();build()});
+  $('g-platform').addEventListener('change',function(){applyPlatform(this.value);build()});
+  ['g-dis','g-allow'].forEach(function(id){$(id).addEventListener('input',function(){if(S.platform!=='custom'){S.platform='custom';$('g-platform').value='custom';$('g-plat-hint').textContent='Izuzeci unutar zabranjenih foldera.'}build()})});
+  $('g-sitemap').addEventListener('input',function(){S.sitemapTouched=this.value.trim()!=='';build()});
+  $('g-explicit').addEventListener('change',build);
+  $('g-bots').addEventListener('click',function(e){
+    var sw=e.target.closest('.rt-sw');if(!sw)return;
+    var t=sw.dataset.bot;S.bots[t]=!S.bots[t];
+    sw.setAttribute('aria-checked',String(S.bots[t]));sw.firstElementChild.textContent=S.bots[t]?'Dozvoljen':'Blokiran';
+    build();
+  });
+  $('g-presets').addEventListener('click',function(e){
+    var b=e.target.closest('.rt-preset');if(!b)return;
+    var f=PRESETS[b.dataset.preset];BOTS.forEach(function(x){S.bots[x.t]=f(x)});
+    renderBots();build();
+  });
+  $('g-copy').addEventListener('click',function(){copyText(S.txt).then(function(){toast('robots.txt je kopiran')},function(){toast('Kopiranje nije uspelo, označite tekst ručno')})});
+  $('g-dl').addEventListener('click',function(){
+    var a=document.createElement('a'),u=URL.createObjectURL(new Blob([S.txt],{type:'text/plain;charset=utf-8'}));
+    a.href=u;a.download='robots.txt';document.body.appendChild(a);a.click();a.remove();setTimeout(function(){URL.revokeObjectURL(u)},1000);
+    toast('robots.txt je preuzet');
+  });
+  $('tab-gen').addEventListener('click',function(){selectTab('gen')});
+  $('tab-chk').addEventListener('click',function(){selectTab('chk')});
+  document.querySelector('.rt-tabs').addEventListener('keydown',function(e){
+    if(e.key!=='ArrowRight'&&e.key!=='ArrowLeft')return;
+    var next=$('tab-gen').getAttribute('aria-selected')==='true'?'chk':'gen';selectTab(next);$('tab-'+next).focus();
+  });
+  $('c-run').addEventListener('click',runCheck);
+  $('c-sample').addEventListener('click',function(){$('c-text').value=SAMPLE;runCheck()});
+  if(location.hash==='#provera')selectTab('chk');
+}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init);else init();
+})();
+
+</script>
+</body>
+</html>
