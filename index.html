@@ -29,7 +29,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="image" type="image/webp" href="assets/img/logo-web-answer-studio.webp" fetchpriority="high">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend:wght@600;700&amp;family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&amp;display=swap">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400..500,0..1,0&amp;icon_names=ads_click,apartment,arrow_forward,auto_awesome,call,category,check_circle,data_object,description,design_services,expand_more,fact_check,flag,groups,hourglass_top,inventory_2,location_on,mail,manage_search,medical_services,public,restaurant,search,search_off,shopping_bag,shopping_cart,smart_toy,spa,storefront,support_agent,touch_app,travel_explore&amp;display=block">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400..500,0..1,0&amp;icon_names=add,ads_click,apartment,arrow_forward,auto_awesome,call,category,check_circle,data_object,description,design_services,expand_more,fact_check,flag,groups,hourglass_top,inventory_2,location_on,mail,manage_search,medical_services,public,remove,restaurant,search,search_off,shopping_bag,shopping_cart,smart_toy,spa,storefront,support_agent,touch_app,travel_explore&amp;display=block">
 <link rel="stylesheet" href="assets/css/seo-provera.css">
 <style>
 html,body{margin:0;padding:0;background:#ffffff;color:#0c0f0f;font-family:'DM Sans',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
@@ -74,6 +74,7 @@ h1,h2,h3,h4,p{margin:0}
 .wa-tool:hover{transform:translateY(-4px)!important;border-color:#9fd9d2!important;box-shadow:0 30px 60px -36px rgba(13,127,118,0.5)!important;color:#0c0f0f!important}
 .wa-dd .wa-ddm{display:none}.wa-dd:hover .wa-ddm,.wa-dd:focus-within .wa-ddm{display:block}
 @media (max-width:1180px){.wa-links,.wa-cta{display:none!important}.wa-burger{display:flex}}
+.wa-faq summary::-webkit-details-marker{display:none}.wa-faq .faq-ic{background:#eef3f2;color:#0c0f0f}.wa-faq details[open] .faq-ic{background:#0c0f0f;color:#2cc4b6;transform:rotate(45deg)}.wa-faq summary:hover{color:#0d7f76}
 </style>
 <script type="application/ld+json">
 {
@@ -193,7 +194,10 @@ h1,h2,h3,h4,p{margin:0}
    }
   },
   {
-   "@type": "WebPage",
+   "@type": [
+    "WebPage",
+    "FAQPage"
+   ],
    "@id": "https://webanswerstudio.com/#webpage",
    "url": "https://webanswerstudio.com/",
    "name": "Izrada i optimizacija web sajtova | Web Answer Studio",
@@ -204,7 +208,73 @@ h1,h2,h3,h4,p{margin:0}
    },
    "about": {
     "@id": "https://webanswerstudio.com/#organization"
-   }
+   },
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Koja je razlika između SEO i GEO optimizacije?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "SEO je optimizacija za klasične Google rezultate, da bi sajt bio što više u listi linkova. GEO je optimizacija za AI odgovore, da bi vas ChatGPT, Gemini i Google AI Overviews naveli kao izvor ili preporuku. GEO ne zamenjuje SEO: AI alati se u velikoj meri oslanjaju na iste izvore koje rangira pretraživač, pa je dobra SEO osnova uslov za oba."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Da li mi treba novi sajt ili može da se sredi postojeći?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "U većini slučajeva postojeći sajt može da se optimizuje. Novi sajt predlažemo samo kada trenutni zaista ograničava rast. Tada prelazak radimo uz proveru svih preusmerenja i ključnih elemenata pre i posle puštanja, da se ne izgube postojeće pozicije."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Za koliko vremena se vide rezultati?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Zavisi od stanja sajta, konkurencije i obima izmena. Tehničke ispravke se obično brže odraze, a sadržaj i autoritet rastu postepeno. Poziciju na Google-u niko ne može pošteno da garantuje, pa je ne obećavamo ni mi."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Koliko košta izrada ili optimizacija sajta?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Cena zavisi od vrste sajta, broja stranica i obima posla. Posle kratkog razgovora i pregleda sajta šaljemo jasnu ponudu, bez skrivenih troškova."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Da li radite sajtove na više jezika?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Da, i to je oblast u kojoj imamo najviše iskustva, sa sajtova na više od deset jezika. Podešavamo ih tako da Google svakom tržištu prikaže pravu verziju i da se jezičke verzije ne takmiče međusobno."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Da li koristite AI za analizu i pisanje sadržaja?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Da, kao alat. AI nam pomaže da brže obradimo velike izveštaje i pripremimo sadržaj, ali svaku preporuku i svaki tekst proveravamo ručno pre nego što stignu na vaš sajt."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Da li radite i održavanje sajta?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Da. Posle lansiranja možemo redovno da održavamo sajt i da nastavimo rast kroz SEO i GEO paket. Ako želite da sajtom upravljate sami, dobijate video uputstvo i pisani vodič napravljene za vaš sajt."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Da li radite sa firmama van Beograda?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Da. Radimo sa firmama iz cele Srbije i regiona, a sve se završava online: razgovor, analiza, izmene i izveštaji. Sa klijentima iz inostranstva radimo na engleskom."
+     }
+    }
+   ]
   }
  ]
 }
@@ -225,7 +295,7 @@ h1,h2,h3,h4,p{margin:0}
         
           <div style="position:absolute;top:100%;left:-24px;padding-top:18px;z-index:40" data-if="2" data-hide="">
             <div style="width:320px;padding:10px;background:#ffffff;border:1px solid #e3ecea;border-radius:18px;box-shadow:0 30px 60px -28px rgba(12,15,15,0.35);display:flex;flex-direction:column;gap:2px">
-              <a href="seo-konsalting" style="display:flex;align-items:center;gap:14px;padding:10px 12px;border-radius:12px;color:#0c0f0f" class="h0"><span style="flex:none;width:40px;height:40px;border-radius:12px;background:linear-gradient(150deg,#1b2625,#0c0f0f);display:grid;place-items:center;font-family:'Material Symbols Rounded';font-size:20px;color:#2cc4b6">support_agent</span><span style="display:flex;flex-direction:column;gap:1px"><span style="font-weight:600;font-size:15px">Konsalting SEO</span><span style="font-size:13px;font-weight:400;color:#6b7675">Savet i optimizacija sajta</span></span></a>
+              <a href="seo-konsalting" style="display:flex;align-items:center;gap:14px;padding:10px 12px;border-radius:12px;color:#0c0f0f" class="h0"><span style="flex:none;width:40px;height:40px;border-radius:12px;background:linear-gradient(150deg,#1b2625,#0c0f0f);display:grid;place-items:center;font-family:'Material Symbols Rounded';font-size:20px;color:#2cc4b6">support_agent</span><span style="display:flex;flex-direction:column;gap:1px"><span style="font-weight:600;font-size:15px">SEO konsalting</span><span style="font-size:13px;font-weight:400;color:#6b7675">Savet i optimizacija sajta</span></span></a>
               <a href="ecommerce-seo" style="display:flex;align-items:center;gap:14px;padding:10px 12px;border-radius:12px;color:#0c0f0f" class="h0"><span style="flex:none;width:40px;height:40px;border-radius:12px;background:linear-gradient(150deg,#1b2625,#0c0f0f);display:grid;place-items:center;font-family:'Material Symbols Rounded';font-size:20px;color:#2cc4b6">shopping_cart</span><span style="display:flex;flex-direction:column;gap:1px"><span style="font-weight:600;font-size:15px">E-commerce SEO</span><span style="font-size:13px;font-weight:400;color:#6b7675">SEO za online prodavnice</span></span></a>
             </div>
           </div>
@@ -249,7 +319,7 @@ h1,h2,h3,h4,p{margin:0}
       <a href="kontakt" style="color:#2b3433">Kontakt</a>
     </div>
   <button class="wa-burger" type="button" aria-label="Otvori meni" aria-expanded="false" aria-controls="wa-mnav"><span></span><span></span><span></span></button></nav>
-<div id="wa-mnav" class="wa-mnav"><a href="./" aria-current="page">Početna</a><button type="button" class="wa-mexp" aria-expanded="false" aria-controls="wa-msub">Optimizacija sajta<i></i></button><div class="wa-msub" id="wa-msub"><a href="seo-konsalting">Konsalting SEO</a><a href="ecommerce-seo">E-commerce SEO</a></div><a href="geo-optimizacija">GEO optimizacija</a><a href="izrada-sajtova">Izrada sajtova</a><button type="button" class="wa-mexp" aria-expanded="false" aria-controls="wa-msub2">SEO alati<i></i></button><div class="wa-msub" id="wa-msub2"><a href="robots-txt-generator">Robots.txt generator</a><a href="schema-generator">Schema generator</a><a href="llms-txt-generator">llms.txt generator</a><a href="serp-preview">Pregled Google rezultata</a></div><a href="prirucnik">Priručnik</a><a href="o-nama">O nama</a><a href="kontakt">Kontakt</a></div></div>
+<div id="wa-mnav" class="wa-mnav"><a href="./" aria-current="page">Početna</a><button type="button" class="wa-mexp" aria-expanded="false" aria-controls="wa-msub">Optimizacija sajta<i></i></button><div class="wa-msub" id="wa-msub"><a href="seo-konsalting">SEO konsalting</a><a href="ecommerce-seo">E-commerce SEO</a></div><a href="geo-optimizacija">GEO optimizacija</a><a href="izrada-sajtova">Izrada sajtova</a><button type="button" class="wa-mexp" aria-expanded="false" aria-controls="wa-msub2">SEO alati<i></i></button><div class="wa-msub" id="wa-msub2"><a href="robots-txt-generator">Robots.txt generator</a><a href="schema-generator">Schema generator</a><a href="llms-txt-generator">llms.txt generator</a><a href="serp-preview">Pregled Google rezultata</a></div><a href="prirucnik">Priručnik</a><a href="o-nama">O nama</a><a href="kontakt">Kontakt</a></div></div>
 
 <section style="position:relative;overflow:hidden;padding:72px 24px 110px;margin-top:-80px;padding-top:160px;background:#f6faf9">
   
@@ -257,7 +327,7 @@ h1,h2,h3,h4,p{margin:0}
   
   <div style="position:relative;max-width:1180px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,460px),1fr));gap:56px;align-items:center">
     <div style="display:flex;flex-direction:column;gap:28px">
-      <h1 style="font-family:Lexend;font-weight:700;font-size:clamp(42px,5.6vw,72px);line-height:1.02;letter-spacing:-0.035em;text-wrap:balance">Izrada i Optimizacija Web Sajtova&nbsp;</h1>
+      <h1 style="font-family:Lexend;font-weight:700;font-size:clamp(42px,5.6vw,72px);line-height:1.02;letter-spacing:-0.035em;text-wrap:balance">Izrada i optimizacija web sajtova&nbsp;</h1>
       <p style="font-size:19px;line-height:1.6;color:#4a5554;max-width:560px;text-wrap:pretty">Sajtovi za firme koje klijenti nalaze na Google-u i u AI odgovorima na vrhu pretrage. Novi sajtovi, unapređenje postojećih i redovno održavanje, sa jasnim putem od posete do upita.</p>
       <div style="display:flex;gap:12px;flex-wrap:wrap">
         <a href="kontakt" style="display:flex;align-items:center;gap:10px;background:#0d7f76;color:#ffffff;padding:18px 28px;border-radius:12px;font-weight:600;font-size:16px;box-shadow:0 14px 30px -12px rgba(13,127,118,0.55)" class="h2">Zatraži analizu <span style="font-family:'Material Symbols Rounded';font-size:20px">arrow_forward</span></a>
@@ -265,7 +335,7 @@ h1,h2,h3,h4,p{margin:0}
       <div style="display:flex;gap:10px;flex-wrap:wrap">
         <span style="display:flex;align-items:center;gap:8px;padding:8px 14px;background:#ffffff;border:1px solid #e1eae8;border-radius:999px;font-size:14px;color:#2b3433"><span style="font-family:'Material Symbols Rounded';font-size:18px;color:#1aa89d">check_circle</span>Bez obaveze</span>
         <span style="display:flex;align-items:center;gap:8px;padding:8px 14px;background:#ffffff;border:1px solid #e1eae8;border-radius:999px;font-size:14px;color:#2b3433"><span style="font-family:'Material Symbols Rounded';font-size:18px;color:#1aa89d">check_circle</span>Odgovor za 24h</span>
-        <span style="display:flex;align-items:center;gap:8px;padding:8px 14px;background:#ffffff;border:1px solid #e1eae8;border-radius:999px;font-size:14px;color:#2b3433"><span style="font-family:'Material Symbols Rounded';font-size:18px;color:#1aa89d">check_circle</span>Merljivi rezultati</span>
+        <span style="display:flex;align-items:center;gap:8px;padding:8px 14px;background:#ffffff;border:1px solid #e1eae8;border-radius:999px;font-size:14px;color:#2b3433"><span style="font-family:'Material Symbols Rounded';font-size:18px;color:#1aa89d">check_circle</span>Direktno sa stručnjakom</span>
       </div>
     </div>
 
@@ -356,7 +426,7 @@ h1,h2,h3,h4,p{margin:0}
         <div style="padding:36px;background:#ffffff;border:1px solid #e3ecea;border-radius:24px;display:flex;flex-direction:column;gap:20px;transition:transform .25s,box-shadow .25s,border-color .25s" class="h4">
           <div style="display:flex;align-items:center;gap:16px">
             <span style="flex:none;width:60px;height:60px;border-radius:18px;background:linear-gradient(150deg,#1b2625,#0c0f0f);box-shadow:inset 0 0 0 1px rgba(255,255,255,0.08),0 14px 26px -14px rgba(13,127,118,0.8);display:grid;place-items:center;font-family:'Material Symbols Rounded';font-size:28px;color:#2cc4b6">support_agent</span>
-            <div style="display:flex;flex-direction:column;gap:3px"><div style="font-size:12px;font-weight:700;letter-spacing:0.14em;color:#0d7f76">OPTIMIZACIJA SAJTA</div><h3 style="font-family:Lexend;font-weight:600;font-size:26px;letter-spacing:-0.02em">Konsalting SEO</h3></div>
+            <div style="display:flex;flex-direction:column;gap:3px"><div style="font-size:12px;font-weight:700;letter-spacing:0.14em;color:#0d7f76">OPTIMIZACIJA SAJTA</div><h3 style="font-family:Lexend;font-weight:600;font-size:26px;letter-spacing:-0.02em">SEO konsalting</h3></div>
           </div>
           <p style="font-size:16px;line-height:1.6;color:#4a5554;text-wrap:pretty">Analiza, jasan plan i optimizacija postojećeg sajta, uz direktan rad sa SEO stručnjakom.</p>
           <div style="display:flex;flex-direction:column;gap:10px;font-size:15px;color:#2b3433;flex:1">
@@ -441,6 +511,23 @@ h1,h2,h3,h4,p{margin:0}
   </div>
 </section>
 
+<section id="o-meni" style="padding:100px 24px;background:#ffffff;border-top:1px solid #eef3f2">
+  <div style="max-width:1180px;margin:0 auto;display:flex;flex-wrap:wrap;gap:56px;align-items:flex-start">
+    <div style="flex:1 1 260px;max-width:380px;display:flex;flex-direction:column;gap:16px">
+      <img src="assets/img/vuk-stojkovic.webp" alt="Vuk Stojković, osnivač Web Answer Studija i tehnički SEO stručnjak" style="display:block;width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:24px;height:auto" width="400" height="500" decoding="async" loading="lazy">
+      <div style="display:flex;flex-direction:column;gap:2px"><div style="font-family:Lexend;font-weight:600;font-size:18px">Vuk Stojković</div><div style="font-size:15px;color:#4a5554">Osnivač, tehnički SEO stručnjak</div></div>
+    </div>
+    <div style="flex:999 1 400px;min-width:0;max-width:680px;display:flex;flex-direction:column;gap:20px">
+      <h2 style="font-family:Lexend;font-weight:700;font-size:clamp(34px,4vw,52px);line-height:1.08;letter-spacing:-0.03em;text-wrap:balance">Temelj koji se ne vidi, a nosi sve ostalo</h2>
+      <p style="font-size:17px;line-height:1.7;color:#4a5554;text-wrap:pretty">Zdravo, ja sam Vuk Stojković, tehnički SEO stručnjak iz Beograda. Više od četiri godine radim za međunarodne kompanije Finixio, Clickout Media i Nexplay Media, na velikim sajtovima u crypto i iGaming industriji, gde je konkurencija na Google-u najjača.</p>
+      <p style="font-size:17px;line-height:1.7;color:#4a5554;text-wrap:pretty">Moj posao je ono što posetilac ne vidi. Pazim da Google pronađe i indeksira prave stranice, da sajt na više jezika prikaže pravu verziju pravom tržištu i da nijedna izmena ili selidba ne obori pozicije. Analiziram logove servera da vidim kako Google zaista obilazi sajt, svaku izmenu proveravam pre i posle puštanja i radim rame uz rame sa programerima. Kada je temelj dobar, rezultate beleže sadržaj i marketing. Kada nije, ništa drugo ne pomaže.</p>
+      <p style="font-size:17px;line-height:1.7;color:#4a5554;text-wrap:pretty">Paralelno vodim SEO projekte za domaće firme, od tehničke osnove i optimizacije stranica do vidljivosti u AI pretrazi. Kada se javite, razgovarate sa osobom koja radi na vašem sajtu.</p>
+      <p style="font-size:17px;line-height:1.7;color:#4a5554;text-wrap:pretty">Pre SEO-a sam četiri godine radio u knjižari, sa kupcima, porudžbinama i zalihama. Zato znam da vlasniku firme ne treba izveštaj pun stručnih izraza, nego sajt koji donosi upite.</p>
+      <a href="o-nama" style="align-self:flex-start;display:flex;align-items:center;gap:8px;font-weight:600;font-size:16px;color:#0d7f76">Više o meni <span style="font-family:'Material Symbols Rounded';font-size:20px">arrow_forward</span></a>
+    </div>
+  </div>
+</section>
+
 <section id="pretraga" style="position:relative;overflow:hidden;padding:120px 24px;background:linear-gradient(180deg,#ffffff,#eef8f6);border-top:1px solid #eef3f2">
   <div style="max-width:1180px;margin:0 auto;display:flex;flex-direction:column;gap:48px">
     <div style="display:flex;flex-direction:column;gap:16px;align-items:flex-start;text-align:left;max-width:780px">
@@ -499,39 +586,32 @@ h1,h2,h3,h4,p{margin:0}
 <section style="padding:100px 24px;background:#ffffff;border-top:1px solid #eef3f2">
   <div style="max-width:1180px;margin:0 auto">
     <div style="display:flex;flex-direction:column;gap:40px">
-      <h2 style="font-family:Lexend;font-weight:700;font-size:clamp(32px,3.6vw,46px);letter-spacing:-0.03em;text-align:center">Kome pomažemo</h2>
-      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,170px),1fr));gap:14px">
-        
-          <div style="padding:30px 16px;background:#ffffff;border:1px solid #e3ecea;border-radius:20px;display:flex;flex-direction:column;align-items:center;gap:16px;text-align:center;transition:background .25s,border-color .25s,transform .25s,box-shadow .25s" class="h9">
-            <span style="width:60px;height:60px;border-radius:18px;background:linear-gradient(150deg,#1b2625,#0c0f0f);box-shadow:inset 0 0 0 1px rgba(255,255,255,0.08),0 14px 26px -14px rgba(13,127,118,0.8);display:grid;place-items:center;font-family:'Material Symbols Rounded';font-size:28px;color:#2cc4b6;font-variation-settings:'wght' 400">storefront</span>
-            <div style="font-family:Lexend;font-weight:600;font-size:15px">Lokalni biznisi</div>
+      <h2 style="font-family:Lexend;font-weight:700;font-size:clamp(32px,3.6vw,46px);letter-spacing:-0.03em">Kome pomažemo</h2>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:16px">
+          <div style="padding:28px;background:#ffffff;border:1px solid #e3ecea;border-radius:20px;display:flex;flex-direction:column;gap:16px;min-width:0;transition:background .25s,border-color .25s,transform .25s,box-shadow .25s" class="h9">
+            <div style="display:flex;align-items:center;gap:14px"><span style="flex:none;width:52px;height:52px;border-radius:14px;background:linear-gradient(150deg,#1b2625,#0c0f0f);box-shadow:inset 0 0 0 1px rgba(255,255,255,0.08),0 14px 26px -14px rgba(13,127,118,0.8);display:grid;place-items:center;font-family:'Material Symbols Rounded';font-size:24px;color:#2cc4b6;font-variation-settings:'wght' 400">storefront</span><h3 style="font-family:Lexend;font-weight:600;font-size:19px;line-height:1.3">Lokalni biznisi</h3></div>
+            <p style="font-size:15px;line-height:1.6;color:#4a5554;text-wrap:pretty">Kada neko traži uslugu u vašem gradu, često se odluči već na Google mapi ili u AI odgovoru, pre nego što otvori sajt. Zato su važni sređen Google profil i isti podaci o firmi svuda na internetu.</p>
           </div>
-        
-          <div style="padding:30px 16px;background:#ffffff;border:1px solid #e3ecea;border-radius:20px;display:flex;flex-direction:column;align-items:center;gap:16px;text-align:center;transition:background .25s,border-color .25s,transform .25s,box-shadow .25s" class="h9">
-            <span style="width:60px;height:60px;border-radius:18px;background:linear-gradient(150deg,#1b2625,#0c0f0f);box-shadow:inset 0 0 0 1px rgba(255,255,255,0.08),0 14px 26px -14px rgba(13,127,118,0.8);display:grid;place-items:center;font-family:'Material Symbols Rounded';font-size:28px;color:#2cc4b6;font-variation-settings:'wght' 400">medical_services</span>
-            <div style="font-family:Lexend;font-weight:600;font-size:15px">Ordinacije i klinike</div>
+          <div style="padding:28px;background:#ffffff;border:1px solid #e3ecea;border-radius:20px;display:flex;flex-direction:column;gap:16px;min-width:0;transition:background .25s,border-color .25s,transform .25s,box-shadow .25s" class="h9">
+            <div style="display:flex;align-items:center;gap:14px"><span style="flex:none;width:52px;height:52px;border-radius:14px;background:linear-gradient(150deg,#1b2625,#0c0f0f);box-shadow:inset 0 0 0 1px rgba(255,255,255,0.08),0 14px 26px -14px rgba(13,127,118,0.8);display:grid;place-items:center;font-family:'Material Symbols Rounded';font-size:24px;color:#2cc4b6;font-variation-settings:'wght' 400">medical_services</span><h3 style="font-family:Lexend;font-weight:600;font-size:19px;line-height:1.3">Ordinacije i klinike</h3></div>
+            <p style="font-size:15px;line-height:1.6;color:#4a5554;text-wrap:pretty">Pacijenti biraju po lokaciji, stručnosti i tome koliko lako mogu da zakažu. Kod zdravstvenih tema Google traži jasne dokaze stručnosti, pa svaka usluga treba svoju stranicu, a svaki lekar biografiju.</p>
           </div>
-        
-          <div style="padding:30px 16px;background:#ffffff;border:1px solid #e3ecea;border-radius:20px;display:flex;flex-direction:column;align-items:center;gap:16px;text-align:center;transition:background .25s,border-color .25s,transform .25s,box-shadow .25s" class="h9">
-            <span style="width:60px;height:60px;border-radius:18px;background:linear-gradient(150deg,#1b2625,#0c0f0f);box-shadow:inset 0 0 0 1px rgba(255,255,255,0.08),0 14px 26px -14px rgba(13,127,118,0.8);display:grid;place-items:center;font-family:'Material Symbols Rounded';font-size:28px;color:#2cc4b6;font-variation-settings:'wght' 400">spa</span>
-            <div style="font-family:Lexend;font-weight:600;font-size:15px">Lepota i wellness</div>
+          <div style="padding:28px;background:#ffffff;border:1px solid #e3ecea;border-radius:20px;display:flex;flex-direction:column;gap:16px;min-width:0;transition:background .25s,border-color .25s,transform .25s,box-shadow .25s" class="h9">
+            <div style="display:flex;align-items:center;gap:14px"><span style="flex:none;width:52px;height:52px;border-radius:14px;background:linear-gradient(150deg,#1b2625,#0c0f0f);box-shadow:inset 0 0 0 1px rgba(255,255,255,0.08),0 14px 26px -14px rgba(13,127,118,0.8);display:grid;place-items:center;font-family:'Material Symbols Rounded';font-size:24px;color:#2cc4b6;font-variation-settings:'wght' 400">spa</span><h3 style="font-family:Lexend;font-weight:600;font-size:19px;line-height:1.3">Lepota i wellness</h3></div>
+            <p style="font-size:15px;line-height:1.6;color:#4a5554;text-wrap:pretty">Klijenti traže konkretan tretman u svom delu grada. Posebna stranica za svaki tretman, fotografije radova i lako zakazivanje pretvaraju pretragu u termin.</p>
           </div>
-        
-          <div style="padding:30px 16px;background:#ffffff;border:1px solid #e3ecea;border-radius:20px;display:flex;flex-direction:column;align-items:center;gap:16px;text-align:center;transition:background .25s,border-color .25s,transform .25s,box-shadow .25s" class="h9">
-            <span style="width:60px;height:60px;border-radius:18px;background:linear-gradient(150deg,#1b2625,#0c0f0f);box-shadow:inset 0 0 0 1px rgba(255,255,255,0.08),0 14px 26px -14px rgba(13,127,118,0.8);display:grid;place-items:center;font-family:'Material Symbols Rounded';font-size:28px;color:#2cc4b6;font-variation-settings:'wght' 400">apartment</span>
-            <div style="font-family:Lexend;font-weight:600;font-size:15px">Nekretnine</div>
+          <div style="padding:28px;background:#ffffff;border:1px solid #e3ecea;border-radius:20px;display:flex;flex-direction:column;gap:16px;min-width:0;transition:background .25s,border-color .25s,transform .25s,box-shadow .25s" class="h9">
+            <div style="display:flex;align-items:center;gap:14px"><span style="flex:none;width:52px;height:52px;border-radius:14px;background:linear-gradient(150deg,#1b2625,#0c0f0f);box-shadow:inset 0 0 0 1px rgba(255,255,255,0.08),0 14px 26px -14px rgba(13,127,118,0.8);display:grid;place-items:center;font-family:'Material Symbols Rounded';font-size:24px;color:#2cc4b6;font-variation-settings:'wght' 400">apartment</span><h3 style="font-family:Lexend;font-weight:600;font-size:19px;line-height:1.3">Nekretnine</h3></div>
+            <p style="font-size:15px;line-height:1.6;color:#4a5554;text-wrap:pretty">Sajtovi sa oglasima imaju hiljade stranica koje se stalno menjaju. Novi oglasi treba brzo da se pojave na Google-u, a istekli oglasi i duplikati ne smeju da troše pažnju Google-a na stranice koje više ne postoje.</p>
           </div>
-        
-          <div style="padding:30px 16px;background:#ffffff;border:1px solid #e3ecea;border-radius:20px;display:flex;flex-direction:column;align-items:center;gap:16px;text-align:center;transition:background .25s,border-color .25s,transform .25s,box-shadow .25s" class="h9">
-            <span style="width:60px;height:60px;border-radius:18px;background:linear-gradient(150deg,#1b2625,#0c0f0f);box-shadow:inset 0 0 0 1px rgba(255,255,255,0.08),0 14px 26px -14px rgba(13,127,118,0.8);display:grid;place-items:center;font-family:'Material Symbols Rounded';font-size:28px;color:#2cc4b6;font-variation-settings:'wght' 400">shopping_bag</span>
-            <div style="font-family:Lexend;font-weight:600;font-size:15px">E-commerce</div>
+          <div style="padding:28px;background:#ffffff;border:1px solid #e3ecea;border-radius:20px;display:flex;flex-direction:column;gap:16px;min-width:0;transition:background .25s,border-color .25s,transform .25s,box-shadow .25s" class="h9">
+            <div style="display:flex;align-items:center;gap:14px"><span style="flex:none;width:52px;height:52px;border-radius:14px;background:linear-gradient(150deg,#1b2625,#0c0f0f);box-shadow:inset 0 0 0 1px rgba(255,255,255,0.08),0 14px 26px -14px rgba(13,127,118,0.8);display:grid;place-items:center;font-family:'Material Symbols Rounded';font-size:24px;color:#2cc4b6;font-variation-settings:'wght' 400">shopping_bag</span><h3 style="font-family:Lexend;font-weight:600;font-size:19px;line-height:1.3">E-commerce</h3></div>
+            <p style="font-size:15px;line-height:1.6;color:#4a5554;text-wrap:pretty">Kategorije i proizvodi treba da se pojave baš kada je kupac spreman da kupi, sa cenom i dostupnošću vidljivim već u rezultatima. Filteri i varijante proizvoda ne smeju da naprave hiljade stranica koje se međusobno takmiče.</p>
           </div>
-        
-          <div style="padding:30px 16px;background:#ffffff;border:1px solid #e3ecea;border-radius:20px;display:flex;flex-direction:column;align-items:center;gap:16px;text-align:center;transition:background .25s,border-color .25s,transform .25s,box-shadow .25s" class="h9">
-            <span style="width:60px;height:60px;border-radius:18px;background:linear-gradient(150deg,#1b2625,#0c0f0f);box-shadow:inset 0 0 0 1px rgba(255,255,255,0.08),0 14px 26px -14px rgba(13,127,118,0.8);display:grid;place-items:center;font-family:'Material Symbols Rounded';font-size:28px;color:#2cc4b6;font-variation-settings:'wght' 400">restaurant</span>
-            <div style="font-family:Lexend;font-weight:600;font-size:15px">Ugostiteljstvo</div>
+          <div style="padding:28px;background:#ffffff;border:1px solid #e3ecea;border-radius:20px;display:flex;flex-direction:column;gap:16px;min-width:0;transition:background .25s,border-color .25s,transform .25s,box-shadow .25s" class="h9">
+            <div style="display:flex;align-items:center;gap:14px"><span style="flex:none;width:52px;height:52px;border-radius:14px;background:linear-gradient(150deg,#1b2625,#0c0f0f);box-shadow:inset 0 0 0 1px rgba(255,255,255,0.08),0 14px 26px -14px rgba(13,127,118,0.8);display:grid;place-items:center;font-family:'Material Symbols Rounded';font-size:24px;color:#2cc4b6;font-variation-settings:'wght' 400">restaurant</span><h3 style="font-family:Lexend;font-weight:600;font-size:19px;line-height:1.3">Ugostiteljstvo</h3></div>
+            <p style="font-size:15px;line-height:1.6;color:#4a5554;text-wrap:pretty">Na pitanje „gde da jedem u blizini” Google i AI odgovaraju za par sekundi. Tačno radno vreme, lokacija i meni napisan kao tekst na stranici, a ne samo kao slika, povećavaju šansu da budete u tom odgovoru.</p>
           </div>
-        
       </div>
     </div>
   </div>
@@ -575,6 +655,37 @@ h1,h2,h3,h4,p{margin:0}
 
 
 
+<section id="kako-radimo" style="padding:100px 24px;background:#f6faf9;border-top:1px solid #eef3f2">
+  <div style="max-width:1180px;margin:0 auto;display:flex;flex-direction:column;gap:48px">
+    <div style="display:flex;flex-direction:column;gap:16px;max-width:760px">
+      <h2 style="font-family:Lexend;font-weight:700;font-size:clamp(34px,4vw,52px);line-height:1.08;letter-spacing:-0.03em;text-wrap:balance">Od prvog upita do sajta koji se vidi</h2>
+      <p style="font-size:18px;line-height:1.6;color:#4a5554;text-wrap:pretty">Četiri koraka. Dok ne prihvatite ponudu, nemate nikakvu obavezu.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:20px">
+      <div style="padding:28px 24px;background:#ffffff;border:1px solid #e3ecea;border-radius:20px;display:flex;flex-direction:column;gap:12px;min-width:0">
+        <div style="width:52px;height:52px;border-radius:50%;background:#0c0f0f;color:#2cc4b6;display:grid;place-items:center;font-family:Lexend;font-weight:700;font-size:17px">01</div>
+        <h3 style="font-family:Lexend;font-weight:600;font-size:19px;margin-top:6px">Upit</h3>
+        <p style="font-size:15px;line-height:1.6;color:#4a5554;text-wrap:pretty">Pošaljete link do sajta ili par rečenica o projektu. Javljamo se u roku od 24 sata.</p>
+      </div>
+      <div style="padding:28px 24px;background:#ffffff;border:1px solid #e3ecea;border-radius:20px;display:flex;flex-direction:column;gap:12px;min-width:0">
+        <div style="width:52px;height:52px;border-radius:50%;background:#0c0f0f;color:#2cc4b6;display:grid;place-items:center;font-family:Lexend;font-weight:700;font-size:17px">02</div>
+        <h3 style="font-family:Lexend;font-weight:600;font-size:19px;margin-top:6px">Analiza i plan</h3>
+        <p style="font-size:15px;line-height:1.6;color:#4a5554;text-wrap:pretty">Sajt pregledamo onako kako ga vidi Google: šta obilazi, šta indeksira i šta propušta. Proverimo i konkurenciju i kako vas danas navode AI alati. Dobijate plan izmena poređanih po uticaju i jasnu ponudu.</p>
+      </div>
+      <div style="padding:28px 24px;background:#ffffff;border:1px solid #e3ecea;border-radius:20px;display:flex;flex-direction:column;gap:12px;min-width:0">
+        <div style="width:52px;height:52px;border-radius:50%;background:#0c0f0f;color:#2cc4b6;display:grid;place-items:center;font-family:Lexend;font-weight:700;font-size:17px">03</div>
+        <h3 style="font-family:Lexend;font-weight:600;font-size:19px;margin-top:6px">Sprovođenje</h3>
+        <p style="font-size:15px;line-height:1.6;color:#4a5554;text-wrap:pretty">Izmene sprovodimo mi, direktno na sajtu, ili ih radite sami po planu. Svaku izmenu proveravamo pre i posle puštanja, da nijedna ne obori postojeće pozicije.</p>
+      </div>
+      <div style="padding:28px 24px;background:#ffffff;border:1px solid #e3ecea;border-radius:20px;display:flex;flex-direction:column;gap:12px;min-width:0">
+        <div style="width:52px;height:52px;border-radius:50%;background:#0c0f0f;color:#2cc4b6;display:grid;place-items:center;font-family:Lexend;font-weight:700;font-size:17px">04</div>
+        <h3 style="font-family:Lexend;font-weight:600;font-size:19px;margin-top:6px">Praćenje</h3>
+        <p style="font-size:15px;line-height:1.6;color:#4a5554;text-wrap:pretty">Pratimo indeksiranje, pozicije i pominjanja u AI odgovorima. Redovno šaljemo izveštaj o tome šta je urađeno i zašto.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section id="seo-provera" class="wa-audit" data-wa-audit aria-labelledby="wa-audit-title">
   <div class="wa-audit__card">
     <div class="wa-audit__glow wa-audit__glow--r"></div>
@@ -601,7 +712,7 @@ h1,h2,h3,h4,p{margin:0}
   <div style="max-width:1180px;margin:0 auto;display:flex;flex-direction:column;gap:48px">
     <div style="display:flex;flex-direction:column;gap:16px;align-items:flex-start;text-align:left;max-width:760px">
       <h2 style="font-family:Lexend;font-weight:700;font-size:clamp(34px,4vw,52px);line-height:1.08;letter-spacing:-0.03em;text-wrap:balance">Alati za vidljivost na Google-u i u AI pretrazi</h2>
-      <p style="font-size:18px;line-height:1.6;color:#4a5554;text-wrap:pretty">Isti alati koje koristim u radu sa klijentima. Rade direktno u browseru, bez registracije.</p>
+      <p style="font-size:18px;line-height:1.6;color:#4a5554;text-wrap:pretty">Isti alati koje koristimo u radu sa klijentima. Rade direktno u browseru, bez registracije.</p>
     </div>
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));gap:20px">
       <a href="robots-txt-generator" style="display:flex;flex-direction:column;background:#ffffff;border:1px solid #e3ecea;border-radius:24px;overflow:hidden;color:#0c0f0f;transition:transform .25s,box-shadow .25s,border-color .25s" class="wa-tool">
@@ -676,13 +787,53 @@ h1,h2,h3,h4,p{margin:0}
   </div>
 </section>
 
+<section id="pitanja" style="padding:100px 24px;background:#ffffff;border-top:1px solid #eef3f2">
+  <div style="max-width:860px;margin:0 auto;display:flex;flex-direction:column;gap:40px">
+    <h2 style="font-family:Lexend;font-weight:700;font-size:clamp(32px,3.6vw,46px);line-height:1.1;letter-spacing:-0.03em;text-wrap:balance">Česta pitanja o izradi i optimizaciji sajtova</h2>
+    <div class="wa-faq" style="display:flex;flex-direction:column;border-top:1px solid #e3ecea">
+      <details open style="border-bottom:1px solid #e3ecea">
+        <summary style="list-style:none;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:22px 4px;cursor:pointer;font-family:Lexend;font-weight:600;font-size:18px;color:#0c0f0f">Koja je razlika između SEO i GEO optimizacije?<span class="faq-ic" style="flex:none;width:36px;height:36px;border-radius:50%;display:grid;place-items:center;font-family:'Material Symbols Rounded';font-size:22px;transition:background .2s,transform .2s">add</span></summary>
+        <p style="padding:0 56px 24px 4px;font-size:16px;line-height:1.7;color:#4a5554;text-wrap:pretty">SEO je optimizacija za klasične Google rezultate, da bi sajt bio što više u listi linkova. GEO je optimizacija za AI odgovore, da bi vas ChatGPT, Gemini i Google AI Overviews naveli kao izvor ili preporuku. GEO ne zamenjuje SEO: AI alati se u velikoj meri oslanjaju na iste izvore koje rangira pretraživač, pa je dobra SEO osnova uslov za oba.</p>
+      </details>
+      <details style="border-bottom:1px solid #e3ecea">
+        <summary style="list-style:none;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:22px 4px;cursor:pointer;font-family:Lexend;font-weight:600;font-size:18px;color:#0c0f0f">Da li mi treba novi sajt ili može da se sredi postojeći?<span class="faq-ic" style="flex:none;width:36px;height:36px;border-radius:50%;display:grid;place-items:center;font-family:'Material Symbols Rounded';font-size:22px;transition:background .2s,transform .2s">add</span></summary>
+        <p style="padding:0 56px 24px 4px;font-size:16px;line-height:1.7;color:#4a5554;text-wrap:pretty">U većini slučajeva postojeći sajt može da se optimizuje. Novi sajt predlažemo samo kada trenutni zaista ograničava rast. Tada prelazak radimo uz proveru svih preusmerenja i ključnih elemenata pre i posle puštanja, da se ne izgube postojeće pozicije.</p>
+      </details>
+      <details style="border-bottom:1px solid #e3ecea">
+        <summary style="list-style:none;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:22px 4px;cursor:pointer;font-family:Lexend;font-weight:600;font-size:18px;color:#0c0f0f">Za koliko vremena se vide rezultati?<span class="faq-ic" style="flex:none;width:36px;height:36px;border-radius:50%;display:grid;place-items:center;font-family:'Material Symbols Rounded';font-size:22px;transition:background .2s,transform .2s">add</span></summary>
+        <p style="padding:0 56px 24px 4px;font-size:16px;line-height:1.7;color:#4a5554;text-wrap:pretty">Zavisi od stanja sajta, konkurencije i obima izmena. Tehničke ispravke se obično brže odraze, a sadržaj i autoritet rastu postepeno. Poziciju na Google-u niko ne može pošteno da garantuje, pa je ne obećavamo ni mi.</p>
+      </details>
+      <details style="border-bottom:1px solid #e3ecea">
+        <summary style="list-style:none;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:22px 4px;cursor:pointer;font-family:Lexend;font-weight:600;font-size:18px;color:#0c0f0f">Koliko košta izrada ili optimizacija sajta?<span class="faq-ic" style="flex:none;width:36px;height:36px;border-radius:50%;display:grid;place-items:center;font-family:'Material Symbols Rounded';font-size:22px;transition:background .2s,transform .2s">add</span></summary>
+        <p style="padding:0 56px 24px 4px;font-size:16px;line-height:1.7;color:#4a5554;text-wrap:pretty">Cena zavisi od vrste sajta, broja stranica i obima posla. Posle kratkog razgovora i pregleda sajta šaljemo jasnu ponudu, bez skrivenih troškova.</p>
+      </details>
+      <details style="border-bottom:1px solid #e3ecea">
+        <summary style="list-style:none;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:22px 4px;cursor:pointer;font-family:Lexend;font-weight:600;font-size:18px;color:#0c0f0f">Da li radite sajtove na više jezika?<span class="faq-ic" style="flex:none;width:36px;height:36px;border-radius:50%;display:grid;place-items:center;font-family:'Material Symbols Rounded';font-size:22px;transition:background .2s,transform .2s">add</span></summary>
+        <p style="padding:0 56px 24px 4px;font-size:16px;line-height:1.7;color:#4a5554;text-wrap:pretty">Da, i to je oblast u kojoj imamo najviše iskustva, sa sajtova na više od deset jezika. Podešavamo ih tako da Google svakom tržištu prikaže pravu verziju i da se jezičke verzije ne takmiče međusobno.</p>
+      </details>
+      <details style="border-bottom:1px solid #e3ecea">
+        <summary style="list-style:none;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:22px 4px;cursor:pointer;font-family:Lexend;font-weight:600;font-size:18px;color:#0c0f0f">Da li koristite AI za analizu i pisanje sadržaja?<span class="faq-ic" style="flex:none;width:36px;height:36px;border-radius:50%;display:grid;place-items:center;font-family:'Material Symbols Rounded';font-size:22px;transition:background .2s,transform .2s">add</span></summary>
+        <p style="padding:0 56px 24px 4px;font-size:16px;line-height:1.7;color:#4a5554;text-wrap:pretty">Da, kao alat. AI nam pomaže da brže obradimo velike izveštaje i pripremimo sadržaj, ali svaku preporuku i svaki tekst proveravamo ručno pre nego što stignu na vaš sajt.</p>
+      </details>
+      <details style="border-bottom:1px solid #e3ecea">
+        <summary style="list-style:none;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:22px 4px;cursor:pointer;font-family:Lexend;font-weight:600;font-size:18px;color:#0c0f0f">Da li radite i održavanje sajta?<span class="faq-ic" style="flex:none;width:36px;height:36px;border-radius:50%;display:grid;place-items:center;font-family:'Material Symbols Rounded';font-size:22px;transition:background .2s,transform .2s">add</span></summary>
+        <p style="padding:0 56px 24px 4px;font-size:16px;line-height:1.7;color:#4a5554;text-wrap:pretty">Da. Posle lansiranja možemo redovno da održavamo sajt i da nastavimo rast kroz SEO i GEO paket. Ako želite da sajtom upravljate sami, dobijate video uputstvo i pisani vodič napravljene za vaš sajt.</p>
+      </details>
+      <details style="border-bottom:1px solid #e3ecea">
+        <summary style="list-style:none;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:22px 4px;cursor:pointer;font-family:Lexend;font-weight:600;font-size:18px;color:#0c0f0f">Da li radite sa firmama van Beograda?<span class="faq-ic" style="flex:none;width:36px;height:36px;border-radius:50%;display:grid;place-items:center;font-family:'Material Symbols Rounded';font-size:22px;transition:background .2s,transform .2s">add</span></summary>
+        <p style="padding:0 56px 24px 4px;font-size:16px;line-height:1.7;color:#4a5554;text-wrap:pretty">Da. Radimo sa firmama iz cele Srbije i regiona, a sve se završava online: razgovor, analiza, izmene i izveštaji. Sa klijentima iz inostranstva radimo na engleskom.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
 <section style="padding:90px 24px;background:#f6faf9;border-top:1px solid #eef3f2">
   <div style="max-width:1180px;margin:0 auto;display:flex;flex-direction:column;align-items:center;gap:36px;text-align:center">
     <div style="width:100%;max-width:980px;display:flex;flex-direction:column;gap:20px">
-      <div style="display:flex;flex-direction:column;gap:10px;align-items:center"><div style="font-size:13px;font-weight:700;letter-spacing:0.18em;color:#0d7f76">GDE RADIMO</div><p style="font-size:18px;line-height:1.6;color:#2b3433;max-width:640px;text-wrap:pretty">Radimo sa firmama i brendovima na teritoriji cele Srbije i u regionu. Sve se završava online, bez obzira gde se nalazite.</p><a href="o-nama#international" style="display:flex;align-items:center;gap:8px;padding:8px 14px 8px 8px;border-radius:999px;background:#ffffff;border:1px solid #cfe5e2;font-size:14px;font-weight:600;color:#0c0f0f" class="hb"><span style="display:grid;place-items:center;height:24px;padding:0 8px;border-radius:999px;background:#0c0f0f;color:#2cc4b6;font-size:11px;font-weight:700;letter-spacing:0.08em">EN</span>International clients welcome<span style="font-family:'Material Symbols Rounded';font-size:18px;color:#0d7f76">arrow_forward</span></a></div>
+      <div style="display:flex;flex-direction:column;gap:10px;align-items:center"><div style="font-size:13px;font-weight:700;letter-spacing:0.18em;color:#0d7f76">GDE RADIMO</div><p style="font-size:18px;line-height:1.6;color:#2b3433;max-width:640px;text-wrap:pretty">Radimo sa firmama iz cele Srbije i regiona: Crne Gore, Bosne i Hercegovine i Hrvatske. Sve se završava online, pa nije važno gde se nalazite.</p><a href="o-nama#international" style="display:flex;align-items:center;gap:8px;padding:8px 14px 8px 8px;border-radius:999px;background:#ffffff;border:1px solid #cfe5e2;font-size:14px;font-weight:600;color:#0c0f0f" class="hb"><span style="display:grid;place-items:center;height:24px;padding:0 8px;border-radius:999px;background:#0c0f0f;color:#2cc4b6;font-size:11px;font-weight:700;letter-spacing:0.08em">EN</span>International clients welcome<span style="font-family:'Material Symbols Rounded';font-size:18px;color:#0d7f76">arrow_forward</span></a></div>
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:20px">
-        <div style="display:flex;flex-direction:column;gap:16px;align-items:flex-start;text-align:left;padding:28px;border-radius:20px;background:#ffffff;border:1px solid #e3ecea;transition:border-color .25s,transform .25s,box-shadow .25s" class="hc"><div style="display:flex;align-items:center;gap:14px"><span style="flex:none;width:52px;height:52px;border-radius:14px;background:linear-gradient(150deg,#1b2625,#0c0f0f);box-shadow:inset 0 0 0 1px rgba(255,255,255,0.08),0 14px 26px -14px rgba(13,127,118,0.8);display:grid;place-items:center;font-family:'Material Symbols Rounded';font-size:24px;color:#2cc4b6">flag</span><div style="display:flex;flex-direction:column;gap:2px"><div style="font-size:12px;font-weight:700;letter-spacing:0.14em;color:#0d7f76">SRBIJA</div><div style="font-family:Lexend;font-weight:600;font-size:19px">Cela Srbija</div></div></div><div style="display:flex;flex-wrap:wrap;gap:8px"><span style="display:flex;align-items:center;gap:6px;padding:9px 14px;background:#ffffff;border:1px solid #e1eae8;border-radius:999px;font-size:14px;font-weight:600;white-space:nowrap;color:#2b3433"><span style="font-family:'Material Symbols Rounded';font-size:18px;color:#1aa89d;font-variation-settings:'FILL' 1">location_on</span>Beograd</span><span style="display:flex;align-items:center;gap:6px;padding:9px 14px;background:#ffffff;border:1px solid #e1eae8;border-radius:999px;font-size:14px;font-weight:600;white-space:nowrap;color:#2b3433"><span style="font-family:'Material Symbols Rounded';font-size:18px;color:#1aa89d;font-variation-settings:'FILL' 1">location_on</span>Pančevo</span><span style="display:flex;align-items:center;gap:6px;padding:9px 14px;background:#ffffff;border:1px solid #e1eae8;border-radius:999px;font-size:14px;font-weight:600;white-space:nowrap;color:#2b3433"><span style="font-family:'Material Symbols Rounded';font-size:18px;color:#1aa89d;font-variation-settings:'FILL' 1">location_on</span>Aranđelovac</span><span style="display:flex;align-items:center;gap:6px;padding:9px 14px;background:#ffffff;border:1px solid #e1eae8;border-radius:999px;font-size:14px;font-weight:600;white-space:nowrap;color:#2b3433"><span style="font-family:'Material Symbols Rounded';font-size:18px;color:#1aa89d;font-variation-settings:'FILL' 1">location_on</span>i ostali gradovi</span></div></div>
-        <div style="display:flex;flex-direction:column;gap:16px;align-items:flex-start;text-align:left;padding:28px;border-radius:20px;background:#ffffff;border:1px solid #e3ecea;transition:border-color .25s,transform .25s,box-shadow .25s" class="hc"><div style="display:flex;align-items:center;gap:14px"><span style="flex:none;width:52px;height:52px;border-radius:14px;background:linear-gradient(150deg,#1b2625,#0c0f0f);box-shadow:inset 0 0 0 1px rgba(255,255,255,0.08),0 14px 26px -14px rgba(13,127,118,0.8);display:grid;place-items:center;font-family:'Material Symbols Rounded';font-size:24px;color:#2cc4b6">public</span><div style="display:flex;flex-direction:column;gap:2px"><div style="font-size:12px;font-weight:700;letter-spacing:0.14em;color:#0d7f76">REGION</div><div style="font-family:Lexend;font-weight:600;font-size:19px">Ex-Yu tržište</div></div></div><div style="display:flex;flex-wrap:wrap;gap:8px"><span style="display:flex;align-items:center;gap:6px;padding:9px 14px;background:#ffffff;border:1px solid #e1eae8;border-radius:999px;font-size:14px;font-weight:600;white-space:nowrap;color:#2b3433"><span style="font-family:'Material Symbols Rounded';font-size:18px;color:#1aa89d;font-variation-settings:'FILL' 1">location_on</span>Crna Gora</span><span style="display:flex;align-items:center;gap:6px;padding:9px 14px;background:#ffffff;border:1px solid #e1eae8;border-radius:999px;font-size:14px;font-weight:600;white-space:nowrap;color:#2b3433"><span style="font-family:'Material Symbols Rounded';font-size:18px;color:#1aa89d;font-variation-settings:'FILL' 1">location_on</span>Bosna i Hercegovina</span><span style="display:flex;align-items:center;gap:6px;padding:9px 14px;background:#ffffff;border:1px solid #e1eae8;border-radius:999px;font-size:14px;font-weight:600;white-space:nowrap;color:#2b3433"><span style="font-family:'Material Symbols Rounded';font-size:18px;color:#1aa89d;font-variation-settings:'FILL' 1">location_on</span>Hrvatska</span></div></div>
+        <div style="display:flex;flex-direction:column;gap:16px;align-items:flex-start;text-align:left;padding:28px;border-radius:20px;background:#ffffff;border:1px solid #e3ecea;transition:border-color .25s,transform .25s,box-shadow .25s" class="hc"><div style="display:flex;align-items:center;gap:14px"><span style="flex:none;width:52px;height:52px;border-radius:14px;background:linear-gradient(150deg,#1b2625,#0c0f0f);box-shadow:inset 0 0 0 1px rgba(255,255,255,0.08),0 14px 26px -14px rgba(13,127,118,0.8);display:grid;place-items:center;font-family:'Material Symbols Rounded';font-size:24px;color:#2cc4b6">flag</span><div style="display:flex;flex-direction:column;gap:2px"><div style="font-size:12px;font-weight:700;letter-spacing:0.14em;color:#0d7f76">SRBIJA</div><div style="font-family:Lexend;font-weight:600;font-size:19px">Cela Srbija</div></div></div></div>
+        <div style="display:flex;flex-direction:column;gap:16px;align-items:flex-start;text-align:left;padding:28px;border-radius:20px;background:#ffffff;border:1px solid #e3ecea;transition:border-color .25s,transform .25s,box-shadow .25s" class="hc"><div style="display:flex;align-items:center;gap:14px"><span style="flex:none;width:52px;height:52px;border-radius:14px;background:linear-gradient(150deg,#1b2625,#0c0f0f);box-shadow:inset 0 0 0 1px rgba(255,255,255,0.08),0 14px 26px -14px rgba(13,127,118,0.8);display:grid;place-items:center;font-family:'Material Symbols Rounded';font-size:24px;color:#2cc4b6">public</span><div style="display:flex;flex-direction:column;gap:2px"><div style="font-size:12px;font-weight:700;letter-spacing:0.14em;color:#0d7f76">REGION</div><div style="font-family:Lexend;font-weight:600;font-size:19px">Crna Gora, BiH i Hrvatska</div></div></div></div>
       </div>
     </div>
   </div>
@@ -700,7 +851,7 @@ h1,h2,h3,h4,p{margin:0}
       </div>
       <div style="display:flex;flex-direction:column;gap:14px;font-size:15px">
         <div style="font-family:Lexend;font-weight:600;font-size:17px;margin-bottom:6px">Usluge</div>
-        <a href="seo-konsalting" style="color:#4a5554">Konsalting SEO</a><a href="ecommerce-seo" style="color:#4a5554">E-commerce SEO</a><a href="geo-optimizacija" style="color:#4a5554">GEO optimizacija</a><a href="izrada-sajtova" style="color:#4a5554">Izrada sajtova</a>
+        <a href="seo-konsalting" style="color:#4a5554">SEO konsalting</a><a href="ecommerce-seo" style="color:#4a5554">E-commerce SEO</a><a href="geo-optimizacija" style="color:#4a5554">GEO optimizacija</a><a href="izrada-sajtova" style="color:#4a5554">Izrada sajtova</a>
       </div>
       <div style="display:flex;flex-direction:column;gap:14px;font-size:15px">
         <div style="font-family:Lexend;font-weight:600;font-size:17px;margin-bottom:6px">SEO alati</div>
