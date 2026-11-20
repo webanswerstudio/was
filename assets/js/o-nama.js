@@ -1,7 +1,7 @@
 window.__DCC = (function () {
 class Component extends DCLogic {
   state = { navOpen: false, lang: 'sr' };
-  componentDidMount() { if (typeof location !== 'undefined' && location.hash === '#international') this.setState({ lang: 'en' }); }
+  componentDidMount() { const chk = () => { if (typeof location !== 'undefined' && location.hash === '#international') this.setState({ lang: 'en' }); }; chk(); window.addEventListener('hashchange', chk); }
   renderVals() {
     const en = this.state.lang === 'en';
     return {
