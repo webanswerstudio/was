@@ -67,12 +67,17 @@
   </url>
 <url>
     <loc>https://webanswerstudio.com/blog</loc>
-    <lastmod>2026-11-20</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <priority>1.0</priority>
   </url>
 <url>
     <loc>https://webanswerstudio.com/google-2027-promene-u-pretrazi</loc>
     <lastmod>2026-11-20</lastmod>
+    <priority>1.0</priority>
+  </url>
+<url>
+    <loc>https://webanswerstudio.com/ai-seo-i-klasicni-seo</loc>
+    <lastmod>2026-11-23</lastmod>
     <priority>1.0</priority>
   </url>
 </urlset>
