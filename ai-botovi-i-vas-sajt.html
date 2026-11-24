@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="sr-Latn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI botovi i vaš sajt: tri podešavanja koja mogu da vas sakriju iz AI odgovora</title>
+<meta name="description" content="Cloudflare, robots.txt i Search Console mogu da zatvore pristup AI botovima. Gde se najčešće greši i kako da proverite svoj sajt za pola sata.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://webanswerstudio.com/ai-botovi-i-vas-sajt">
+<link rel="icon" type="image/png" sizes="48x48" href="favicon-48.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="theme-color" content="#ffffff">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Web Answer Studio">
+<meta property="og:locale" content="sr_RS">
+<meta property="og:title" content="AI botovi i vaš sajt: tri podešavanja koja mogu da vas sakriju iz AI odgovora">
+<meta property="og:description" content="Cloudflare, robots.txt i Search Console mogu da zatvore pristup AI botovima. Gde se najčešće greši i kako da proverite svoj sajt za pola sata.">
+<meta property="og:url" content="https://webanswerstudio.com/ai-botovi-i-vas-sajt">
+<meta property="og:image" content="https://webanswerstudio.com/assets/img/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Web Answer Studio – izrada i optimizacija web sajtova">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="AI botovi i vaš sajt: tri podešavanja koja mogu da vas sakriju iz AI odgovora">
+<meta name="twitter:description" content="Cloudflare, robots.txt i Search Console mogu da zatvore pristup AI botovima. Gde se najčešće greši i kako da proverite svoj sajt za pola sata.">
+<meta name="twitter:image" content="https://webanswerstudio.com/assets/img/og-image.jpg">
+<meta name="twitter:image:alt" content="Web Answer Studio – izrada i optimizacija web sajtova">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="image" type="image/webp" href="assets/img/logo-web-answer-studio.webp" fetchpriority="high">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend:wght@600;700&amp;family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&amp;display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400..500,0..1,0&amp;icon_names=arrow_back,arrow_downward,arrow_forward,auto_awesome,call,data_object,description,design_services,expand_more,groups,mail,menu_book,redeem,search,shopping_cart,smart_toy,support_agent,verified_user&amp;display=block">
+<style>
+html,body{margin:0;padding:0;background:#ffffff;color:#0c0f0f;font-family:'DM Sans',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+*{box-sizing:border-box}
+a{color:#0d7f76;text-decoration:none}
+a:hover{color:#0c0f0f}
+h1,h2,h3,h4,p{margin:0}
+.h0:hover{background:#eef8f6!important;color:#0c0f0f!important}
+.h1:hover{background:#0d7f76!important;color:#ffffff!important}
+.h2:hover{color:#0d7f76!important}
+.h3:hover{background:#0c0f0f!important;color:#ffffff!important}
+[data-hide]{display:none!important}
+.wa-burger{display:none;width:46px;height:46px;padding:0;border:1px solid #e3ecea;border-radius:12px;background:#ffffff;cursor:pointer;flex-direction:column;align-items:center;justify-content:center;gap:5px}
+.wa-burger span{display:block;width:20px;height:2px;border-radius:2px;background:#0c0f0f;transition:transform .25s,opacity .2s}
+.wa-burger[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.wa-burger[aria-expanded="true"] span:nth-child(2){opacity:0}
+.wa-burger[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+.wa-mnav{display:none;position:absolute;left:24px;right:24px;top:100%;margin-top:8px;max-height:calc(100vh - 110px);overflow:auto;padding:6px;background:#ffffff;border:1px solid #e3ecea;border-radius:16px;box-shadow:0 30px 60px -28px rgba(12,15,15,0.35);flex-direction:column}
+.wa-mnav[data-open]{display:flex}
+.wa-mnav a,.wa-mexp{display:flex;align-items:center;justify-content:space-between;width:100%;min-height:44px;padding:0 12px;border:0;border-radius:10px;background:transparent;font-family:inherit;font-size:15px;font-weight:500;color:#0c0f0f;text-align:left;cursor:pointer}
+.wa-mnav a:hover,.wa-mexp:hover{background:#eef8f6;color:#0c0f0f}
+.wa-mnav a[aria-current],.wa-mexp[data-cur]{color:#0d7f76;font-weight:600}
+.wa-mexp i{width:8px;height:8px;margin-right:4px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:translateY(-2px) rotate(45deg);transition:transform .2s}
+.wa-mexp[aria-expanded="true"] i{transform:translateY(2px) rotate(-135deg)}
+.wa-msub{display:none;flex-direction:column;margin:0 0 4px 12px;padding-left:8px;border-left:2px solid #e3ecea}
+.wa-msub[data-open]{display:flex}
+.wa-msub a{min-height:40px;font-size:14px;color:#4a5554}
+.wa-mnav a.wa-mcta{justify-content:center;margin-top:6px;background:#0c0f0f;color:#ffffff;font-weight:600}
+.wa-mnav a.wa-mcta:hover{background:#0d7f76;color:#ffffff}
+.wa-dd .wa-ddm{display:none}.wa-dd:hover .wa-ddm,.wa-dd:focus-within .wa-ddm{display:block}
+@media (max-width:1180px){.wa-links,.wa-cta{display:none!important}.wa-burger{display:flex}}
+</style>
+<style id="wa-nav2">.h6:hover{background:#ffffff!important;color:#0c0f0f!important}.wa-ddi:hover{background:#eef8f6!important;color:#0c0f0f!important}.wa-navl:hover{color:#0d7f76!important}.wa-ncta:hover{background:#0c0f0f!important;color:#ffffff!important}.wa-lang a:hover{color:#0d7f76!important}.wa-dd .wa-ddm{display:none}.wa-dd:hover .wa-ddm,.wa-dd:focus-within .wa-ddm{display:block}.wa-tool:hover{transform:translateY(-3px)!important;border-color:#9fd9d2!important;background:#eef8f6!important;color:#0c0f0f!important}.wa-mnav a.wa-mcta{justify-content:center;margin-top:6px;background:#0c0f0f;color:#ffffff;font-weight:600}@media (max-width:1180px){.wa-links,.wa-cta{display:none!important}.wa-burger{display:flex}}</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "BlogPosting",
+   "headline": "AI botovi i vaš sajt: tri podešavanja koja mogu da vas sakriju iz AI odgovora",
+   "description": "Cloudflare, robots.txt i Search Console mogu da zatvore pristup AI botovima. Gde se najčešće greši i kako da proverite svoj sajt za pola sata.",
+   "datePublished": "2026-11-24",
+   "dateModified": "2026-11-24",
+   "inLanguage": "sr-Latn",
+   "mainEntityOfPage": "https://webanswerstudio.com/ai-botovi-i-vas-sajt",
+   "image": "https://webanswerstudio.com/assets/img/og-image.jpg",
+   "author": {
+    "@type": "Person",
+    "name": "Vuk Stojković",
+    "url": "https://webanswerstudio.com/o-nama"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "Web Answer Studio",
+    "url": "https://webanswerstudio.com/",
+    "logo": {
+     "@type": "ImageObject",
+     "url": "https://webanswerstudio.com/assets/img/logo-web-answer-studio.webp"
+    }
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Početna",
+     "item": "https://webanswerstudio.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Blog",
+     "item": "https://webanswerstudio.com/blog"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "AI botovi i vaš sajt: tri podešavanja koja mogu da vas sakriju iz AI odgovora",
+     "item": "https://webanswerstudio.com/ai-botovi-i-vas-sajt"
+    }
+   ]
+  }
+ ]
+}
+</script>
+<style id="wa-toc">html{scroll-behavior:smooth}.wa-toc{flex:none;width:260px;position:sticky;top:116px;padding:22px 20px 14px;background:#fff;border:1.5px solid #8fd0c8;border-radius:18px;box-shadow:0 18px 40px -30px rgba(13,127,118,.45);display:flex;flex-direction:column;gap:6px}.wa-toc a{display:flex;gap:10px;padding:10px 0;border-bottom:1px solid #eef3f2;font-size:14px;line-height:1.45;color:#4a5554}.wa-toc a:hover,.wa-toc a[data-active]{color:#0d7f76}.wa-toc a[data-active]{font-weight:600}.wa-toc a span:first-child{flex:none;width:3px;border-radius:2px;background:transparent}.wa-toc a[data-active] span:first-child{background:#0d7f76}.wa-tocm{display:none;padding:16px 20px;background:#fff;border:1.5px solid #8fd0c8;border-radius:16px}.wa-tocm summary{cursor:pointer;font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#0d7f76}.wa-tocm a{display:flex;align-items:center;min-height:44px;border-bottom:1px solid #eef3f2;font-size:15px;color:#2b3433}article h2[id]{scroll-margin-top:120px}@media (max-width:1039px){.wa-toc{display:none}.wa-tocm{display:block}}</style>
+</head>
+<body>
+<div style="min-height:100vh;background:#ffffff">
+
+<div style="position:sticky;top:0;z-index:20;padding:16px 24px 0">
+  <nav style="max-width:1180px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:clamp(16px,2.4vw,36px);flex-wrap:wrap;padding:12px 12px 12px 24px;background:#ffffff;border:1px solid #e3ecea;border-radius:16px;box-shadow:0 10px 30px -18px rgba(12,15,15,0.25)" aria-label="Glavna navigacija">
+    <a href="./" aria-label="Web Answer Studio, početna" style="display:flex;align-items:center;gap:10px;color:#0c0f0f">
+      <img src="assets/img/logo-web-answer-studio.webp" alt="Logo Web Answer Studio" style="display:block;height:46px;width:auto" width="440" height="120" decoding="async" fetchpriority="high">
+    </a>
+    <div class="wa-links" style="display:flex;gap:clamp(18px,2.2vw,32px);flex-wrap:wrap;align-items:center;font-size:15px;font-weight:500;margin-left:auto">
+      <div class="wa-dd" style="position:relative;display:flex;align-items:center"><a href="./#usluge" style="display:flex;align-items:center;gap:2px;color:#2b3433" class="wa-navl">Usluge<span style="font-family:'Material Symbols Rounded';font-size:20px;color:inherit">expand_more</span></a><div class="wa-ddm" style="position:absolute;top:100%;left:-24px;padding-top:18px;z-index:40"><div style="width:340px;max-width:calc(100vw - 48px);padding:10px;background:#ffffff;border:1px solid #e3ecea;border-radius:18px;box-shadow:0 30px 60px -28px rgba(12,15,15,0.35);display:flex;flex-direction:column;gap:2px"><a href="seo-konsalting" style="display:flex;align-items:center;gap:14px;padding:10px 12px;border-radius:12px;color:#0c0f0f" class="wa-ddi"><span style="flex:none;width:40px;height:40px;border-radius:12px;background:linear-gradient(150deg,#1b2625,#0c0f0f);display:grid;place-items:center;font-family:'Material Symbols Rounded';font-size:20px;color:#2cc4b6">support_agent</span><span style="display:flex;flex-direction:column;gap:1px"><span style="font-weight:600;font-size:15px">SEO konsalting</span><span style="font-size:13px;font-weight:400;color:#6b7675">Savet i optimizacija sajta</span></span></a><a href="ecommerce-seo" style="display:flex;align-items:center;gap:14px;padding:10px 12px;border-radius:12px;color:#0c0f0f" class="wa-ddi"><span style="flex:none;width:40px;height:40px;border-radius:12px;background:linear-gradient(150deg,#1b2625,#0c0f0f);display:grid;place-items:center;font-family:'Material Symbols Rounded';font-size:20px;color:#2cc4b6">shopping_cart</span><span style="display:flex;flex-direction:column;gap:1px"><span style="font-weight:600;font-size:15px">E-commerce SEO</span><span style="font-size:13px;font-weight:400;color:#6b7675">SEO za online prodavnice</span></span></a><a href="geo-optimizacija" style="display:flex;align-items:center;gap:14px;padding:10px 12px;border-radius:12px;color:#0c0f0f" class="wa-ddi"><span style="flex:none;width:40px;height:40px;border-radius:12px;background:linear-gradient(150deg,#1b2625,#0c0f0f);display:grid;place-items:center;font-family:'Material Symbols Rounded';font-size:20px;color:#2cc4b6">auto_awesome</span><span style="display:flex;flex-direction:column;gap:1px"><span style="font-weight:600;font-size:15px">GEO optimizacija</span><span style="font-size:13px;font-weight:400;color:#6b7675">Vidljivost u AI odgovorima</span></span></a><a href="izrada-sajtova" style="display:flex;align-items:center;gap:14px;padding:10px 12px;border-radius:12px;color:#0c0f0f" class="wa-ddi"><span style="flex:none;width:40px;height:40px;border-radius:12px;background:linear-gradient(150deg,#1b2625,#0c0f0f);display:grid;place-items:center;font-family:'Material Symbols Rounded';font-size:20px;color:#2cc4b6">design_services</span><span style="display:flex;flex-direction:column;gap:1px"><span style="font-weight:600;font-size:15px">Izrada sajtova</span><span style="font-size:13px;font-weight:400;color:#6b7675">Novi sajt sa SEO osnovom</span></span></a></div></div></div>
+      <a href="blog" aria-current="page" style="color:#0d7f76" class="wa-navl">Blog</a>
+      <div class="wa-dd" style="position:relative;display:flex;align-items:center"><a href="prirucnik" style="display:flex;align-items:center;gap:2px;color:#2b3433" class="wa-navl">Resursi<span style="font-family:'Material Symbols Rounded';font-size:20px;color:inherit">expand_more</span></a><div class="wa-ddm" style="position:absolute;top:100%;left:-24px;padding-top:18px;z-index:40"><div style="width:660px;max-width:calc(100vw - 48px);padding:10px;background:#ffffff;border:1px solid #e3ecea;border-radius:18px;box-shadow:0 30px 60px -28px rgba(12,15,15,0.35);display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px"><div style="display:flex;flex-direction:column;gap:2px"><div style="padding:8px 12px 6px;font-size:13px;font-weight:600;color:#6b7675">Vodiči</div><a href="prirucnik" style="display:flex;align-items:center;gap:14px;padding:10px 12px;border-radius:12px;color:#0c0f0f" class="wa-ddi"><span style="flex:none;width:40px;height:40px;border-radius:12px;background:linear-gradient(150deg,#1b2625,#0c0f0f);display:grid;place-items:center;font-family:'Material Symbols Rounded';font-size:20px;color:#2cc4b6">menu_book</span><span style="display:flex;flex-direction:column;gap:1px"><span style="font-weight:600;font-size:15px">Priručnik</span><span style="font-size:13px;font-weight:400;color:#6b7675">SEO i GEO vodiči za vlasnike sajtova</span></span></a><a href="prirucnik#poklon" style="display:flex;align-items:center;gap:14px;padding:10px 12px;border-radius:12px;color:#0c0f0f" class="wa-ddi"><span style="flex:none;width:40px;height:40px;border-radius:12px;background:linear-gradient(150deg,#1b2625,#0c0f0f);display:grid;place-items:center;font-family:'Material Symbols Rounded';font-size:20px;color:#2cc4b6">redeem</span><span style="display:flex;flex-direction:column;gap:1px"><span style="font-weight:600;font-size:15px">Poklon vodič</span><span style="font-size:13px;font-weight:400;color:#6b7675">„Dobar SEO je dobar GEO“</span></span></a></div><div style="display:flex;flex-direction:column;gap:2px;padding-left:6px;border-left:1px solid #eef3f2"><div style="padding:8px 12px 6px;font-size:13px;font-weight:600;color:#6b7675">Besplatni alati</div><a href="robots-txt-generator" style="display:flex;align-items:center;gap:14px;padding:10px 12px;border-radius:12px;color:#0c0f0f" class="wa-ddi"><span style="flex:none;width:40px;height:40px;border-radius:12px;background:linear-gradient(150deg,#1b2625,#0c0f0f);display:grid;place-items:center;font-family:'Material Symbols Rounded';font-size:20px;color:#2cc4b6">smart_toy</span><span style="display:flex;flex-direction:column;gap:1px"><span style="font-weight:600;font-size:15px">Robots.txt generator</span><span style="font-size:13px;font-weight:400;color:#6b7675">Pristup za Google i AI botove</span></span></a><a href="schema-generator" style="display:flex;align-items:center;gap:14px;padding:10px 12px;border-radius:12px;color:#0c0f0f" class="wa-ddi"><span style="flex:none;width:40px;height:40px;border-radius:12px;background:linear-gradient(150deg,#1b2625,#0c0f0f);display:grid;place-items:center;font-family:'Material Symbols Rounded';font-size:20px;color:#2cc4b6">data_object</span><span style="display:flex;flex-direction:column;gap:1px"><span style="font-weight:600;font-size:15px">Schema generator</span><span style="font-size:13px;font-weight:400;color:#6b7675">JSON-LD za lokalne firme</span></span></a><a href="llms-txt-generator" style="display:flex;align-items:center;gap:14px;padding:10px 12px;border-radius:12px;color:#0c0f0f" class="wa-ddi"><span style="flex:none;width:40px;height:40px;border-radius:12px;background:linear-gradient(150deg,#1b2625,#0c0f0f);display:grid;place-items:center;font-family:'Material Symbols Rounded';font-size:20px;color:#2cc4b6">description</span><span style="display:flex;flex-direction:column;gap:1px"><span style="font-weight:600;font-size:15px">llms.txt generator</span><span style="font-size:13px;font-weight:400;color:#6b7675">Pregled sajta za AI alate</span></span></a><a href="serp-preview" style="display:flex;align-items:center;gap:14px;padding:10px 12px;border-radius:12px;color:#0c0f0f" class="wa-ddi"><span style="flex:none;width:40px;height:40px;border-radius:12px;background:linear-gradient(150deg,#1b2625,#0c0f0f);display:grid;place-items:center;font-family:'Material Symbols Rounded';font-size:20px;color:#2cc4b6">search</span><span style="display:flex;flex-direction:column;gap:1px"><span style="font-weight:600;font-size:15px">Pregled Google rezultata</span><span style="font-size:13px;font-weight:400;color:#6b7675">Naslov i opis u pikselima</span></span></a></div></div></div></div>
+      <a href="o-nama" style="color:#2b3433" class="wa-navl">O nama</a>
+    </div>
+    <div class="wa-cta" style="display:flex;align-items:center;gap:18px">
+      <a href="kontakt" style="display:flex;align-items:center;gap:8px;background:#0d7f76;color:#ffffff;padding:13px 20px;border-radius:12px;font-weight:600;font-size:15px;box-shadow:0 12px 26px -14px rgba(13,127,118,0.6)" class="wa-ncta">Zatraži analizu <span style="font-family:'Material Symbols Rounded';font-size:18px">arrow_forward</span></a>
+    </div>
+  <button class="wa-burger" type="button" aria-label="Otvori meni" aria-expanded="false" aria-controls="wa-mnav"><span></span><span></span><span></span></button></nav>
+<div id="wa-mnav" class="wa-mnav"><button type="button" class="wa-mexp" aria-expanded="false" aria-controls="wa-msub">Usluge<i></i></button><div class="wa-msub" id="wa-msub"><a href="seo-konsalting">SEO konsalting</a><a href="ecommerce-seo">E-commerce SEO</a><a href="geo-optimizacija">GEO optimizacija</a><a href="izrada-sajtova">Izrada sajtova</a></div><a href="blog" aria-current="page">Blog</a><button type="button" class="wa-mexp" aria-expanded="false" aria-controls="wa-msub2">Resursi<i></i></button><div class="wa-msub" id="wa-msub2"><a href="prirucnik">Priručnik</a><a href="prirucnik#poklon">Poklon vodič</a><a href="robots-txt-generator">Robots.txt generator</a><a href="schema-generator">Schema generator</a><a href="llms-txt-generator">llms.txt generator</a><a href="serp-preview">Pregled Google rezultata</a></div><a href="o-nama">O nama</a><a href="kontakt" class="wa-mcta">Zatraži analizu</a></div></div>
+
+<section data-screen-label="01 Članak" style="padding:56px 24px 110px;background:#ffffff">
+  <div style="max-width:1180px;margin:0 auto;display:flex;flex-direction:column;gap:44px">
+    <header style="max-width:1068px;width:100%;margin:0 auto;display:flex;flex-direction:column;gap:20px">
+      <a href="blog" style="align-self:flex-start;display:flex;align-items:center;gap:6px;font-size:15px;font-weight:600;color:#0d7f76"><span style="font-family:'Material Symbols Rounded';font-size:18px">arrow_back</span>Blog</a>
+      <div style="font-size:14px;font-weight:600;color:#0d7f76">SEO i AI pretraga</div>
+      <h1 style="max-width:860px;font-family:Lexend;font-weight:700;font-size:clamp(36px,4.6vw,56px);line-height:1.08;letter-spacing:-0.035em;text-wrap:balance">AI botovi i vaš sajt: tri podešavanja koja mogu da vas sakriju iz AI odgovora</h1>
+      <div style="display:flex;align-items:center;gap:12px;padding-top:4px;font-size:15px;color:#4a5554">
+        <img src="assets/img/vuk-stojkovic.webp" alt="Vuk Stojković" width="44" height="44" style="display:block;width:44px;height:44px;border-radius:50%;object-fit:cover">
+        <div style="display:flex;flex-direction:column;gap:2px"><span style="font-weight:600;color:#0c0f0f">Vuk Stojković</span><span><time datetime="2026-11-24">24. novembar 2026.</time> · 8 min čitanja</span></div>
+      </div>
+    </header>
+    <div style="max-width:1068px;width:100%;margin:0 auto;display:flex;gap:48px;align-items:flex-start">
+    <aside class="wa-toc" aria-label="Sadržaj članka">
+      <div style="padding-bottom:8px;font-size:12px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#0d7f76">U ovom tekstu</div>
+      <a href="#cloudflare"><span></span><span>Cloudflare i zaštitni slojevi</span></a>
+      <a href="#robots"><span></span><span>robots.txt i Content Signals</span></a>
+      <a href="#search-console"><span></span><span>Prekidač u Search Console-u</span></a>
+      <a href="#provera"><span></span><span>Šta da proverite ove nedelje</span></a>
+      <a href="#zakljucak"><span></span><span>Zaključak</span></a>
+    </aside>
+    <article style="flex:1 1 0;min-width:0;max-width:760px;margin:0;display:flex;flex-direction:column;gap:22px">
+      <details class="wa-tocm"><summary>U ovom tekstu</summary><div style="display:flex;flex-direction:column;padding-top:8px"><a href="#cloudflare">Cloudflare i zaštitni slojevi</a><a href="#robots">robots.txt i Content Signals</a><a href="#search-console">Prekidač u Search Console-u</a><a href="#provera">Šta da proverite ove nedelje</a><a href="#zakljucak">Zaključak</a></div></details>
+      <p style="font-size:18px;line-height:1.75;color:#2b3433;text-wrap:pretty">Firma koja prodaje i ugrađuje klime u Nišu može da ima posebnu stranicu za svaku uslugu, sveže recenzije i dobre pozicije na Google-u, a da je ChatGPT i Google AI Mode ipak ne pominju. Ponekad razlog nije sadržaj nego pristup: AI sistem nikad nije pročitao sajt, ili mu je rečeno da ga ne koristi u odgovorima.</p>
+      <p style="font-size:18px;line-height:1.75;color:#2b3433;text-wrap:pretty">Ta vrata nalaze se na tri mesta: u Cloudflare-u ili drugom zaštitnom sloju ispred sajta, u fajlu robots.txt i u Google Search Console-u. Svako od njih može da zatvori pristup nezavisno od druga dva. Najčešće to nije svesna odluka vlasnika, nego podrazumevano podešavanje, hosting ili programer koji je štitio server.</p>
+      <p style="font-size:18px;line-height:1.75;color:#2b3433;text-wrap:pretty">U ovom tekstu prolazimo kroz sva tri mesta: šta svako kontroliše, gde se greši i kako da proverite svoj sajt za pola sata. Zašto je pristup uopšte uslov da vas AI citira, objasnili smo u tekstu <a href="ai-seo-i-klasicni-seo" style="color:#0d7f76;text-decoration:underline;text-underline-offset:3px">AI SEO i klasični SEO</a>.</p>
+      <div style="margin:6px 0;padding:22px 26px;background:#eef8f6;border:1.5px solid #8fd0c8;border-radius:18px;font-size:18px;line-height:1.65;font-weight:500;color:#0c0f0f;text-wrap:pretty">Bot mora da prođe Cloudflare, robots.txt i, kod Google-a, prekidač u Search Console-u. Dovoljno je da se vrata zatvore na jednom mestu pa da sajt ne bude izvor.</div>
+      <h2 id="cloudflare" style="scroll-margin-top:120px;font-family:Lexend;font-weight:700;font-size:clamp(26px,3vw,34px);line-height:1.2;letter-spacing:-0.02em;text-wrap:balance;margin-top:28px">1. Cloudflare i drugi zaštitni slojevi ispred sajta</h2>
+      <p style="font-size:18px;line-height:1.75;color:#2b3433;text-wrap:pretty">Prvi sloj vlasnici sajta najređe gledaju. Cloudflare, firewall na hostingu ili sigurnosni plugin mogu da odbiju AI bota pre nego što on uopšte stigne do robots.txt fajla. Za Cloudflare je to posebno važno, jer kroz njega prolazi oko 20% svih veb stranica.</p>
+      <p style="font-size:14px;line-height:1.6;color:#6b7675">Izvor: <a href="https://www.seroundtable.com/cloudflare-block-ai-crawlers-39673.html" target="_blank" rel="noopener" style="color:#0d7f76;text-decoration:underline;text-underline-offset:3px">Search Engine Roundtable</a></p>
+      <p style="font-size:18px;line-height:1.75;color:#2b3433;text-wrap:pretty">Cloudflare je 1. jula 2025. počeo da novim domenima automatski blokira AI crawlere. Blokada jednim klikom postojala je i ranije, i uključilo ju je više od milion korisnika. Ako je neko tada „za svaki slučaj“ kliknuo blokadu na vašem nalogu, ona je verovatno i dalje tamo.</p>
+      <p style="font-size:14px;line-height:1.6;color:#6b7675">Izvor: <a href="https://www.computerworld.com/article/4015341/cloudflare-offers-to-make-ai-pay-to-crawl-websites.html" target="_blank" rel="noopener" style="color:#0d7f76;text-decoration:underline;text-underline-offset:3px">Computerworld</a></p>
+      <p style="font-size:18px;line-height:1.75;color:#2b3433;text-wrap:pretty">Današnja podešavanja podeljena su na tri ponašanja botova:</p>
+      <ul style="margin:0;padding-left:22px;display:flex;flex-direction:column;gap:10px"><li style="font-size:18px;line-height:1.75;color:#2b3433;text-wrap:pretty"><strong style="color:#0c0f0f">Search:</strong> botovi koji indeksiraju sadržaj da bi kasnije odgovarali na pitanja.</li><li style="font-size:18px;line-height:1.75;color:#2b3433;text-wrap:pretty"><strong style="color:#0c0f0f">Agent:</strong> botovi koji u realnom vremenu otvaraju stranicu umesto korisnika, na primer kad u ChatGPT-u neko traži da proveri vaš cenovnik.</li><li style="font-size:18px;line-height:1.75;color:#2b3433;text-wrap:pretty"><strong style="color:#0c0f0f">Training:</strong> botovi koji uzimaju sadržaj za treniranje modela.</li></ul>
+      <p style="font-size:18px;line-height:1.75;color:#2b3433;text-wrap:pretty">Za svako ponašanje birate Allow, Block ili Block on pages with ads, a za Training postoji i opcija Disallow. Sve se nalazi pod Security &gt; Settings &gt; AI Crawler and Agent access policies.</p>
+      <p style="font-size:14px;line-height:1.6;color:#6b7675">Izvor: <a href="https://developers.cloudflare.com/bots/additional-configurations/block-ai-bots/" target="_blank" rel="noopener" style="color:#0d7f76;text-decoration:underline;text-underline-offset:3px">Cloudflare dokumentacija</a></p>
+      <p style="font-size:18px;line-height:1.75;color:#2b3433;text-wrap:pretty">Najvažnija promena stigla je 15. septembra 2026: opcije Block i Block on pages with ads sada važe i za botove mešovite namene, kao što su Googlebot, Bingbot i Applebot. Ako Training stavite na Block, ne gašite samo treniranje, nego utičete i na običnu pretragu. Cloudflare zato preporučuje Disallow AI Training za sajtove koji ne žele treniranje, a žele da ostanu u pretrazi.</p>
+      <p style="font-size:18px;line-height:1.75;color:#2b3433;text-wrap:pretty">Od septembra 2026. podrazumevane vrednosti za nove domene zavise od toga da li sajt zarađuje od reklama. Sajt bez reklama dobija Allow za sve tri kategorije. Sajt sa reklamama dobija Disallow za treniranje i Block on pages with ads za agente.</p>
+      <p style="font-size:14px;line-height:1.6;color:#6b7675">Izvor: <a href="https://blog.cloudflare.com/accountable-mixed-use-ai-crawlers/" target="_blank" rel="noopener" style="color:#0d7f76;text-decoration:underline;text-underline-offset:3px">Cloudflare blog</a></p>
+      <p style="font-size:18px;line-height:1.75;color:#2b3433;text-wrap:pretty"><strong style="color:#0c0f0f">Kako da proverite:</strong> u Cloudflare-u otvorite AI Crawl Control i karticu Crawlers. Tu vidite koji AI botovi dolaze na sajt i koja je akcija za svakog, a kartica Metrics pokazuje HTTP odgovore po botu, pa se blokada vidi kao niz 4xx odgovora.</p>
+      <p style="font-size:14px;line-height:1.6;color:#6b7675">Izvor: <a href="https://developers.cloudflare.com/ai-crawl-control/get-started/" target="_blank" rel="noopener" style="color:#0d7f76;text-decoration:underline;text-underline-offset:3px">Cloudflare dokumentacija</a></p>
+      <p style="font-size:18px;line-height:1.75;color:#2b3433;text-wrap:pretty">Ako je bot podešen na Allow, a i dalje je blokiran, krivac je često starije WAF pravilo. Takva pravila ne moraju da se vide u izveštajima AI Crawl Control-a, pa ih proverite posebno.</p>
+      <p style="font-size:14px;line-height:1.6;color:#6b7675">Izvor: <a href="https://developers.cloudflare.com/ai-crawl-control/configuration/ai-crawl-control-with-waf/" target="_blank" rel="noopener" style="color:#0d7f76;text-decoration:underline;text-underline-offset:3px">Cloudflare dokumentacija</a></p>
+      <p style="font-size:18px;line-height:1.75;color:#2b3433;text-wrap:pretty">Ako ne koristite Cloudflare, isto pitanje postavite hostingu: da li firewall ili sigurnosni plugin blokira botove po imenu ili po broju zahteva u minuti.</p>
+      <h2 id="robots" style="scroll-margin-top:120px;font-family:Lexend;font-weight:700;font-size:clamp(26px,3vw,34px);line-height:1.2;letter-spacing:-0.02em;text-wrap:balance;margin-top:28px">2. robots.txt i Content Signals: šta dozvoljavate, a šta samo poručujete</h2>
+      <p style="font-size:18px;line-height:1.75;color:#2b3433;text-wrap:pretty"><a href="robots-txt-generator" style="color:#0d7f76;text-decoration:underline;text-underline-offset:3px">robots.txt</a> je drugi sloj i jedini koji važi za sve botove odjednom. Za Google pretragu, uključujući AI Overviews i AI Mode, pristup određuju pravila za Googlebot. Google-Extended se odnosi na treniranje i grounding u drugim Google sistemima, a ne na samu pretragu.</p>
+      <p style="font-size:14px;line-height:1.6;color:#6b7675">Izvor: <a href="https://developers.google.com/search/docs/appearance/ai-features" target="_blank" rel="noopener" style="color:#0d7f76;text-decoration:underline;text-underline-offset:3px">Google Search Central</a></p>
+      <p style="font-size:18px;line-height:1.75;color:#2b3433;text-wrap:pretty">Kod OpenAI-ja su uloge razdvojene. OAI-SearchBot određuje da li se sajt pojavljuje u odgovorima ChatGPT pretrage, a promena u robots.txt-u se primenjuje za oko 24 sata. GPTBot skuplja sadržaj za treniranje, pa njegovo blokiranje ne sklanja sajt iz pretrage. ChatGPT-User otvara stranice kad to korisnik zatraži, i za njega robots.txt pravila možda ne važe.</p>
+      <p style="font-size:14px;line-height:1.6;color:#6b7675">Izvor: <a href="https://developers.openai.com/api/docs/bots" target="_blank" rel="noopener" style="color:#0d7f76;text-decoration:underline;text-underline-offset:3px">OpenAI dokumentacija</a></p>
+      <p style="font-size:18px;line-height:1.75;color:#2b3433;text-wrap:pretty">Cloudflare je 2025. predložio dopunu robots.txt-a pod imenom Content Signals, sa tri signala:</p>
+      <ul style="margin:0;padding-left:22px;display:flex;flex-direction:column;gap:10px"><li style="font-size:18px;line-height:1.75;color:#2b3433;text-wrap:pretty"><code style="font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:0.9em;background:#eef3f2;color:#0c0f0f;padding:2px 6px;border-radius:6px">search</code>: pravljenje indeksa i klasični rezultati, odnosno linkovi i kratki izvodi. Ne obuhvata AI sažetke.</li><li style="font-size:18px;line-height:1.75;color:#2b3433;text-wrap:pretty"><code style="font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:0.9em;background:#eef3f2;color:#0c0f0f;padding:2px 6px;border-radius:6px">ai-input</code>: korišćenje sadržaja kao ulaza za AI odgovore u realnom vremenu.</li><li style="font-size:18px;line-height:1.75;color:#2b3433;text-wrap:pretty"><code style="font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:0.9em;background:#eef3f2;color:#0c0f0f;padding:2px 6px;border-radius:6px">ai-train</code>: treniranje i doterivanje AI modela.</li></ul>
+      <p style="font-size:14px;line-height:1.6;color:#6b7675">Izvor: <a href="https://blog.cloudflare.com/content-signals-policy/" target="_blank" rel="noopener" style="color:#0d7f76;text-decoration:underline;text-underline-offset:3px">Cloudflare blog</a></p>
+      <p style="font-size:18px;line-height:1.75;color:#2b3433;text-wrap:pretty">Ako Cloudflare upravlja vašim robots.txt-om, sam upisuje <code style="font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:0.9em;background:#eef3f2;color:#0c0f0f;padding:2px 6px;border-radius:6px">search=yes</code> i <code style="font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:0.9em;background:#eef3f2;color:#0c0f0f;padding:2px 6px;border-radius:6px">ai-train=no</code>. Signal <code style="font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:0.9em;background:#eef3f2;color:#0c0f0f;padding:2px 6px;border-radius:6px">ai-input</code> namerno ne upisuje, jer ne zna šta želite. Prazan ai-input ne znači „ne“, nego samo da stav niste izrazili.</p>
+      <p style="font-size:14px;line-height:1.6;color:#6b7675">Izvor: <a href="https://blog.cloudflare.com/content-signals-policy/" target="_blank" rel="noopener" style="color:#0d7f76;text-decoration:underline;text-underline-offset:3px">Cloudflare blog</a></p>
+      <p style="font-size:18px;line-height:1.75;color:#2b3433;text-wrap:pretty">Na webinarima se može čuti da ai-train mora biti „yes“ da biste se pojavili u AI odgovorima. Po definicijama same politike to ne stoji: za odgovore je bitan ai-input, a treniranje je posebna poslovna odluka. Imajte u vidu i da su ovo izražene želje, a ne tehnička brava, i da nije jasno koliko ih Google i drugi zaista poštuju.</p>
+      <p style="font-size:14px;line-height:1.6;color:#6b7675">Izvor: <a href="https://searchengineland.com/cloudflare-content-signals-462538" target="_blank" rel="noopener" style="color:#0d7f76;text-decoration:underline;text-underline-offset:3px">Search Engine Land</a></p>
+      <p style="font-size:18px;line-height:1.75;color:#2b3433;text-wrap:pretty">Primer za firmu koja želi da bude vidljiva u AI pretrazi, a ne želi da joj sadržaj ide u treniranje:</p>
+      <div role="figure" aria-label="Primer robots.txt fajla" style="margin:4px 0;padding:20px 22px;background:#0c0f0f;border-radius:16px;overflow-x:auto;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:15px;line-height:1.75;color:#e6f3f1"><span style="display:block;white-space:pre">User-agent: *</span><span style="display:block;white-space:pre">Content-Signal: search=yes, ai-input=yes, ai-train=no</span><span style="display:block;white-space:pre">Allow: /</span><span style="display:block;height:1.75em"></span><span style="display:block;white-space:pre">User-agent: GPTBot</span><span style="display:block;white-space:pre">Disallow: /</span></div>
+      <p style="font-size:18px;line-height:1.75;color:#2b3433;text-wrap:pretty">Ako vam treniranje ne smeta, stavite <code style="font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:0.9em;background:#eef3f2;color:#0c0f0f;padding:2px 6px;border-radius:6px">ai-train=yes</code> i izostavite blok za GPTBot. U oba slučaja OAI-SearchBot i Googlebot ostaju pušteni.</p>
+      <p style="font-size:18px;line-height:1.75;color:#2b3433;text-wrap:pretty"><strong style="color:#0c0f0f">Zamka u kodu stranice:</strong> Google kaže da stranica mora biti indeksirana i podobna za prikaz sa snippetom da bi ušla u AI Overviews i AI Mode. Zaboravljena oznaka <code style="font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:0.9em;background:#eef3f2;color:#0c0f0f;padding:2px 6px;border-radius:6px">nosnippet</code> ili <code style="font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:0.9em;background:#eef3f2;color:#0c0f0f;padding:2px 6px;border-radius:6px">max-snippet</code> u temi ili SEO pluginu zato može tiho da vas isključi, a ispravka se može videti tek posle nekoliko dana ili meseci.</p>
+      <p style="font-size:14px;line-height:1.6;color:#6b7675">Izvor: <a href="https://developers.google.com/search/docs/appearance/ai-features" target="_blank" rel="noopener" style="color:#0d7f76;text-decoration:underline;text-underline-offset:3px">Google Search Central</a></p>
+      <p style="font-size:18px;line-height:1.75;color:#2b3433;text-wrap:pretty">I još jedna stvar koju ćete čuti: <a href="llms-txt-generator" style="color:#0d7f76;text-decoration:underline;text-underline-offset:3px">llms.txt</a>. Google pretraga ga ne koristi, ali vam neće ni naškoditi ako ga napravite za druge servise.</p>
+      <p style="font-size:14px;line-height:1.6;color:#6b7675">Izvor: <a href="https://developers.google.com/search/docs/fundamentals/ai-optimization-guide" target="_blank" rel="noopener" style="color:#0d7f76;text-decoration:underline;text-underline-offset:3px">Google Search Central</a></p>
+      <h2 id="search-console" style="scroll-margin-top:120px;font-family:Lexend;font-weight:700;font-size:clamp(26px,3vw,34px);line-height:1.2;letter-spacing:-0.02em;text-wrap:balance;margin-top:28px">3. Search Console: prekidač za Google AI funkcije</h2>
+      <p style="font-size:18px;line-height:1.75;color:#2b3433;text-wrap:pretty">Treći sloj je najnoviji. Google sada navodi da sajt, pored standardnih tehničkih uslova, mora biti uključen u „Search generative AI features“ u Search Console-u da bi mogao da se prikaže u AI funkcijama.</p>
+      <p style="font-size:14px;line-height:1.6;color:#6b7675">Izvor: <a href="https://developers.google.com/search/docs/fundamentals/ai-optimization-guide" target="_blank" rel="noopener" style="color:#0d7f76;text-decoration:underline;text-underline-offset:3px">Google Search Central</a></p>
+      <p style="font-size:18px;line-height:1.75;color:#2b3433;text-wrap:pretty">Podešavanje se nalazi pod Settings &gt; Search generative AI i od 31. avgusta 2026. dostupno je za sve sajtove na svetu. Podrazumevano je uključeno, a sajt možete isključiti iz AI funkcija. Promena obično deluje za nekoliko dana.</p>
+      <p style="font-size:14px;line-height:1.6;color:#6b7675">Izvor: <a href="https://support.google.com/webmasters/answer/16908024?hl=en-GB" target="_blank" rel="noopener" style="color:#0d7f76;text-decoration:underline;text-underline-offset:3px">Search Console pomoć</a></p>
+      <p style="font-size:18px;line-height:1.75;color:#2b3433;text-wrap:pretty">Isključen sajt ne dobija posete ni prikaze iz AI Overviews, AI Mode i AI Overviews u Discover-u. Google tvrdi da se ovo podešavanje ne koristi kao signal za rangiranje u ostatku pretrage.</p>
+      <p style="font-size:14px;line-height:1.6;color:#6b7675">Izvor: <a href="https://blog.google/products-and-platforms/products/search/new-opportunities-control-and-insights-for-website-owners/" target="_blank" rel="noopener" style="color:#0d7f76;text-decoration:underline;text-underline-offset:3px">Google blog</a></p>
+      <p style="font-size:18px;line-height:1.75;color:#2b3433;text-wrap:pretty">Prekidač ne menja odluke iz Merchant Centera i Google Ads-a, pa je prikazivanje proizvoda u Google kupovini posebno pitanje. Za portale postoji još jedna cena: Top Stories se sve češće prikazuju unutar AI Overviews, pa isključenje iz AI može značiti i manje vidljivosti u vestima.</p>
+      <p style="font-size:14px;line-height:1.6;color:#6b7675">Izvor: <a href="https://www.searchenginejournal.com/what-opting-out-of-googles-ai-search-features-means-now/" target="_blank" rel="noopener" style="color:#0d7f76;text-decoration:underline;text-underline-offset:3px">Search Engine Journal</a></p>
+      <p style="font-size:18px;line-height:1.75;color:#2b3433;text-wrap:pretty">Rizik je ovde ljudski. Prekidač može da pomeri svako ko ima vlasnički pristup nalogu, na primer bivša agencija ili programer koji je pročitao vest o AI-ju i hteo da „zatvori sajt“. Zato uz prekidač pogledajte i ko sve ima pristup, pod Settings &gt; Users and permissions.</p>
+      <p style="font-size:18px;line-height:1.75;color:#2b3433;text-wrap:pretty">Od istog datuma svi nalozi imaju i izveštaj o prikazima u AI funkcijama, po stranicama i zemljama. Ako je izveštaj prazan, a sajt ima solidan saobraćaj, to je znak da proverite sva tri sloja iz ovog teksta.</p>
+      <p style="font-size:14px;line-height:1.6;color:#6b7675">Izvor: <a href="https://seroundtable.com/google-search-console-generative-ai-tools-live-41984.html" target="_blank" rel="noopener" style="color:#0d7f76;text-decoration:underline;text-underline-offset:3px">Search Engine Roundtable</a></p>
+      <h2 id="provera" style="scroll-margin-top:120px;font-family:Lexend;font-weight:700;font-size:clamp(26px,3vw,34px);line-height:1.2;letter-spacing:-0.02em;text-wrap:balance;margin-top:28px">Šta možete da proverite ove nedelje</h2>
+      <p style="font-size:18px;line-height:1.75;color:#2b3433;text-wrap:pretty">Za ovo vam ne treba programer, samo pristup Cloudflare-u (ili hostingu) i Search Console-u. Računajte na pola sata.</p>
+      <ol style="margin:0;padding-left:26px;display:flex;flex-direction:column;gap:14px"><li style="font-size:18px;line-height:1.75;color:#2b3433;text-wrap:pretty;padding-left:4px"><strong style="color:#0c0f0f">Cloudflare:</strong> u AI Crawl Control, kartica Crawlers, proverite da Googlebot, Bingbot i OAI-SearchBot nisu blokirani. Ako je Training na Block, a želite da ostanete u pretrazi, prebacite ga na Disallow AI Training. Pogledajte i WAF pravila koja pominju botove.</li><li style="font-size:18px;line-height:1.75;color:#2b3433;text-wrap:pretty;padding-left:4px"><strong style="color:#0c0f0f">robots.txt:</strong> otvorite vašdomen.rs/robots.txt u pregledaču. Potražite Disallow pravila za Googlebot, Bingbot i OAI-SearchBot, i proverite da li je Cloudflare dodao svoj blok na vrh fajla. Odluku o ai-train i GPTBot donesite svesno, ne podrazumevano.</li><li style="font-size:18px;line-height:1.75;color:#2b3433;text-wrap:pretty;padding-left:4px"><strong style="color:#0c0f0f">Search Console:</strong> pod Settings &gt; Search generative AI treba da stoji opcija za uključivanje. Na istom mestu, pod Users and permissions, uklonite naloge bivših agencija i saradnika.</li><li style="font-size:18px;line-height:1.75;color:#2b3433;text-wrap:pretty;padding-left:4px"><strong style="color:#0c0f0f">Ključna stranica:</strong> u URL Inspection proverite da je stranica glavne usluge indeksirana. Zatim u izvornom kodu stranice potražite reči <code style="font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:0.9em;background:#eef3f2;color:#0c0f0f;padding:2px 6px;border-radius:6px">nosnippet</code> i <code style="font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:0.9em;background:#eef3f2;color:#0c0f0f;padding:2px 6px;border-radius:6px">max-snippet</code>.</li><li style="font-size:18px;line-height:1.75;color:#2b3433;text-wrap:pretty;padding-left:4px"><strong style="color:#0c0f0f">Test u ChatGPT-u:</strong> zamolite ga da otvori vašu stranicu sa cenama i prepriča je. Ako ne može, pogledajte da li Cloudflare ili hosting beleži odbijene zahteve OpenAI botova.</li><li style="font-size:18px;line-height:1.75;color:#2b3433;text-wrap:pretty;padding-left:4px"><strong style="color:#0c0f0f">Zabeležite datum svake promene.</strong> OpenAI-ju treba oko dan, Google-ovom prekidaču nekoliko dana, a promeni snippet oznaka i nekoliko meseci. Bez datuma nećete znati šta je dalo rezultat.</li></ol>
+      <h2 id="zakljucak" style="scroll-margin-top:120px;font-family:Lexend;font-weight:700;font-size:clamp(26px,3vw,34px);line-height:1.2;letter-spacing:-0.02em;text-wrap:balance;margin-top:28px">Zaključak</h2>
+      <p style="font-size:18px;line-height:1.75;color:#2b3433;text-wrap:pretty">AI pretraga ne može da citira sajt koji ne može da pročita. Pre nego što uložite u nove tekstove, PR ili <a href="geo-optimizacija" style="color:#0d7f76;text-decoration:underline;text-underline-offset:3px">AEO usluge</a>, proverite da vrata nisu zatvorena na jednom od tri mesta: u Cloudflare-u, u robots.txt-u ili u Search Console-u.</p>
+      <p style="font-size:18px;line-height:1.75;color:#2b3433;text-wrap:pretty">Nijedno od ovih podešavanja nije pogrešno samo po sebi. Firma može svesno da odluči da ne želi treniranje ili da isključi sajt iz Google AI funkcija. Problem nastaje kad odluku donese podrazumevano podešavanje ili neko ko više ne radi sa vama.</p>
+      <p style="font-size:18px;line-height:1.75;color:#2b3433;text-wrap:pretty">Zato je cilj jednostavan: svaki od tri sloja treba da odražava odluku koju ste vi doneli, i da znate kad je doneta.</p>
+      <div style="margin-top:20px;display:flex;flex-direction:column;gap:16px;align-items:flex-start;padding:clamp(28px,4vw,40px);border-radius:24px;background:#0c0f0f;color:#ffffff">
+        <h2 style="font-family:Lexend;font-weight:700;font-size:clamp(24px,2.6vw,30px);line-height:1.2;letter-spacing:-0.02em;text-wrap:balance">Želite da proverimo da li AI botovi mogu da pročitaju vaš sajt?</h2>
+        <p style="font-size:17px;line-height:1.7;color:#c3cecc;text-wrap:pretty">Pogledamo Cloudflare, robots.txt i Search Console i javimo vam šta je otvoreno, šta zatvoreno i da li je to u skladu sa onim što želite.</p>
+        <a href="kontakt" style="display:flex;align-items:center;gap:8px;background:#1aa89d;color:#0c0f0f;padding:15px 22px;border-radius:12px;font-weight:700;font-size:15px" class="h6">Zatraži analizu <span style="font-family:'Material Symbols Rounded';font-size:18px">arrow_forward</span></a>
+      </div>
+    </article>
+  </div>
+  </div>
+</section>
+
+<footer style="padding:80px 24px 32px;background:#ffffff;border-top:1px solid #eef3f2">
+  <div style="max-width:1180px;margin:0 auto;display:flex;flex-direction:column;gap:56px">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,170px),1fr));gap:40px">
+      <div style="display:flex;flex-direction:column;gap:20px">
+        <div style="display:flex;align-items:center;gap:10px">
+          <img src="assets/img/logo-web-answer-studio.webp" alt="Logo Web Answer Studio" style="display:block;height:46px;width:auto" width="440" height="120" decoding="async" loading="lazy">
+        </div>
+        <p style="font-size:15px;line-height:1.65;color:#4a5554">Dizajn, redizajn i optimizacija sajtova. Pravimo brze, moderne sajtove koji se vide na Google-u i donose upite.</p>
+        <a href="kontakt" style="align-self:flex-start;background:#0d7f76;color:#ffffff;padding:12px 20px;border-radius:10px;font-weight:600;font-size:15px" class="h3">Zatraži analizu</a>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:14px;font-size:15px">
+        <div style="font-family:Lexend;font-weight:600;font-size:17px;margin-bottom:6px">Usluge</div>
+        <a href="seo-konsalting" style="color:#4a5554">SEO konsalting</a><a href="ecommerce-seo" style="color:#4a5554">E-commerce SEO</a><a href="geo-optimizacija" style="color:#4a5554">GEO optimizacija</a><a href="izrada-sajtova" style="color:#4a5554">Izrada sajtova</a>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:14px;font-size:15px">
+        <div style="font-family:Lexend;font-weight:600;font-size:17px;margin-bottom:6px">SEO alati</div>
+        <a href="robots-txt-generator" style="color:#4a5554">Robots.txt generator</a><a href="schema-generator" style="color:#4a5554">Schema generator</a><a href="llms-txt-generator" style="color:#4a5554">llms.txt generator</a><a href="serp-preview" style="color:#4a5554">Pregled Google rezultata</a>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:14px;font-size:15px">
+        <div style="font-family:Lexend;font-weight:600;font-size:17px;margin-bottom:6px">Resursi</div>
+        <a href="blog" style="color:#4a5554">Blog</a><a href="prirucnik" style="color:#4a5554">Priručnik</a><a href="prirucnik#poklon" style="color:#4a5554">Poklon vodič</a>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:14px;font-size:15px">
+        <div style="font-family:Lexend;font-weight:600;font-size:17px;margin-bottom:6px">Kontakt</div>
+        <a href="mailto:webanswerstudio@gmail.com" style="display:flex;align-items:center;gap:10px;color:#4a5554"><span style="font-family:'Material Symbols Rounded';font-size:20px;color:#0d7f76">mail</span>webanswerstudio@gmail.com</a>
+        <a href="tel:+381642906197" style="display:flex;align-items:center;gap:10px;color:#4a5554"><span style="font-family:'Material Symbols Rounded';font-size:20px;color:#0d7f76">call</span>+381 64 2906197</a>
+        <a href="o-nama" style="display:flex;align-items:center;gap:10px;color:#4a5554"><span style="font-family:'Material Symbols Rounded';font-size:20px;color:#0d7f76">groups</span>O nama</a>
+        <a href="https://www.instagram.com/webanswerstudio/" rel="noopener" target="_blank" style="display:flex;align-items:center;gap:10px;color:#4a5554"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0d7f76" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="0.6" fill="#0d7f76"></circle></svg>Instagram</a>
+      </div>
+    </div>
+    <div style="display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-top:24px;border-top:1px solid #eef3f2;font-size:14px;color:#6b7675">
+      <span>© 2026 Web Answer Studio. Sva prava zadržana.</span>
+      <a href="politika-privatnosti" style="color:#6b7675">Politika privatnosti</a>
+    </div>
+  </div>
+</footer>
+
+</div>
+<script src="assets/js/site.js" defer></script>
+<script>(function(){var ids=["cloudflare","robots","search-console","provera","zakljucak"],links=document.querySelectorAll('.wa-toc a');function u(){var a=ids[0];ids.forEach(function(id){var e=document.getElementById(id);if(e&&e.getBoundingClientRect().top<160)a=id});if(innerHeight+scrollY>=document.body.scrollHeight-4)a=ids[ids.length-1];links.forEach(function(l){l.getAttribute('href')==='#'+a?l.setAttribute('data-active',''):l.removeAttribute('data-active')})}addEventListener('scroll',u,{passive:true});u();document.querySelectorAll('.wa-tocm a').forEach(function(l){l.addEventListener('click',function(){l.closest('details').open=false})})})();</script>
+
+</body>
+</html>
